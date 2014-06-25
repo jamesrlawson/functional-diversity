@@ -1,0 +1,451 @@
+plotID,individual,speciesName,stem,circumference,dbh
+1,1,Acmena smithii,A,94.6,30.1
+1,2,Acmena smithii,A,60,19.1
+1,3,Acmena smithii,A,42.3,13.5
+1,8,Acmena smithii,A,79,25.1
+1,13,Acmena smithii,A,59.8,19.0
+1,13,Acmena smithii,B,60.8,19.4
+1,14,Acmena smithii,A,120.4,38.3
+1,15,Acmena smithii,A,105,33.4
+1,16,Acmena smithii,A,67.1,21.4
+1,22,Acmena smithii,A,83.2,26.5
+1,22,Acmena smithii,B,37.6,12.0
+1,26,Acmena smithii,A,53.5,17.0
+1,27,Acmena smithii,A,64.9,20.7
+1,29,Acmena smithii,A,64,20.4
+1,33,Acmena smithii,A,165,52.5
+1,37,Acmena smithii,A,41.2,13.1
+1,38,Acmena smithii,A,61.8,19.7
+1,39,Acmena smithii,A,56.7,18.0
+1,42,Acmena smithii,A,32.7,10.4
+1,18,Casuarina cunninghamiana,A,46.2,14.7
+1,17,Ceratopetalum apetalum,A,34.3,10.9
+1,25,Ceratopetalum apetalum,A,31.7,10.1
+1,32,Ceratopetalum apetalum,A,39,12.4
+1,28,Doryphora sassafras,A,60.3,19.2
+1,6,Waterhousea floribunda,A,36.6,11.7
+1,11,Waterhousea floribunda,A,120.5,38.4
+1,12,Waterhousea floribunda,A,154.3,49.1
+1,30,Waterhousea floribunda,A,62.3,19.8
+1,36,Waterhousea floribunda,A,48.3,15.4
+1,43,Waterhousea floribunda,A,31.6,10.1
+1,44,Waterhousea floribunda,A,50.5,16.1
+1,4,Tristaniopsis laurina,A,137.2,43.7
+1,4,Tristaniopsis laurina,B,32.2,10.2
+1,4,Tristaniopsis laurina,C,35.1,11.2
+1,5,Tristaniopsis laurina,A,101.2,32.2
+1,7,Tristaniopsis laurina,A,120.1,38.2
+1,9,Tristaniopsis laurina,A,85.7,27.3
+1,10,Tristaniopsis laurina,A,62.9,20.0
+1,10,Tristaniopsis laurina,B,76.4,24.3
+1,19,Tristaniopsis laurina,A,205,65.3
+1,20,Tristaniopsis laurina,A,74.6,23.7
+1,20,Tristaniopsis laurina,B,73.5,23.4
+1,21,Tristaniopsis laurina,A,117.3,37.3
+1,23,Tristaniopsis laurina,A,115.8,36.9
+1,23,Tristaniopsis laurina,B,32.1,10.2
+1,24,Tristaniopsis laurina,A,69.5,22.1
+1,24,Tristaniopsis laurina,B,124.3,39.6
+1,31,Tristaniopsis laurina,A,160,50.9
+1,34,Tristaniopsis laurina,A,85,27.1
+1,34,Tristaniopsis laurina,B,69.3,22.1
+1,35,Tristaniopsis laurina,A,110.6,35.2
+1,40,Tristaniopsis laurina,A,31.7,10.1
+1,40,Tristaniopsis laurina,B,41.1,13.1
+1,41,Tristaniopsis laurina,A,37.9,12.1
+2,1,Tristaniopsis laurina,A,46.1,14.7
+2,2,Tristaniopsis laurina,A,71.5,22.8
+2,2,Tristaniopsis laurina,B,96.9,30.8
+2,3,Tristaniopsis laurina,A,92.7,29.5
+2,3,Tristaniopsis laurina,B,65.7,20.9
+2,3,Tristaniopsis laurina,C,59.5,18.9
+2,3,Tristaniopsis laurina,D,67,21.3
+2,3,Tristaniopsis laurina,E,62.7,20.0
+2,3,Tristaniopsis laurina,F,41.9,13.3
+2,4,Tristaniopsis laurina,A,31.9,10.2
+2,5,Tristaniopsis laurina,A,38.3,12.2
+2,6,Tristaniopsis laurina,A,56.8,18.1
+2,6,Tristaniopsis laurina,B,57.3,18.2
+2,7,Tristaniopsis laurina,A,86.9,27.7
+2,7,Tristaniopsis laurina,B,121,38.5
+2,8,Tristaniopsis laurina,A,177.5,56.5
+2,9,Tristaniopsis laurina,A,52.9,16.8
+2,9,Tristaniopsis laurina,B,81.8,26.0
+2,10,Tristaniopsis laurina,A,34.7,11.0
+2,11,Tristaniopsis laurina,A,43.9,14.0
+2,12,Tristaniopsis laurina,A,67.1,21.4
+2,12,Tristaniopsis laurina,B,40.3,12.8
+2,12,Tristaniopsis laurina,C,34,10.8
+2,12,Tristaniopsis laurina,D,209.1,66.6
+2,13,Tristaniopsis laurina,A,40.4,12.9
+2,14,Tristaniopsis laurina,A,69.7,22.2
+2,15,Tristaniopsis laurina,A,41.4,13.2
+2,16,Tristaniopsis laurina,A,68.9,21.9
+2,16,Tristaniopsis laurina,B,66.7,21.2
+2,17,Tristaniopsis laurina,A,77.2,24.6
+2,18,Tristaniopsis laurina,A,51.6,16.4
+2,19,Tristaniopsis laurina,A,59.2,18.8
+2,20,Tristaniopsis laurina,A,132.5,42.2
+2,20,Tristaniopsis laurina,B,192.6,61.3
+2,21,Tristaniopsis laurina,A,56.7,18.0
+2,22,Tristaniopsis laurina,A,52.3,16.6
+2,22,Tristaniopsis laurina,B,43.5,13.8
+2,23,Tristaniopsis laurina,A,46.5,14.8
+2,24,Tristaniopsis laurina,A,33.6,10.7
+2,25,Tristaniopsis laurina,A,49,15.6
+2,26,Tristaniopsis laurina,A,115.9,36.9
+2,27,Tristaniopsis laurina,B,124.5,39.6
+2,28,Tristaniopsis laurina,A,149.1,47.5
+3,3,Acacia mearnsii,A,52.4,16.67943804
+3,2,Acacia melanoxylon,A,50.3,16.01098728
+3,2,Acacia melanoxylon,B,61.7,19.63971998
+3,7,Acacia melanoxylon,A,32.8,10.44056427
+3,7,Acacia melanoxylon,B,37.1,11.80929678
+3,9,Acacia melanoxylon,A,101,32.1492985
+3,10,Acacia melanoxylon,A,32.5,10.3450713
+3,11,Acacia melanoxylon,A,43.9,13.973804
+3,1,Eucalyptus viminalis,A,481,153.1070553
+3,8,Eucalyptus viminalis,A,300,95.49296586
+3,4,Leptospermum brevipes,A,37.9,12.06394469
+3,5,Pomaderris aspera,A,34.7,11.04535305
+3,6,Pomaderris aspera,A,31.8,10.12225438
+4,7,Acacia floribunda,A,31.8,10.12225438
+4,9,Acacia floribunda,A,34.2,10.88619811
+4,2,Bursaria spinosa,A,66.2,21.07211447
+4,8,Bursaria spinosa,A,40.4,12.8597194
+4,4,Cassinia trinerva,A,32,10.18591636
+4,1,Casuarina cunninghamiana,A,300,95.49296586
+4,6,Casuarina cunninghamiana,A,262,83.39719018
+4,10,Casuarina cunninghamiana,A,331,105.3605723
+4,11,Casuarina cunninghamiana,A,277.5,88.33099342
+4,3,Eucalyptus cypellocarpa,A,136.5,43.44929946
+4,5,Eucalyptus cypellocarpa,A,318,101.2225438
+5,13,Backhousia myrtifolia,A,42.8,13.62366313
+5,13,Backhousia myrtifolia,B,35.3,11.23633898
+5,1,Casuarina cunninghamiana,A,48,15.27887454
+5,2,Casuarina cunninghamiana,A,49.2,15.6608464
+5,3,Casuarina cunninghamiana,A,455,144.8309982
+5,8,Casuarina cunninghamiana,A,419,133.3718423
+5,4,Eucalyptus elata,A,279,88.80845825
+5,12,Eucalyptus elata,A,180,57.29577951
+5,5,Tristaniopsis laurina,A,76.85,24.46211475
+5,6,Tristaniopsis laurina,A,37.2,11.84112777
+5,7,Tristaniopsis laurina,A,32,10.18591636
+5,9,Tristaniopsis laurina,A,44.8,14.2602829
+5,9,Tristaniopsis laurina,B,37.4,11.90478974
+5,9,Tristaniopsis laurina,C,41.4,13.17802929
+5,10,Tristaniopsis laurina,A,40,12.73239545
+5,11,Tristaniopsis laurina,A,42.5,13.52817016
+5,14,Tristaniopsis laurina,A,49.8,15.85183233
+5,15,Tristaniopsis laurina,A,85.2,27.1200023
+6,10,Acacia mearnsii,A,33.1,10.53605723
+6,1,Casuarina cunninghamiana,A,32.6,10.37690229
+6,2,Casuarina cunninghamiana,A,46.5,14.80140971
+6,3,Casuarina cunninghamiana,A,37.6,11.96845172
+6,4,Casuarina cunninghamiana,A,69.9,22.24986104
+6,5,Casuarina cunninghamiana,A,36.9,11.7456348
+6,6,Casuarina cunninghamiana,A,47.4,15.08788861
+6,7,Casuarina cunninghamiana,A,85.4,27.18366428
+6,8,Casuarina cunninghamiana,A,42.1,13.40084621
+6,9,Casuarina cunninghamiana,A,139.2,44.30873616
+6,11,Casuarina cunninghamiana,A,92.7,29.50732645
+6,12,Casuarina cunninghamiana,A,150.3,47.84197589
+6,13,Casuarina cunninghamiana,A,126.4,40.23436961
+6,14,Casuarina cunninghamiana,A,58.2,18.52563538
+7,3,Acacia dealbata,A,32.7,10.40873328
+7,9,Acacia dealbata,A,42.4,13.49633917
+7,10,Acacia dealbata,A,41.9,13.33718423
+7,10,Acacia dealbata,B,34.6,11.01352206
+7,11,Acacia dealbata,A,33.8,10.75887415
+7,14,Acacia dealbata,A,52.5,16.71126902
+7,15,Acacia dealbata,A,33.1,10.53605723
+7,16,Acacia dealbata,A,32.9,10.47239526
+7,23,Acacia dealbata,A,33.6,10.69521218
+7,27,Acacia dealbata,A,44.4,14.13295895
+7,30,Acacia dealbata,A,35.1,11.17267701
+7,31,Acacia dealbata,A,33.5,10.66338119
+7,32,Acacia dealbata,A,38.2,12.15943765
+7,33,Acacia dealbata,A,33.9,10.79070514
+7,34,Acacia dealbata,A,45.9,14.61042378
+7,35,Acacia dealbata,A,34.6,11.01352206
+7,36,Acacia dealbata,A,31.6,10.0585924
+7,37,Acacia dealbata,A,38.2,12.15943765
+7,38,Acacia dealbata,A,46.5,14.80140971
+7,28,Eucalyptus bridgesiana,A,179,56.97746963
+7,1,Eucalyptus rubida,A,41.4,13.17802929
+7,2,Eucalyptus rubida,A,58.9,18.7484523
+7,4,Eucalyptus rubida,A,65.7,20.91295952
+7,4,Eucalyptus rubida,B,37.6,11.96845172
+7,4,Eucalyptus rubida,C,47.5,15.11971959
+7,4,Eucalyptus rubida,D,37.7,12.00028271
+7,5,Eucalyptus rubida,A,87.2,27.75662208
+7,7,Eucalyptus rubida,A,34.2,10.88619811
+7,7,Eucalyptus rubida,B,41.1,13.08253632
+7,8,Eucalyptus rubida,A,36.5,11.61831085
+7,12,Eucalyptus rubida,A,70.3,22.377185
+7,17,Eucalyptus rubida,A,49.9,15.88366332
+7,18,Eucalyptus rubida,A,41.6,13.24169127
+7,19,Eucalyptus rubida,A,73.9,23.52310059
+7,21,Eucalyptus rubida,A,37,11.77746579
+7,22,Eucalyptus rubida,A,44.3,14.10112796
+7,24,Eucalyptus rubida,A,52.4,16.67943804
+7,25,Eucalyptus rubida,A,49.5,15.75633937
+7,26,Eucalyptus rubida,A,36.7,11.68197282
+7,29,Eucalyptus rubida,A,73.3,23.33211466
+7,6,Eucalyptus rubida,A,73.7,23.45943861
+7,6,Eucalyptus rubida,B,32.4,10.31324031
+7,13,Eucalyptus rubida,A,42,13.36901522
+7,20,Eucalyptus rubida,A,50.7,16.13831123
+7,20,Eucalyptus rubida,B,60.2,19.16225515
+7,20,Eucalyptus rubida,C,41.8,13.30535324
+7,20,Eucalyptus rubida,D,52.3,16.64760705
+7,20,Eucalyptus rubida,E,57.8,18.39831142
+8,32,Acacia dealbata,A,32.5,10.3450713
+8,3,Acacia melanoxylon,A,82.7,26.32422759
+8,4,Acacia melanoxylon,A,97.7,31.09887588
+8,7,Acacia melanoxylon,A,84.5,26.89718538
+8,10,Acacia melanoxylon,A,129.9,41.34845422
+8,12,Acacia melanoxylon,A,95.7,30.46225611
+8,15,Acacia melanoxylon,A,79.1,25.178312
+8,41,Acacia melanoxylon,A,118.9,37.84704547
+8,42,Acacia melanoxylon,A,76.5,24.35070629
+8,1,Eucalyptus camphora subsp. humeana,A,108.4,34.50479166
+8,2,Eucalyptus camphora subsp. humeana,A,225,71.61972439
+8,6,Eucalyptus camphora subsp. humeana,A,98.9,31.48084774
+8,11,Eucalyptus camphora subsp. humeana,A,145,46.1549335
+8,17,Eucalyptus camphora subsp. humeana,A,168,53.47606088
+8,20,Eucalyptus camphora subsp. humeana,A,71,22.60000192
+8,21,Eucalyptus camphora subsp. humeana,A,175,55.70423008
+8,23,Eucalyptus camphora subsp. humeana,A,86.5,27.53380515
+8,24,Eucalyptus camphora subsp. humeana,A,100.5,31.99014356
+8,25,Eucalyptus camphora subsp. humeana,A,215,68.43662553
+8,26,Eucalyptus camphora subsp. humeana,A,70.3,22.377185
+8,27,Eucalyptus camphora subsp. humeana,A,105.2,33.48620003
+8,28,Eucalyptus camphora subsp. humeana,A,89.4,28.45690382
+8,29,Eucalyptus camphora subsp. humeana,A,109,34.69577759
+8,34,Eucalyptus camphora subsp. humeana,A,72.7,23.14112873
+8,35,Eucalyptus camphora subsp. humeana,A,49.7,15.82000134
+8,36,Eucalyptus camphora subsp. humeana,A,51,16.2338042
+8,37,Eucalyptus camphora subsp. humeana,A,80,25.46479089
+8,40,Eucalyptus camphora subsp. humeana,A,67,21.32676237
+8,8,Leptospermum brevipes,A,49,15.59718442
+8,8,Leptospermum brevipes,B,43.2,13.75098708
+8,9,Leptospermum brevipes,A,40.9,13.01887434
+8,13,Leptospermum brevipes,A,79.9,25.43295991
+8,14,Leptospermum brevipes,A,37.5,11.93662073
+8,16,Leptospermum brevipes,A,56.4,17.95267758
+8,30,Leptospermum brevipes,A,35.1,11.17267701
+8,30,Leptospermum brevipes,B,49,15.59718442
+8,33,Leptospermum brevipes,A,49.5,15.75633937
+8,33,Leptospermum brevipes,B,43.6,13.87831104
+8,5,Leptospermum grandifolium,A,55.7,17.72986066
+8,5,Leptospermum grandifolium,B,35.5,11.30000096
+8,5,Leptospermum grandifolium,C,64.8,20.62648062
+8,38,Leptospermum grandifolium,A,57.1,18.1754945
+8,39,Leptospermum grandifolium,A,53.7,17.09324089
+8,18,Pomaderris aspera,A,34,10.82253613
+8,19,Pomaderris aspera,A,31.6,10.0585924
+8,22,Pomaderris aspera,A,41.7,13.27352225
+8,31,Pomaderris aspera,A,43.2,13.75098708
+8,43,Pomaderris aspera,A,34,10.82253613
+8,43,Pomaderris aspera,B,33,10.50422624
+8,43,Pomaderris aspera,C,43.3,13.78281807
+9,1,Acacia dealbata,A,34.6,11.01352206
+9,2,Acacia dealbata,A,31.6,10.0585924
+9,3,Acacia dealbata,A,41.5,13.20986028
+9,4,Acacia dealbata,A,33.2,10.56788822
+9,9,Acacia dealbata,A,40.4,12.8597194
+9,10,Acacia dealbata,A,40.4,12.8597194
+9,12,Acacia dealbata,A,44.8,14.2602829
+9,13,Acacia dealbata,A,34.9,11.10901503
+9,14,Acacia dealbata,A,31.8,10.12225438
+9,16,Acacia dealbata,A,32.1,10.21774735
+9,5,Eucalyptus radiata,A,132.9,42.30338387
+9,7,Eucalyptus radiata,A,87.1,27.72479109
+9,8,Eucalyptus radiata,A,77.6,24.70084717
+9,11,Eucalyptus radiata,A,99.5,31.67183368
+9,17,Eucalyptus radiata,A,173,55.06761031
+9,18,Eucalyptus radiata,A,198,63.02535746
+9,19,Eucalyptus radiata,A,125.2,39.85239775
+9,6,Eucalyptus viminalis,A,498,158.5183233
+9,15,Eucalyptus viminalis,A,752,239.3690344
+10,2,Eucalyptus camphora subsp. humeana,A,90,28.64788976
+10,9,Eucalyptus camphora subsp. humeana,A,165,52.52113122
+10,1,Eucalyptus stellulata,A,160,50.92958179
+10,1,Eucalyptus stellulata,B,140,44.56338407
+10,3,Eucalyptus stellulata,A,120,38.19718634
+10,3,Eucalyptus stellulata,A,160,50.92958179
+10,10,Eucalyptus stellulata,A,120,38.19718634
+10,4,Leptospermum brevipes,A,32,10.18591636
+10,4,Leptospermum brevipes,B,32,10.18591636
+10,5,Leptospermum brevipes,A,40,12.73239545
+10,6,Leptospermum brevipes,A,40,12.73239545
+10,7,Leptospermum brevipes,A,80,25.46479089
+10,8,Leptospermum brevipes,A,33,10.50422624
+10,8,Leptospermum brevipes,B,32,10.18591636
+11,4,Acacia irrorata,A,67.6,21.51774831
+11,1,Casuarina cunninghamiana,A,149.8,47.68282095
+11,2,Casuarina cunninghamiana,A,49.8,15.85183233
+11,3,Casuarina cunninghamiana,A,129.5,41.22113026
+11,5,Casuarina cunninghamiana,A,141.9,45.16817285
+11,9,Casuarina cunninghamiana,A,145.9,46.44141239
+11,6,Eucalyptus amplifolia,A,338,107.5887415
+11,8,Eucalyptus amplifolia,A,115.8,36.86028482
+11,7,Notelaea microcarpa var. microcarpa,A,39.5,12.5732405
+12,7,Angophora subvelutina,A,53.6,17.0614099
+12,9,Angophora subvelutina,A,134.2,42.71718673
+12,10,Angophora subvelutina,A,38.3,12.19126864
+12,3,Casuarina cunninghamiana,A,249,79.25916166
+12,4,Casuarina cunninghamiana,A,170,54.11268065
+12,5,Casuarina cunninghamiana,A,160,50.92958179
+12,1,Eucalyptus tereticornis,A,33,10.50422624
+12,2,Eucalyptus tereticornis,A,83,26.41972055
+12,6,Eucalyptus tereticornis,A,74.3,23.65042454
+12,8,Eucalyptus tereticornis,A,56.5,17.98450857
+12,11,Eucalyptus tereticornis,A,187,59.52394872
+12,12,Eucalyptus tereticornis,A,120.1,38.22901733
+12,13,Eucalyptus tereticornis,A,235,74.80282325
+13,1,Alphitonia excelsa,A,58.9,18.7484523
+13,2,Alphitonia excelsa,A,43.6,13.87831104
+13,3,Alphitonia excelsa,A,52,16.55211408
+13,4,Alphitonia excelsa,A,49.7,15.82000134
+13,5,Alphitonia excelsa,A,37.9,12.06394469
+13,8,Alphitonia excelsa,A,35.5,11.30000096
+13,18,Alphitonia excelsa,A,61.8,19.67155097
+13,32,Alphitonia excelsa,A,74.9,23.84141048
+13,37,Alphitonia excelsa,A,37.7,12.00028271
+13,22,Banksia integrifolia,A,32.9,10.47239526
+13,10,Casuarina glauca,A,107.9,34.34563672
+13,13,Casuarina glauca,A,33,10.50422624
+13,15,Casuarina glauca,A,38.1,12.12760666
+13,16,Casuarina glauca,A,33.7,10.72704316
+13,23,Casuarina glauca,A,35.6,11.33183195
+13,24,Casuarina glauca,A,42,13.36901522
+13,25,Casuarina glauca,A,59.5,18.93943823
+13,28,Casuarina glauca,A,33.8,10.75887415
+13,29,Casuarina glauca,A,31.6,10.0585924
+13,30,Casuarina glauca,A,53.8,17.12507188
+13,35,Casuarina glauca,A,31.7,10.09042339
+13,43,Casuarina glauca,A,105.3,33.51803102
+13,36,Grevillea robusta,A,32.6,10.37690229
+13,12,Lophostemon suaveolens,A,380,120.9577567
+13,19,Lophostemon suaveolens,A,127,40.42535555
+13,20,Lophostemon suaveolens,A,135.4,43.09915859
+13,26,Lophostemon suaveolens,A,105,33.42253805
+13,31,Lophostemon suaveolens,A,177,56.34084985
+13,7,Melaleuca quinquenervia,A,74.2,23.61859355
+13,11,Melaleuca quinquenervia,A,83,26.41972055
+13,14,Melaleuca quinquenervia,A,65.6,20.88112853
+13,27,Melaleuca quinquenervia,A,70.4,22.40901599
+13,33,Melaleuca quinquenervia,A,107.4,34.18648178
+13,38,Melaleuca quinquenervia,A,57.1,18.1754945
+13,39,Melaleuca quinquenervia,A,41.9,13.33718423
+13,40,Melaleuca quinquenervia,A,55.5,17.66619868
+13,41,Melaleuca quinquenervia,A,61.6,19.60788899
+13,6,Melaleuca quinquenervia,A,75.5,24.03239641
+13,6,Melaleuca quinquenervia,B,81.2,25.84676276
+13,9,Parsonsia straminea,A,31.8,10.12225438
+13,17,Tree (Sportsmans 57),A,49.3,15.69267739
+13,21,Tree (Sportsmans 57),A,42.1,13.40084621
+13,34,Tree (Sportsmans 57),A,33.1,10.53605723
+13,42,Tree (Sportsmans 57),A,56.6,18.01633956
+14,4,Acacia dealbata,A,38.4,12.22309963
+14,1,Eucalyptus radiata,A,181,57.6140894
+14,5,Eucalyptus radiata,A,54.5,17.3478888
+14,12,Eucalyptus radiata,A,68.1,21.67690325
+14,12,Eucalyptus radiata,B,85.5,27.21549527
+14,13,Eucalyptus radiata,A,70.4,22.40901599
+14,2,Eucalyptus viminalis,A,213,67.80000576
+14,3,Eucalyptus viminalis,A,155,49.33803236
+14,6,Eucalyptus viminalis,A,130.1,41.41211619
+14,7,Eucalyptus viminalis,A,198.5,63.18451241
+14,8,Eucalyptus viminalis,A,110.2,35.07774946
+14,9,Eucalyptus viminalis,A,83.1,26.45155154
+14,10,Eucalyptus viminalis,A,168,53.47606088
+14,11,Eucalyptus viminalis,A,112.4,35.77803121
+14,14,Eucalyptus viminalis,A,140,44.56338407
+14,15,Eucalyptus viminalis,A,145,46.1549335
+14,16,Eucalyptus viminalis,A,146,46.47324338
+15,3,Acmena smithii,A,78.9,25.1
+15,6,Acmena smithii,A,34.2,10.9
+15,7,Acmena smithii,A,55,17.5
+15,7,Acmena smithii,B,34,10.8
+15,7,Acmena smithii,C,32.5,10.3
+15,9,Acmena smithii,A,47.6,15.2
+15,13,Acmena smithii,A,44.1,14.0
+15,13,Acmena smithii,B,41,13.1
+15,13,Acmena smithii,C,98.2,31.3
+15,13,Acmena smithii,D,47.5,15.1
+15,15,Acmena smithii,A,35.6,11.3
+15,16,Acmena smithii,A,57.9,18.4
+15,17,Acmena smithii,A,135.1,43.0
+15,18,Acmena smithii,A,42.5,13.5
+15,2,Commersonia fraseri,A,58.6,18.7
+15,5,Commersonia fraseri,A,32,10.2
+15,1,Eucalyptus resinifera,A,202,64.3
+15,14,Eucalyptus resinifera,A,385,122.5
+15,11,Eucalyptus tereticornis,A,238,75.8
+15,4,Glochidion ferdinandi var. ferdinandi,A,31.8,10.1
+15,8,Glochidion ferdinandi var. ferdinandi,A,32.4,10.3
+15,10,Glochidion ferdinandi var. ferdinandi,A,71.5,22.8
+15,12,Glochidion ferdinandi var. ferdinandi,A,51,16.2
+15,19,Glochidion ferdinandi var. ferdinandi,A,85.4,27.2
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

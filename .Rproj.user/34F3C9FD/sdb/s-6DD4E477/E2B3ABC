@@ -1,0 +1,17 @@
+{
+    "contents" : "plot.quad(hydroplots, hydroplots$FDis, FD)\nplot.quad(hydroplots, hydroplots$FDiv, FD)\nplot.quad(hydroplots,hydroplots$FRic, FD)\nplot.quad(hydroplots, hydroplots$FEve, FD)\nplot.quad(hydroplots, hydroplots$nbsp, FD)\n\nplot.quad(hydroplots, hydroplots$SLA.CWM, CWM)\nplot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)\nplot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)\nplot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)",
+    "created" : 1403662369886.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "736745686",
+    "id" : "E2B3ABC",
+    "lastKnownWriteTime" : 7363194279527281529,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled4"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
