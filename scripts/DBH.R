@@ -6,7 +6,7 @@ library(reshape)
 library(FD)
 
 DBH <- na.omit(read.csv("data/DBH.csv", header=TRUE))
-hydro <- read.csv("data/hydronorm.csv", header=TRUE)
+hydro <- read.csv("data/hydro_all.csv", header=TRUE)
 
 DBH.small <- subset(DBH, dbh < 50)
 

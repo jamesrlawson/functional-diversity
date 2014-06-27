@@ -1,0 +1,17 @@
+{
+    "contents" : "FD.gowdis <- gowdis(traits)\n\nFD.metaMDS <- metaMDS(FD.gowdis)\n\nplot(FD.metaMDS, display = c(\"site\"), type = \"p\")\n\nView(FD.metaMDS)\n\nplot(hclust(FD.gowdis))\n",
+    "created" : 1403765466751.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "17510117",
+    "id" : "333D62B2",
+    "lastKnownWriteTime" : 27303570963497028,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

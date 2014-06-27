@@ -18,7 +18,7 @@ library(FD)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydronorm.csv", header=TRUE)
+hydro <- read.csv("data/hydro_all.csv", header=TRUE)
 
 # remove observations that average less than 1% cover
 percentcover <- subset(percentcover, avgcover > 1)
@@ -43,9 +43,8 @@ rm(test)
 #######
 
 traits <- allspp.cover[2]
-traits <- cbind(traits, allspp.cover[4:8])
+traits <- cbind(traits, allspp.cover[4:9])
 traits <- ddply(traits, .(species), unique)
-#traits$growthform <- as.factor(traits$growthform)
 
 # transform traits
 
@@ -53,18 +52,21 @@ hist(log2(traits$seedmass))
 hist(log(traits$SLA))
 hist(log10(traits$maxheight), breaks = 5)
 hist((traits$flowering.period)) # non-normal distribution with any common transform
+hist(traits$WD)
 
 traits$seedmass <- log2(traits$seedmass)
 traits$SLA <- log(traits$SLA)
 traits$maxheight <- log10(traits$maxheight)
 
 traits$woody <- as.numeric(traits$woody)
+traits$lifehistory <- as.numeric(traits$lifehistory)
+
 
 # create abun, in correct input format for FD analysis
 
 abun <- data.frame(allspp.cover[1])
 abun <- cbind(abun, allspp.cover[2])
-abun <- cbind(abun, allspp.cover[11])
+abun <- cbind(abun, allspp.cover[12])
 abun <- cast(abun, plotID ~ species, value="relcover", fill=0)
 rownames(abun) <- abun$plotID
 abun$plotID <- NULL
@@ -75,13 +77,13 @@ rownames(traits) <- spp
 rm(spp)
 
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
-### 6 or 12 groups ###
+### 10 groups ###
 
 FD.dbfd <- dbFD(traits, 
                 abun, 
                 w.abun = TRUE, 
                 stand.x = TRUE,
-                ord = c("podani"),
+                ord = c("metric"),
                 corr = c("cailliez"),
                 calc.FGR = TRUE, 
                 calc.FDiv = TRUE, 
@@ -107,6 +109,14 @@ hydroplots$SLA.CWM <- CWM$SLA
 hydroplots$seedmass.CWM <- CWM$seedmass
 hydroplots$maxheight.CWM <- CWM$maxheight
 hydroplots$flowering.period.CWM <- CWM$flowering.period
+hydroplots$WD.CWM <- CWM$WD
+
+
+CWM$woody <- NULL
+CWM$lifehistory <- NULL
+
+View(cor(CWM))
+pairs(CWM)
 
 ## try a Tukey's test to compare hydro categories ##
 
@@ -117,7 +127,7 @@ TukeyHSD(FDis.aov)
 
 plot.linear(hydroplots, hydroplots$FDis, FD)
 plot.linear(hydroplots, hydroplots$FDiv, FD)
-plot.linear(hydroplots,hydroplots$FRic, FD)
+plot.linear(hydroplots, hydroplots$FRic, FD)
 plot.linear(hydroplots, hydroplots$FEve, FD)
 plot.linear(hydroplots, hydroplots$nbsp, FD)
 

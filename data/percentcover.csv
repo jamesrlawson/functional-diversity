@@ -29,7 +29,7 @@ plotID,stratum,species,avgcover
 2,groundcover,Doodia aspera,28.6
 2,groundcover,Carex polyantha,30
 2,groundcover,Tristaniopsis laurina,2
-2,groundcover,Dianella caerulea,1
+2,groundcover,Dianella caerulea subsp. caerulea,1
 2,groundcover,Oplismenus aemulus,0.4
 2,groundcover,Tylophora barbata,0.2
 2,groundcover,Blechnum nudum,3.2
@@ -48,7 +48,7 @@ plotID,stratum,species,avgcover
 3,groundcover,Coprosma quadrifida,0.6
 3,groundcover,Adiantum aethiopicum,2.4
 3,groundcover,Anagallis arvensis,2.2
-3,groundcover,Senecio ?prenanthoides,0.2
+3,groundcover,Senecio prenanthoides,0.2
 3,groundcover,Misc. forbs,0.6
 3,groundcover,Rubus fruticosus agg.,0.4
 3,groundcover,Rubus parvifolius,1
@@ -59,13 +59,13 @@ plotID,stratum,species,avgcover
 3,groundcover,Carex longebrachiata,0.2
 3,shrub,Coprosma quadrifida,2
 3,shrub,Pomaderris aspera,15.4
-3,shrub,Senecio ?prenanthoides,2.6
+3,shrub,Senecio prenanthoides,2.6
 3,shrub,Leptospermum brevipes,14.1
 3,shrub,Acacia mearnsii,1
 3,shrub,Cassinia aculeata,0.95
 3,shrub,Lomatia myricoides,1
 3,shrub,Acacia melanoxylon,1.6
-3,shrub,Bursaria spinosa,0.8
+3,shrub,Bursaria spinosa subsp. lasiophylla,0.8
 3,shrub,Pteridium esculentum,4.4
 3,subcanopy,Acacia mearnsii,0
 3,subcanopy,Acacia melanoxylon,3.9
@@ -97,7 +97,7 @@ plotID,stratum,species,avgcover
 4,groundcover,Asplenium flabellifolium,1.4
 4,groundcover,Urtica incisa,1
 4,shrub,Pteridium esculentum,1.4
-4,shrub,Bursaria spinosa,1.2
+4,shrub,Bursaria spinosa subsp. spinosa,1.2
 4,shrub,Melicytus dentatus,10
 4,shrub,Acacia floribunda,10
 4,shrub,Lomatia myricoides,1.9
@@ -173,25 +173,25 @@ plotID,stratum,species,avgcover
 7,groundcover,debris,22.4
 7,shrub,Lomatia myricoides,0.2
 7,shrub,Pomaderris aspera,1.4
-7,shrub,Acacia dealbata,14
+7,shrub,Acacia dealbata subsp. dealbata,14
 7,shrub,Acacia melanoxylon,1.2
 7,shrub,Acacia boormanii,13.2
 7,shrub,Beyeria viscosa,6.2
 7,shrub,Leptospermum brevipes,1
-7,subcanopy,Acacia dealbata,18
+7,subcanopy,Acacia dealbata subsp. dealbata,18
 7,subcanopy,Eucalyptus rubida,20.4
 7,canopy,Eucalyptus rubida,21.8
 8,groundcover,Stellaria flaccida,5.5
 8,groundcover,Rubus fruticosus agg.,19
 8,groundcover,Melicytus dentatus,0.6
 8,groundcover,Coprosma quadrifida,0.6
-8,groundcover,Poa labillardierei var. labillardierei,2.6
+8,groundcover,Poa labillardierei subsp.. labillardierei,2.6
 8,groundcover,Acaena novae-zelandiae,2.2
 8,groundcover,Misc. grasses,0.8
 8,groundcover,Prunella vulgaris,1.2
 8,groundcover,Blechnum nudum,27.2
 8,groundcover,misc. herbs / forbs,1
-8,groundcover,Carex ?appressa,9.2
+8,groundcover,Carex appressa,9.2
 8,groundcover,Adiantum aethiopicum,0.2
 8,groundcover,Pteridium esculentum,0
 8,groundcover,Rubus parvifolius,1.2
@@ -202,18 +202,18 @@ plotID,stratum,species,avgcover
 8,shrub,Coprosma quadrifida,9.6
 8,shrub,Pomaderris aspera,1
 8,shrub,Leptospermum brevipes,2.1
-8,shrub,Acacia dealbata,1.4
+8,shrub,Acacia dealbata subsp. dealbata,1.4
 8,shrub,Leptospermum grandifolium,0.6
 8,shrub,Lomatia myricoides,0.4
 8,subcanopy,Pomaderris aspera,7.4
 8,subcanopy,Acacia melanoxylon,1
 8,subcanopy,Leptospermum brevipes,10
-8,subcanopy,Acacia dealbata,5.6
+8,subcanopy,Acacia dealbata subsp. dealbata,5.6
 8,canopy,Acacia melanoxylon,14
 8,canopy,Eucalyptus camphora subsp. humeana,38
 8,canopy,Eucalyptus radiata,2
 9,groundcover,Pteridium esculentum,9.4
-9,groundcover,Poa labillardierei var. labillardierei,33.4
+9,groundcover,Poa labillardierei subsp.. labillardierei,33.4
 9,groundcover,Rubus parvifolius,1.4
 9,groundcover,Viola hederacea,1.2
 9,groundcover,Geranium homeanum,0.2
@@ -232,7 +232,7 @@ plotID,stratum,species,avgcover
 9,shrub,Lomatia myricoides,11
 9,shrub,Lomatia ilicifolia,2.2
 9,shrub,Eucalyptus camphora subsp. humeana,1.4
-9,shrub,Acacia dealbata,1.6
+9,shrub,Acacia dealbata subsp. dealbata,1.6
 9,shrub,Cassinia aculeata,6
 9,shrub,Pultenaea juniperina,7.1
 9,shrub,Prostanthera lasianthos,7
@@ -241,21 +241,21 @@ plotID,stratum,species,avgcover
 9,shrub,Leptospermum grandifolium,1
 9,shrub,Pomaderris aspera,2.2
 9,shrub,Leptospermum brevipes,1
-9,shrub,Hovea asperifolia,0
+9,shrub,Hovea asperifolia subsp. asperifolia,0
 9,shrub,Polyscias sambucifolia,0.6
 9,shrub,Eucalyptus radiata,1.5
 9,shrub,Acacia melanoxylon,0.6
-9,subcanopy,Acacia dealbata,56
+9,subcanopy,Acacia dealbata subsp. dealbata,56
 9,subcanopy,Eucalyptus camphora subsp. humeana,0.2
 9,subcanopy,Eucalyptus viminalis,0.2
 9,subcanopy,Eucalyptus radiata,7.4
-9,canopy,Acacia dealbata,5
+9,canopy,Acacia dealbata subsp. dealbata,5
 9,canopy,Eucalyptus viminalis,3.4
 9,canopy,Eucalyptus radiata,6
 10,groundcover,Adiantum aethiopicum,2.6
 10,groundcover,Dichondra repens,0.8
 10,groundcover,Poa sieberiana,5.8
-10,groundcover,Carex ?appressa,1.6
+10,groundcover,Carex appressa,1.6
 10,groundcover,Pteridium esculentum,1.8
 10,groundcover,Lastreopsis decomposita,2.6
 10,groundcover,Microlaena stipoides,2
@@ -266,7 +266,7 @@ plotID,stratum,species,avgcover
 10,shrub,Lomatia myricoides,0.6
 10,shrub,Coprosma quadrifida,23
 10,shrub,Cassinia aculeata,1.4
-10,shrub,Bursaria spinosa,29
+10,shrub,Bursaria spinosa subsp. lasiophylla,29
 10,shrub,Acacia pravissima,0.8
 10,shrub,Cassinia aculeata,4.6
 10,shrub,Pomaderris aspera,5.4
@@ -274,7 +274,7 @@ plotID,stratum,species,avgcover
 10,shrub,Leptospermum sp. (Snowy Ck),7
 10,shrub,Rosa rubiginosa,0.6
 10,shrub,Eucalyptus stellulata,1
-10,shrub,Acacia dealbata,0.4
+10,shrub,Acacia dealbata subsp. dealbata,0.4
 10,subcanopy,Leptospermum brevipes,38
 10,subcanopy,Leptospermum sp. (Snowy Ck),2
 10,subcanopy,Eucalyptus stellulata,6
@@ -310,14 +310,14 @@ plotID,stratum,species,avgcover
 11,groundcover,Cymbopogon refractus,0.2
 11,groundcover,Carex sp. (Mann),2.6
 11,groundcover,Imperata cylindrica,3.4
-11,shrub,Acacia irrorata,8
+11,shrub,Acacia irrorata subsp. irrorata,8
 11,shrub,Cayratia clematidea,1
 11,shrub,Melicytus dentatus,0.2
 11,shrub,Casuarina cunninghamiana,3.4
-11,shrub,Notelaea microcarpa var. microcarpa,3.8
+11,shrub,Notelaea microcarpa subsp.. microcarpa,3.8
 11,subcanopy,Casuarina cunninghamiana,6
 11,subcanopy,Eucalyptus amplifolia,0.2
-11,subcanopy,Acacia irrorata,3
+11,subcanopy,Acacia irrorata subsp. irrorata,3
 11,canopy,Casuarina cunninghamiana,7.6
 11,canopy,Eucalyptus amplifolia,10
 12,groundcover,Commelina cyanea,24.8
@@ -352,11 +352,11 @@ plotID,stratum,species,avgcover
 12,shrub,Ligustrum sinense,4.5
 12,shrub,Melicytus dentatus,13
 12,shrub,Acacia floribunda,2.22
-12,shrub,Notelaea microcarpa var. velutina,1.4
+12,shrub,Notelaea microcarpa subsp.. velutina,1.4
 12,shrub,Eucalyptus tereticornis,0.4
 12,shrub,Angophora subvelutina,0.4
 12,shrub,Rhytidosporum diosmoides,0.4
-12,shrub,Acacia irrorata,8.6
+12,shrub,Acacia irrorata subsp. irrorata,8.6
 12,shrub,Solanum americanum,2.4
 12,subcanopy,Eucalyptus tereticornis,0.4
 12,subcanopy,Angophora subvelutina,0.2
@@ -384,9 +384,9 @@ plotID,stratum,species,avgcover
 13,shrub,Parsonsia straminea,0.2
 13,shrub,Casuarina glauca,0.7
 13,shrub,Breynia oblongifolia,0.6
-13,shrub,Trema tomentosa var. aspera,1.2
+13,shrub,Trema tomentosa subsp.. aspera,1.2
 13,shrub,Notelaea longifolia,3.6
-13,shrub,Acacia irrorata,0.2
+13,shrub,Acacia irrorata subsp. irrorata,0.2
 13,shrub,Syzygium oleosum,6.4
 13,shrub,Pomaderris aspera,0.6
 13,shrub,Alphitonia excelsa,4.4
@@ -415,7 +415,7 @@ plotID,stratum,species,avgcover
 13,canopy,Grevillea robusta,1
 13,canopy,Tree (Sportsmans 57),12
 14,shrub,Leptospermum brevipes,8.3
-14,shrub,Acacia dealbata,3.6
+14,shrub,Acacia dealbata subsp. dealbata,3.6
 14,shrub,Hovea asperifolia subsp. asperifolia,13.5
 14,shrub,Cassinia aculeata,2.2
 14,shrub,Cassinia aculeata,0.4
@@ -427,7 +427,7 @@ plotID,stratum,species,avgcover
 14,shrub,Dodonaea viscosa subsp. cuneata,3.5
 14,shrub,Acacia implexa,3.7
 14,shrub,Acacia falciformis,1.2
-14,subcanopy,Acacia dealbata,15.1
+14,subcanopy,Acacia dealbata subsp. dealbata,15.1
 14,subcanopy,Eucalyptus radiata,2
 14,subcanopy,Eucalyptus viminalis,7
 14,canopy,Eucalyptus radiata,13.2
@@ -448,7 +448,7 @@ plotID,stratum,species,avgcover
 15,shrub,Ligustrum sinense,9
 15,shrub,Commersonia fraseri,10
 15,shrub,Acmena smithii,3.2
-15,shrub,Glochidion ferdinandi var. ferdinandi,8
+15,shrub,Glochidion ferdinandi subsp.. ferdinandi,8
 15,subcanopy,Ripogonum album,19
 15,subcanopy,Commersonia fraseri,12
 15,subcanopy,Acmena smithii,13

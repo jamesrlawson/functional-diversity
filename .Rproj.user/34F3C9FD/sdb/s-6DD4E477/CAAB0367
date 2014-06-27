@@ -1,0 +1,17 @@
+{
+    "contents" : "blah <- data.frame(cbind( \"MDFMDFDecember\" = hydroplots$MDFMDFDecember,\n                          \"MDFMDFNovember\" = hydroplots$MDFMDFNovember,\n                          \"MDFMDFOctober\" = hydroplots$MDFMDFOctober,\n                          \"MDFMDFJuly\" = hydroplots$MDFMDFJuly,\n                          \"MDFMDFMay\" = hydroplots$MDFMDFMay,\n                          \"MDFMDFFebruary\" = hydroplots$MDFMDFFebruary,\n                          \"MDFMDFJanuary\" = hydroplots$MDFMDFJanuary,\n                          \"MDFMDFMarch\" = hydroplots$MDFMDFMarch,\n                          \"MDFMDFApril\"  = hydroplots$MDFMDFApril,\n                          \"MDFMDFJune\" = hydroplots$MDFMDFJune,\n                          \"MDFMDFAugust\" = hydroplots$MDFMDFAugust,\n                          \"MDFMDFSeptember\" = hydroplots$MDFMDFSeptember))\n                          \nblah.cor <- cor(blah)\nView(blah.cor)\npairs(blah)\n\nblah <- prcomp(blah, scale=TRUE, centre=TRUE, retx=TRUE)\nsummary(blah)\nplot(blah)\nbiplot(blah)\n\n\nblah2 <- rda(CWM, scale=TRUE)\nsummary(blah2)\nbiplot(blah2)\n",
+    "created" : 1403677232534.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2749607899",
+    "id" : "CAAB0367",
+    "lastKnownWriteTime" : 0,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
