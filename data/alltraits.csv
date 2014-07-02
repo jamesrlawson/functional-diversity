@@ -102,7 +102,7 @@ Cyperus polystachyos,0.6,0.07,NA,0,0.5,1,SRG
 Cyperus sphaeroideus,0.5,NA,NA,0,0.5,1,SRG
 Desmodium sp.,NA,NA,NA,1,NA,1,VH
 Desmodium varians,NA,2.08,NA,1,1,1,VH
-Dianella caerulea,0.75,7.1,17.21,0,0.5,1,SRG
+Dianella caerulea subsp. caerulea,0.75,7.1,17.21,0,0.5,1,SRG
 Dianella caerulea subsp. producta,0.75,7.1,10.86,0,0.5,1,SRG
 Dianella longifolia subsp. stenophylla,0.8,3.26,13.14,0,0.5,1,SRG
 Dianella revoluta,1,5.83,5.61,0,0.5,1,SRG
@@ -278,7 +278,7 @@ Ranunculus repens,0.6,2.32,16.72,0,0.5,1,H
 Ranunculus sp. (Nariel),NA,NA,NA,0,NA,0,H
 Rhytidosporum diosmoides,1.2,NA,NA,1,0.166666667,1,S
 Richardia brasiliensis,0.4,1.07,23.6,0,0.75,1,H
-Ripogonum album,NA,1.89,11.94,1,0.416666667,1,VW
+Ripogonum album,15,1.89,11.94,1,0.416666667,1,VW
 Rosa rubiginosa,3,15.2,22.56,1,0.166666667,1,S
 Rostraria cristata,0.4,0.2,8.7,0,0.5,1,G
 Rubus fruticosus agg.,3,2.89,22.17,1,0.416666667,1,S

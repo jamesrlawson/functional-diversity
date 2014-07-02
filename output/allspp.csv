@@ -1,187 +1,191 @@
-"","species","maxheight","seedmass","SLA","woody","flowering.period","lifehistory","growthform"
-"1","Abrophyllum ornans",8,0.05,11.06,1,0.25,1,"S/T"
-"3","Acacia dealbata subsp. dealbata",30,12.54,16.24,1,0.416666667,1,"T"
-"4","Acacia falciformis",10,42.8,6.04,1,0.333333333,1,"S/T"
-"5","Acacia fimbriata",6,17,5.12,1,0.416666667,1,"S/T"
-"6","Acacia floribunda",8,7.08,9.88,1,0.333333333,1,"S/T"
-"7","Acacia implexa",12,20.33,7.78,1,0.416666667,1,"T"
-"8","Acacia irrorata subsp. irrorata",12,11.4,10.05,1,0.25,1,"S/T"
-"9","Acacia leiocalyx subsp. leiocalyx",6,10.71,9.86,1,0.416666667,1,"S/T"
-"10","Acacia maidenii",20,13.1,8.96,1,0.5,1,"T"
-"11","Acacia mearnsii",10,13.2,9.74,1,0.25,1,"S/T"
-"12","Acacia melanoxylon",30,14.62,8.33,1,0.5,1,"T"
-"13","Acacia pravissima",8,8.4,9.34,1,0.25,1,"S/T"
-"14","Acaena novae-zelandiae",0.3,1.61,17.7,0,0.25,1,"H"
-"15","Acetosella vulgaris",0.5,0.7,17.5,0,0.416666667,1,"H"
-"16","Acmena smithii",5,81.02,11.77,1,0.333333333,1,"S/T"
-"17","Acronychia oblongifolia",27,5.88,13.48,1,0.25,1,"S/T"
-"20","Alectryon subcinereus",8,104.17,13.35,1,0.25,1,"S/T"
-"21","Alphitonia excelsa",25,18.2,9.06,1,0.333333333,1,"T"
-"22","Anagallis arvensis",0.3,0.5,22.48,0,0.25,1,"H"
-"23","Angophora subvelutina",20,7.26,8.38,1,0.5,1,"T"
-"25","Aristida ramosa",1.2,0.86,9.44,0,0.25,1,"G"
-"31","Astroloma humifusum",0.5,61.56,10.49,1,1,0,"S"
-"33","Backhousia myrtifolia",30,13.01,11.97,1,0.166666667,1,"S/T"
-"34","Banksia integrifolia subsp. monticola",25,13.67,17.1,1,0.25,1,"T"
-"35","Bedfordia arborescens",5,0.74,14.26,1,0.25,1,"S/T"
-"37","Beyeria viscosa",4,32.14,21.51,1,0.25,1,"S"
-"38","Bidens pilosa",1,2.1,62.12,0,0.5,0,"H"
-"39","Bidens subalternans",1.6,3.55,38.89,0,0.5,0,"H"
-"45","Bothriochloa macra",1,1.3,24.61,0,0.25,1,"G"
-"48","Breynia oblongifolia",3,7.83,15.76,1,0.5,1,"S"
-"49","Bromus catharticus",1,7.7,27.23,0,0.25,1,"G"
-"50","Bursaria spinosa subsp. lasiophylla",5,1.48,5.8,1,0.25,1,"S"
-"51","Bursaria spinosa subsp. spinosa",10,1.48,8.76,1,0.5,1,"S/T"
-"52","Callistemon subulatus",1,0.04,5.51,1,0.25,1,"S"
-"57","Carduus tenuiflorus",1.5,3.5,12.28,0,0.166666667,0,"H"
-"58","Carex appressa",1.2,0.84,14.57,0,0.5,1,"SRG"
-"61","Carex inversa",0.5,0.37,20.69,0,0.5,1,"SRG"
-"62","Carex longebrachiata",0.8,1.38,15.52,0,0.5,1,"SRG"
-"63","Carex polyantha",0.8,1.25,17.08,0,0.5,1,"SRG"
-"68","Cassinia aculeata",2.5,0.07,13.8,1,0.5,1,"S"
-"69","Cassinia longifolia",2.5,0.03,7.96,1,0.5,1,"S"
-"70","Cassinia trinerva",8,0.18,20.63,1,0.5,1,"S/T"
-"73","Casuarina cunninghamiana",35,0.63,1.41,1,0.166666667,1,"T"
-"74","Casuarina glauca",20,1.14,4.69,1,0.166666667,1,"T"
-"76","Centaurium erythraea",0.5,0.01,14.1,0,1,1,"H"
-"77","Centaurium tenuiflorum",0.4,0.01,13.57,0,0.5,0,"H"
-"78","Centella asiatica",0.2,1.5,47.03,0,0.5,1,"C"
-"79","Ceratopetalum apetalum",25,17.09,12.07,1,0.5,1,"T"
-"80","Cirsium vulgare",1.5,2.64,12.65,0,0.416666667,0,"H"
-"85","Commelina cyanea",0.2,17.5,54.11,0,0.75,1,"C"
-"86","Commersonia fraseri",8,6.06,23.49,1,0.25,1,"S/T"
-"88","Conyza bonariensis",1,0.1,20.95,0,1,0,"H"
-"89","Conyza parva",0.5,0.07,22.75,0,0.5,0,"H"
-"90","Conyza sumatrensis",2,0.04,13.87,0,0.75,0,"H"
-"91","Coprosma hirtella",2,37.04,6.11,1,0.25,0,"S"
-"92","Coprosma quadrifida",4,10.57,34.41,1,0.25,0,"S"
-"95","Cryptocarya glaucescens",35,323.99,10.35,1,0.25,1,"T"
-"104","Dianella caerulea",0.75,7.1,17.21,0,0.5,1,"SRG"
-"105","Dianella caerulea var. producta",0.75,7.1,10.86,0,0.5,1,"SRG"
-"106","Dianella longifolia var. stenophylla",0.8,3.26,13.14,0,0.5,1,"SRG"
-"107","Dianella revoluta",1,5.83,5.61,0,0.5,1,"SRG"
-"109","Dichondra repens",0.2,1.45,32.64,0,0.5,1,"H"
-"111","Dodonaea viscosa subsp. cuneata",8,4.91,12.83,1,0.25,1,"S/T"
-"114","Doryphora sassafras",35,11,11.01,1,0.166666667,1,"T"
-"115","Duboisia myoporoides",20,1.52,22.07,1,0.5,1,"S/T"
-"119","Ehrharta erecta",0.6,1.78,11.96,0,0.5,1,"G"
-"120","Elymus scaber",1.1,0.15,26.42,0,0.666666667,1,"G"
-"122","Entolasia stricta",0.8,1.64,36.64,0,1,1,"G"
-"124","Eucalyptus amplifolia",30,2.55,4.9,1,0.25,1,"T"
-"125","Eucalyptus bridgesiana",20,2.76,6.32,1,0.166666667,1,"T"
-"126","Eucalyptus camphora subsp. humeana",20,0.34,8.6,1,0.333333333,1,"T"
-"127","Eucalyptus cypellocarpa",50,7.09,4.39,1,0.25,1,"T"
-"128","Eucalyptus elata",30,4.41,6.41,1,0.5,1,"T"
-"129","Eucalyptus radiata",50,8.65,10.3,1,0.25,1,"T"
-"131","Eucalyptus rubida",40,2.96,5.11,1,0.25,1,"T"
-"132","Eucalyptus stellulata",15,1.49,8.05,1,0.75,1,"T"
-"133","Eucalyptus tereticornis",50,0.89,6.55,1,0.5,1,"T"
-"134","Eucalyptus viminalis",30,1.28,6.89,1,1,1,"T"
-"135","Euchiton gymnocephalus",0.4,0.03,55.4,0,1,1,"H"
-"139","Ficus coronata",12,0.32,18.35,1,1,1,"S/T"
-"145","Gamochaeta purpurea",0.4,0.01,33.11,0,0.333333333,0,"H"
-"148","Geranium molle",0.5,1.24,19.75,0,0.416666667,1,"H"
-"149","Geranium potentilloides",0.5,1.75,19.85,0,0.583333333,1,"H"
-"152","Glochidion ferdinandi var. ferdinandi",8,15.75,12.84,1,1,1,"S/T"
-"165","Grevillea robusta",40,20,5.02,1,0.25,1,"T"
-"166","Guioa semiglauca",6,41,13.21,1,0.25,1,"T"
-"167","Gymnostachys anceps",1.5,228.6,6.98,0,1,1,"SRG"
-"175","Hibbertia aspera subsp. aspera",0.6,2.49,14.67,1,0.25,1,"S"
-"179","Hydrocotyle peduncularis",0.2,0.44,33.22,0,0.75,1,"C"
-"181","Hypochaeris radicata",0.8,0.7,25.89,0,0.75,1,"H"
-"183","Imperata cylindrica",1.2,0.22,16.11,0,0.25,1,"G"
-"185","Juncus gregiflorus",1.4,0.01,10.03,0,0.5,1,"SRG"
-"190","Lagenophora stipitata",0.2,0.44,30.68,0,0.5,1,"H"
-"192","Lepidosperma laterale",1,2.85,7.64,0,0.5,1,"SRG"
-"195","Leptospermum brevipes",4,0.15,9.02,1,0.25,1,"S/T"
-"196","Leptospermum emarginatum",4,0.25,7.71,1,0.25,1,"S"
-"197","Leptospermum grandifolium",6,0.13,7.83,1,0.333333333,1,"S/T"
-"198","Leptospermum polygalifolium subsp. polygalifolium",3,0.13,13.24,1,0.166666667,1,"S"
-"199","Leptospermum trinervium",2.5,0.19,8.64,1,0.5,1,"S/T"
-"200","Ligustrum lucidum",10,31,13.68,1,0.5,1,"S/T"
-"201","Ligustrum sinense",3,17,10.46,1,0.416666667,1,"S"
-"202","Livistona australis",30,841.29,9.48,1,0.25,1,"T"
-"205","Lomandra longifolia",1,11.33,12.89,0,0.25,1,"SRG"
-"208","Lomatia myricoides",5,6.45,10.32,1,0.166666667,1,"S/T"
-"210","Lophostemon suaveolens",22,0.67,7.3,1,0.25,1,"T"
-"211","Melaleuca quinquenervia",15,0.31,7.96,1,0.5,1,"T"
-"212","Melicytus dentatus",4,11.57,16.64,1,0.5,1,"S"
-"213","Mentha pulegium",0.4,0.07,42.06,0,0.333333333,0,"H"
-"216","Microlaena stipoides",0.7,4.97,36.27,0,1,1,"G"
-"218","Morus alba",20,9,10,1,0.25,1,"S/T"
-"219","Myrsine variabilis",15,27.21,10.01,1,0.416666667,1,"S/T"
-"220","Neolitsea dealbata",12,146.02,13.7,1,0.25,1,"S/T"
-"222","Notelaea longifolia",9,44.2,8.5,1,0.583333333,1,"T"
-"224","Notelaea microcarpa var. velutina",10,43.52,6.02,1,0.583333333,1,"T"
-"225","Notelaea venosa",6,130.84,9.41,1,0.5,1,"S/T"
-"227","Oplismenus aemulus",0.3,0.88,56.16,0,1,1,"C"
-"228","Oplismenus imbecillis",0.3,0.92,63.27,0,1,1,"C"
-"231","Oxalis perennans",0.3,0.64,36.01,0,0.666666667,1,"H"
-"233","Ozothamnus diosmifolius",2,0.06,10.43,1,0.416666667,1,"S"
-"236","Paspalum dilatatum",2,1.5,21.44,0,0.5,1,"G"
-"241","Pennisetum clandestinum",0.9,2.18,30.46,0,0.25,1,"C"
-"242","Persicaria decipiens",0.3,1.07,19.9,0,0.25,1,"H"
-"243","Persicaria hydropiper",1.2,2.03,30,0,0.166666667,1,"H"
-"245","Persoonia lanceolata",3,87.76,7.46,1,0.333333333,1,"S"
-"247","Phragmites australis",6,0.12,20.9,0,0.25,1,"SRG"
-"248","Phyllanthus gunnii",2,1.75,12.97,1,0.5,1,"S"
-"249","Phyllanthus virgatus",0.5,0.36,32.6,0,0.5,1,"H"
-"250","Phytolacca octandra",2,4.79,25.25,0,0.5,1,"H"
-"252","Pittosporum revolutum",3,17.11,17.66,1,0.25,1,"S"
-"253","Pittosporum spinescens",8,7.54,18.44,1,0.5,1,"S/T"
-"254","Plantago debilis",0.2,0.29,21.96,0,1,1,"H"
-"255","Plantago major",0.2,0.2,29.93,0,0.5,1,"H"
-"258","Platylobium formosum subsp. formosum",2.5,9.5,14.49,1,0.25,1,"S"
-"259","Plectranthus parviflorus",0.7,0.42,34.4,1,1,1,"S"
-"260","Poa labillardierei var. labillardierei",1.2,0.3,13.59,0,1,1,"G"
-"261","Poa meionectes",0.7,0.412,10.72,0,0.5,1,"G"
-"262","Poa pratensis",0.9,0.25,26,0,0.25,1,"G"
-"263","Poa sieberiana",1,0.27,12.62,0,1,1,"G"
-"264","Polyscias sambucifolia subsp. decomposita",5,4.02,10.25,1,0.25,1,"S/T"
-"265","Pomaderris aspera",4,0.56,13.42,1,0.166666667,1,"S"
-"267","Pomaderris lanigera",5,1.29,8.61,1,0.166666667,1,"S/T"
-"269","Pratia purpurascens",0.2,0.2,60.87,0,0.75,1,"C"
-"270","Prostanthera lasianthos",6,1.01,13.38,1,0.416666667,1,"S/T"
-"271","Prunella vulgaris",0.4,0.75,26.48,0,0.5,1,"C"
-"272","Prunus cerasifera",15,430,34.92,1,0.25,1,"S/T"
-"274","Pultenaea juniperina",3,5.45,6.45,1,0.333333333,1,"S"
-"276","Ranunculus repens",0.6,2.32,16.72,0,0.5,1,"H"
-"279","Richardia brasiliensis",0.4,1.07,23.6,0,0.75,1,"H"
-"281","Rosa rubiginosa",3,15.2,22.56,1,0.166666667,1,"S"
-"282","Rostraria cristata",0.4,0.2,8.7,0,0.5,1,"G"
-"283","Rubus fruticosus agg.",3,2.89,22.17,1,0.416666667,1,"S"
-"284","Rubus moluccanus var. trilobus",1.2,0.85,13.84,1,0.5,1,"S"
-"285","Rubus parvifolius",0.6,0.33,23.11,1,0.5,1,"S"
-"286","Rumex brownii",0.8,0.62,16.97,0,1,1,"H"
-"288","Salix fragilis",18,0.14,8.8,1,0.25,1,"T"
-"292","Senecio linearifolius",1.5,0.24,18.27,0,1,1,"H"
-"293","Senecio madagascariensis",0.6,0.26,7.78,0,0.75,1,"H"
-"297","Setaria pumila",1.3,1.39,15.1,0,0.25,1,"G"
-"305","Sida rhombifolia",1,2.59,23.59,1,0.75,1,"S"
-"308","Solanum americanum",1.3,0.59,15,0,1,0,"H"
-"309","Solanum aviculare",4,0.82,36.25,1,0.25,1,"S"
-"310","Solanum mauritianum",4,1.03,20.13,1,0.75,1,"S/T"
-"311","Solanum nigrum",1.2,0.52,26.04,0,0.25,0,"H"
-"314","Sonchus asper",1.5,0.32,31.38,0,0.25,0,"H"
-"315","Sonchus oleraceus",1.1,0.26,26.47,0,1,0,"H"
-"316","Stellaria flaccida",0.2,0.42,48.42,0,0.416666667,1,"H"
-"317","Stellaria media",0.2,0.35,43.22,0,0.5,0,"H"
-"320","Symplocos thwaitesii",15,36,7.87,1,0.333333333,1,"S/T"
-"321","Syzygium oleosum",15,216.49,10.07,1,0.833333333,1,"S/T"
-"322","Tagetes minuta",2,1.18,50.14,0,0.25,0,"H"
-"323","Taraxacum officinale",0.4,0.7,19.17,0,1,1,"H"
-"324","Tasmannia insipida",3,2.35,12.15,1,0.333333333,1,"S"
-"325","Themeda australis",1.2,1.96,16.74,0,0.5,1,"G"
-"326","Tradescantia fluminensis",0.2,3.01,46.41,0,0.5,1,"C"
-"329","Trema tomentosa var. aspera",6,4.86,47.9,1,0.333333333,1,"S/T"
-"330","Trifolium repens",0.3,0.41,24.36,0,0.75,1,"H"
-"331","Tristaniopsis laurina",30,10.26,7.48,1,0.166666667,1,"T"
-"334","Urtica incisa",1,0.24,40.55,0,1,1,"H"
-"335","Verbena bonariensis",2,0.17,14.6,0,0.333333333,1,"H"
-"336","Verbena quadrangularis",2.5,0.2,9.52,0,1,1,"H"
-"338","Vernonia cinerea",1,0.29,28.06,0,0.5,1,"H"
-"339","Veronica calycina",0.5,0.19,15.24,0,0.5,1,"H"
-"344","Viola hederacea",0.2,0.7,23.18,0,0.5,1,"H"
-"346","Vulpia bromoides",0.4,0.48,33.65,0,0.25,0,"G"
-"349","Wilkiea huegeliana",8,169.46,9.85,1,0.25,1,"S/T"
-"350","Xanthium occidentale",2,50.08,48.65,0,0.5,1,"H"
+"","species","maxheight","seedmass","SLA","woody","flowering.period","lifehistory"
+"1","Abrophyllum ornans",8,0.05,11.06,1,0.25,1
+"3","Acacia dealbata subsp. dealbata",30,12.54,16.24,1,0.416666667,1
+"4","Acacia falciformis",10,42.8,6.04,1,0.333333333,1
+"5","Acacia fimbriata",6,17,5.12,1,0.416666667,1
+"6","Acacia floribunda",8,7.08,9.88,1,0.333333333,1
+"7","Acacia implexa",12,20.33,7.78,1,0.416666667,1
+"8","Acacia irrorata subsp. irrorata",12,11.4,10.05,1,0.25,1
+"9","Acacia leiocalyx subsp. leiocalyx",6,10.71,9.86,1,0.416666667,1
+"10","Acacia maidenii",20,13.1,8.96,1,0.5,1
+"11","Acacia mearnsii",10,13.2,9.74,1,0.25,1
+"12","Acacia melanoxylon",30,14.62,8.33,1,0.5,1
+"13","Acacia pravissima",8,8.4,9.34,1,0.25,1
+"14","Acaena novae-zelandiae",0.3,1.61,17.7,0,0.25,1
+"15","Acetosella vulgaris",0.5,0.7,17.5,0,0.416666667,1
+"16","Acmena smithii",5,81.02,11.77,1,0.333333333,1
+"17","Acronychia oblongifolia",27,5.88,13.48,1,0.25,1
+"20","Alectryon subcinereus",8,104.17,13.35,1,0.25,1
+"21","Alphitonia excelsa",25,18.2,9.06,1,0.333333333,1
+"22","Anagallis arvensis",0.3,0.5,22.48,0,0.25,1
+"23","Angophora subvelutina",20,7.26,8.38,1,0.5,1
+"25","Aristida ramosa",1.2,0.86,9.44,0,0.25,1
+"31","Astroloma humifusum",0.5,61.56,10.49,1,1,0
+"33","Backhousia myrtifolia",30,13.01,11.97,1,0.166666667,1
+"34","Banksia integrifolia subsp. monticola",25,13.67,17.1,1,0.25,1
+"35","Bedfordia arborescens",5,0.74,14.26,1,0.25,1
+"37","Beyeria viscosa",4,32.14,21.51,1,0.25,1
+"38","Bidens pilosa",1,2.1,62.12,0,0.5,0
+"39","Bidens subalternans",1.6,3.55,38.89,0,0.5,0
+"43","Blechnum patersonii",0.5,NA,28.88,0,NA,1
+"45","Bothriochloa macra",1,1.3,24.61,0,0.25,1
+"48","Breynia oblongifolia",3,7.83,15.76,1,0.5,1
+"49","Bromus catharticus",1,7.7,27.23,0,0.25,1
+"50","Bursaria spinosa subsp. lasiophylla",5,1.48,5.8,1,0.25,1
+"51","Bursaria spinosa subsp. spinosa",10,1.48,8.76,1,0.5,1
+"52","Callistemon subulatus",1,0.04,5.51,1,0.25,1
+"53","Calochlaena dubia",1.5,NA,23.75,0,NA,1
+"57","Carduus tenuiflorus",1.5,3.5,12.28,0,0.166666667,0
+"58","Carex appressa",1.2,0.84,14.57,0,0.5,1
+"61","Carex inversa",0.5,0.37,20.69,0,0.5,1
+"62","Carex longebrachiata",0.8,1.38,15.52,0,0.5,1
+"63","Carex polyantha",0.8,1.25,17.08,0,0.5,1
+"68","Cassinia aculeata",2.5,0.07,13.8,1,0.5,1
+"69","Cassinia longifolia",2.5,0.03,7.96,1,0.5,1
+"70","Cassinia trinerva",8,0.18,20.63,1,0.5,1
+"73","Casuarina cunninghamiana",35,0.63,1.41,1,0.166666667,1
+"74","Casuarina glauca",20,1.14,4.69,1,0.166666667,1
+"76","Centaurium erythraea",0.5,0.01,14.1,0,1,1
+"77","Centaurium tenuiflorum",0.4,0.01,13.57,0,0.5,0
+"78","Centella asiatica",0.2,1.5,47.03,0,0.5,1
+"79","Ceratopetalum apetalum",25,17.09,12.07,1,0.5,1
+"80","Cirsium vulgare",1.5,2.64,12.65,0,0.416666667,0
+"85","Commelina cyanea",0.2,17.5,54.11,0,0.75,1
+"86","Commersonia fraseri",8,6.06,23.49,1,0.25,1
+"88","Conyza bonariensis",1,0.1,20.95,0,1,0
+"89","Conyza parva",0.5,0.07,22.75,0,0.5,0
+"90","Conyza sumatrensis",2,0.04,13.87,0,0.75,0
+"91","Coprosma hirtella",2,37.04,6.11,1,0.25,0
+"92","Coprosma quadrifida",4,10.57,34.41,1,0.25,0
+"95","Cryptocarya glaucescens",35,323.99,10.35,1,0.25,1
+"104","Dianella caerulea",0.75,7.1,17.21,0,0.5,1
+"105","Dianella caerulea subsp. producta",0.75,7.1,10.86,0,0.5,1
+"106","Dianella longifolia subsp. stenophylla",0.8,3.26,13.14,0,0.5,1
+"107","Dianella revoluta",1,5.83,5.61,0,0.5,1
+"109","Dichondra repens",0.2,1.45,32.64,0,0.5,1
+"111","Dodonaea viscosa subsp. cuneata",8,4.91,12.83,1,0.25,1
+"113","Doodia caudata",0.3,NA,11.9,0,NA,1
+"114","Doryphora sassafras",35,11,11.01,1,0.166666667,1
+"115","Duboisia myoporoides",20,1.52,22.07,1,0.5,1
+"119","Ehrharta erecta",0.6,1.78,11.96,0,0.5,1
+"120","Elymus scaber",1.1,0.15,26.42,0,0.666666667,1
+"122","Entolasia stricta",0.8,1.64,36.64,0,1,1
+"124","Eucalyptus amplifolia",30,2.55,4.9,1,0.25,1
+"125","Eucalyptus bridgesiana",20,2.76,6.32,1,0.166666667,1
+"126","Eucalyptus camphora subsp. humeana",20,0.34,8.6,1,0.333333333,1
+"127","Eucalyptus cypellocarpa",50,7.09,4.39,1,0.25,1
+"128","Eucalyptus elata",30,4.41,6.41,1,0.5,1
+"129","Eucalyptus radiata",50,8.65,10.3,1,0.25,1
+"131","Eucalyptus rubida",40,2.96,5.11,1,0.25,1
+"132","Eucalyptus stellulata",15,1.49,8.05,1,0.75,1
+"133","Eucalyptus tereticornis",50,0.89,6.55,1,0.5,1
+"134","Eucalyptus viminalis",30,1.28,6.89,1,1,1
+"135","Euchiton gymnocephalus",0.4,0.03,55.4,0,1,1
+"139","Ficus coronata",12,0.32,18.35,1,1,1
+"145","Gamochaeta purpurea",0.4,0.01,33.11,0,0.333333333,0
+"148","Geranium molle",0.5,1.24,19.75,0,0.416666667,1
+"149","Geranium potentilloides",0.5,1.75,19.85,0,0.583333333,1
+"152","Glochidion ferdinandi subsp. ferdinandi",8,15.75,12.84,1,1,1
+"165","Grevillea robusta",40,20,5.02,1,0.25,1
+"166","Guioa semiglauca",6,41,13.21,1,0.25,1
+"167","Gymnostachys anceps",1.5,228.6,6.98,0,1,1
+"175","Hibbertia aspera subsp. aspera",0.6,2.49,14.67,1,0.25,1
+"179","Hydrocotyle peduncularis",0.2,0.44,33.22,0,0.75,1
+"181","Hypochaeris radicata",0.8,0.7,25.89,0,0.75,1
+"183","Imperata cylindrica",1.2,0.22,16.11,0,0.25,1
+"185","Juncus gregiflorus",1.4,0.01,10.03,0,0.5,1
+"190","Lagenophora stipitata",0.2,0.44,30.68,0,0.5,1
+"192","Lepidosperma laterale",1,2.85,7.64,0,0.5,1
+"195","Leptospermum brevipes",4,0.15,9.02,1,0.25,1
+"196","Leptospermum emarginatum",4,0.25,7.71,1,0.25,1
+"197","Leptospermum grandifolium",6,0.13,7.83,1,0.333333333,1
+"198","Leptospermum polygalifolium subsp. polygalifolium",3,0.13,13.24,1,0.166666667,1
+"199","Leptospermum trinervium",2.5,0.19,8.64,1,0.5,1
+"200","Ligustrum lucidum",10,31,13.68,1,0.5,1
+"201","Ligustrum sinense",3,17,10.46,1,0.416666667,1
+"202","Livistona australis",30,841.29,9.48,1,0.25,1
+"205","Lomandra longifolia",1,11.33,12.89,0,0.25,1
+"208","Lomatia myricoides",5,6.45,10.32,1,0.166666667,1
+"210","Lophostemon suaveolens",22,0.67,7.3,1,0.25,1
+"211","Melaleuca quinquenervia",15,0.31,7.96,1,0.5,1
+"212","Melicytus dentatus",4,11.57,16.64,1,0.5,1
+"213","Mentha pulegium",0.4,0.07,42.06,0,0.333333333,0
+"216","Microlaena stipoides",0.7,4.97,36.27,0,1,1
+"218","Morus alba",20,9,10,1,0.25,1
+"219","Myrsine variabilis",15,27.21,10.01,1,0.416666667,1
+"220","Neolitsea dealbata",12,146.02,13.7,1,0.25,1
+"222","Notelaea longifolia",9,44.2,8.5,1,0.583333333,1
+"224","Notelaea microcarpa subsp. velutina",10,43.52,6.02,1,0.583333333,1
+"225","Notelaea venosa",6,130.84,9.41,1,0.5,1
+"227","Oplismenus aemulus",0.3,0.88,56.16,0,1,1
+"228","Oplismenus imbecillis",0.3,0.92,63.27,0,1,1
+"231","Oxalis perennans",0.3,0.64,36.01,0,0.666666667,1
+"233","Ozothamnus diosmifolius",2,0.06,10.43,1,0.416666667,1
+"236","Paspalum dilatatum",2,1.5,21.44,0,0.5,1
+"241","Pennisetum clandestinum",0.9,2.18,30.46,0,0.25,1
+"242","Persicaria decipiens",0.3,1.07,19.9,0,0.25,1
+"243","Persicaria hydropiper",1.2,2.03,30,0,0.166666667,1
+"245","Persoonia lanceolata",3,87.76,7.46,1,0.333333333,1
+"247","Phragmites australis",6,0.12,20.9,0,0.25,1
+"248","Phyllanthus gunnii",2,1.75,12.97,1,0.5,1
+"249","Phyllanthus virgatus",0.5,0.36,32.6,0,0.5,1
+"250","Phytolacca octandra",2,4.79,25.25,0,0.5,1
+"252","Pittosporum revolutum",3,17.11,17.66,1,0.25,1
+"253","Pittosporum spinescens",8,7.54,18.44,1,0.5,1
+"254","Plantago debilis",0.2,0.29,21.96,0,1,1
+"255","Plantago major",0.2,0.2,29.93,0,0.5,1
+"258","Platylobium formosum subsp. formosum",2.5,9.5,14.49,1,0.25,1
+"259","Plectranthus parviflorus",0.7,0.42,34.4,1,1,1
+"260","Poa labillardierei subsp. labillardierei",1.2,0.3,13.59,0,1,1
+"261","Poa meionectes",0.7,0.412,10.72,0,0.5,1
+"262","Poa pratensis",0.9,0.25,26,0,0.25,1
+"263","Poa sieberiana",1,0.27,12.62,0,1,1
+"264","Polyscias sambucifolia subsp. decomposita",5,4.02,10.25,1,0.25,1
+"265","Pomaderris aspera",4,0.56,13.42,1,0.166666667,1
+"267","Pomaderris lanigera",5,1.29,8.61,1,0.166666667,1
+"269","Pratia purpurascens",0.2,0.2,60.87,0,0.75,1
+"270","Prostanthera lasianthos",6,1.01,13.38,1,0.416666667,1
+"271","Prunella vulgaris",0.4,0.75,26.48,0,0.5,1
+"272","Prunus cerasifera",15,430,34.92,1,0.25,1
+"274","Pultenaea juniperina",3,5.45,6.45,1,0.333333333,1
+"276","Ranunculus repens",0.6,2.32,16.72,0,0.5,1
+"279","Richardia brasiliensis",0.4,1.07,23.6,0,0.75,1
+"280","Ripogonum album",15,1.89,11.94,1,0.416666667,1
+"281","Rosa rubiginosa",3,15.2,22.56,1,0.166666667,1
+"282","Rostraria cristata",0.4,0.2,8.7,0,0.5,1
+"283","Rubus fruticosus agg.",3,2.89,22.17,1,0.416666667,1
+"284","Rubus moluccanus subsp. trilobus",1.2,0.85,13.84,1,0.5,1
+"285","Rubus parvifolius",0.6,0.33,23.11,1,0.5,1
+"286","Rumex brownii",0.8,0.62,16.97,0,1,1
+"288","Salix fragilis",18,0.14,8.8,1,0.25,1
+"292","Senecio linearifolius",1.5,0.24,18.27,0,1,1
+"293","Senecio madagascariensis",0.6,0.26,7.78,0,0.75,1
+"297","Setaria pumila",1.3,1.39,15.1,0,0.25,1
+"305","Sida rhombifolia",1,2.59,23.59,1,0.75,1
+"308","Solanum americanum",1.3,0.59,15,0,1,0
+"309","Solanum aviculare",4,0.82,36.25,1,0.25,1
+"310","Solanum mauritianum",4,1.03,20.13,1,0.75,1
+"311","Solanum nigrum",1.2,0.52,26.04,0,0.25,0
+"314","Sonchus asper",1.5,0.32,31.38,0,0.25,0
+"315","Sonchus oleraceus",1.1,0.26,26.47,0,1,0
+"316","Stellaria flaccida",0.2,0.42,48.42,0,0.416666667,1
+"317","Stellaria media",0.2,0.35,43.22,0,0.5,0
+"320","Symplocos thwaitesii",15,36,7.87,1,0.333333333,1
+"321","Syzygium oleosum",15,216.49,10.07,1,0.833333333,1
+"322","Tagetes minuta",2,1.18,50.14,0,0.25,0
+"323","Taraxacum officinale",0.4,0.7,19.17,0,1,1
+"324","Tasmannia insipida",3,2.35,12.15,1,0.333333333,1
+"325","Themeda australis",1.2,1.96,16.74,0,0.5,1
+"326","Tradescantia fluminensis",0.2,3.01,46.41,0,0.5,1
+"329","Trema tomentosa subsp. aspera",6,4.86,47.9,1,0.333333333,1
+"330","Trifolium repens",0.3,0.41,24.36,0,0.75,1
+"331","Tristaniopsis laurina",30,10.26,7.48,1,0.166666667,1
+"334","Urtica incisa",1,0.24,40.55,0,1,1
+"335","Verbena bonariensis",2,0.17,14.6,0,0.333333333,1
+"336","Verbena quadrangularis",2.5,0.2,9.52,0,1,1
+"338","Vernonia cinerea",1,0.29,28.06,0,0.5,1
+"339","Veronica calycina",0.5,0.19,15.24,0,0.5,1
+"344","Viola hederacea",0.2,0.7,23.18,0,0.5,1
+"346","Vulpia bromoides",0.4,0.48,33.65,0,0.25,0
+"349","Wilkiea huegeliana",8,169.46,9.85,1,0.25,1
+"350","Xanthium occidentale",2,50.08,48.65,0,0.5,1

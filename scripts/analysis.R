@@ -19,6 +19,10 @@ library(FD)
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
 hydro <- read.csv("data/hydro_all.csv", header=TRUE)
+WD <- read.csv("data/WD.csv", header=TRUE)
+WDferns <- read.csv("data/WD.csv", header=TRUE)
+
+
 
 # remove observations that average less than 1% cover
 percentcover <- subset(percentcover, avgcover > 1)
@@ -26,12 +30,39 @@ percentcover <- subset(percentcover, avgcover > 1)
 # generate df with total % cover (across all strata) of species at each plot
 plotsums <- ddply(percentcover, .(plotID, species), summarise, speciescover = sum(avgcover))
 
-# remove WD and get df with only species that have complete data for all traits
+# test how much % cover per plot is reduced by applying na.omit to trait data
+
+allspp <- alltraits
+allspp$growthform <- NULL
+
+allspp.cover <- findtraitvals(plotsums, allspp)
+
+richness.all <- tapply(allspp.cover$species, allspp.cover$plotID, length)
+plotcover.all <- tapply(allspp.cover$speciescover, allspp.cover$plotID, sum)
 
 allspp <- alltraits
 allspp <- na.omit(allspp)
+# add in the ferns that got omitted due to no seedmass data
+#allspp <- rbind(allspp, alltraits[53,]) # Calochlaena dubia
+#allspp <- rbind(allspp, alltraits[43,]) # Doodia aspera
+#allspp <- rbind(allspp, alltraits[113,]) # Blechnum nudum
+
+allspp <- allspp[order(allspp$species), ]
+allspp$WD <- WD$WD
+allspp$growthform <- NULL
 
 allspp.cover <- findtraitvals(plotsums, allspp)
+
+richness.naomit <- tapply(allspp.cover$species, allspp.cover$plotID, length)
+plotcover.naomit <- tapply(allspp.cover$speciescover, allspp.cover$plotID, sum)
+
+dataDensity <- data.frame(cbind("richness" = richness.naomit / richness.all,
+                                "plotcover" = plotcover.naomit / plotcover.all))
+
+#View(dataDensity)
+
+###
+
 allspp.totalcover <- ddply(allspp.cover, .(plotID), summarise, totalcover = sum(speciescover))
 allspp.cover <- merge(allspp.cover, allspp.totalcover, by.x = "plotID", by.y = "plotID")
 allspp.cover <-relabund(allspp.cover)
@@ -43,23 +74,23 @@ rm(test)
 #######
 
 traits <- allspp.cover[2]
-traits <- cbind(traits, allspp.cover[4:9])
+traits <- cbind(traits, allspp.cover[4:10])
+traits$lifehistory <- NULL
 traits <- ddply(traits, .(species), unique)
 
 # transform traits
 
-hist(log2(traits$seedmass))
-hist(log(traits$SLA))
+hist(log10(traits$seedmass))
+hist(log10(traits$SLA))
 hist(log10(traits$maxheight), breaks = 5)
 hist((traits$flowering.period)) # non-normal distribution with any common transform
-hist(traits$WD)
 
-traits$seedmass <- log2(traits$seedmass)
-traits$SLA <- log(traits$SLA)
+traits$seedmass <- log10(traits$seedmass)
+traits$SLA <- log10(traits$SLA)
 traits$maxheight <- log10(traits$maxheight)
 
 traits$woody <- as.numeric(traits$woody)
-traits$lifehistory <- as.numeric(traits$lifehistory)
+#traits$lifehistory <- as.numeric(traits$lifehistory)
 
 
 # create abun, in correct input format for FD analysis
@@ -77,7 +108,7 @@ rownames(traits) <- spp
 rm(spp)
 
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
-### 10 groups ###
+### 12 groups ###
 
 FD.dbfd <- dbFD(traits, 
                 abun, 
@@ -115,8 +146,8 @@ hydroplots$WD.CWM <- CWM$WD
 CWM$woody <- NULL
 CWM$lifehistory <- NULL
 
-View(cor(CWM))
-pairs(CWM)
+#View(cor(CWM))
+#pairs(CWM)
 
 ## try a Tukey's test to compare hydro categories ##
 
@@ -135,6 +166,8 @@ plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
 plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
 plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
 plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
+plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
+
 
 plot.quad(hydroplots, hydroplots$FDis, FD)
 plot.quad(hydroplots, hydroplots$FDiv, FD)
@@ -146,6 +179,8 @@ plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
 plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
 plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
 plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
+plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
+
 
 
 getStats(hydroplots, hydroplots$FDis, FD)
@@ -158,5 +193,7 @@ getStats(hydroplots, hydroplots$SLA.CWM, CWM)
 getStats(hydroplots,hydroplots$seedmass.CWM, CWM)
 getStats(hydroplots, hydroplots$maxheight.CWM, CWM)
 getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
+getStats(hydroplots, hydroplots$WD.CWM, CWM)
+
 
 
