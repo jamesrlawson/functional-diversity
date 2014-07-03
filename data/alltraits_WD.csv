@@ -1,0 +1,351 @@
+species,maxheight,seedmass,SLA,woody,flowering.period,WD,lifehistory,growthform
+Abrophyllum ornans,8,0.05,11.06,1,0.25,0.601603758,1,S/T
+Acacia boormanii,4,13.26,NA,1,0.166666667,0.503041879,1,S
+Acacia dealbata subsp. dealbata,30,12.54,16.24,1,0.416666667,0.47583155,1,T
+Acacia falciformis,10,42.8,6.04,1,0.333333333,0.724,1,S/T
+Acacia fimbriata,6,17,5.12,1,0.416666667,NA,1,S/T
+Acacia floribunda,8,7.08,9.88,1,0.333333333,0.680824363,1,S/T
+Acacia implexa,12,20.33,7.78,1,0.416666667,0.638879167,1,T
+Acacia irrorata subsp. irrorata,12,11.4,10.05,1,0.25,0.419941579,1,S/T
+Acacia leiocalyx subsp. leiocalyx,6,10.71,9.86,1,0.416666667,0.569275537,1,S/T
+Acacia maidenii,20,13.1,8.96,1,0.5,0.62,1,T
+Acacia mearnsii,10,13.2,9.74,1,0.25,0.652112524,1,S/T
+Acacia melanoxylon,30,14.62,8.33,1,0.5,0.476657708,1,T
+Acacia pravissima,8,8.4,9.34,1,0.25,NA,1,S/T
+Acaena novae-zelandiae,0.3,1.61,17.7,0,0.25,NA,1,H
+Acetosella vulgaris,0.5,0.7,17.5,0,0.416666667,NA,1,H
+Acmena smithii,5,81.02,11.77,1,0.333333333,0.714651867,1,S/T
+Acronychia oblongifolia,27,5.88,13.48,1,0.25,0.81,1,S/T
+Adiantum aethiopicum,0.5,NA,61.42,0,NA,NA,1,F
+Adiantum hispidulum,0.7,NA,25.96,0,NA,NA,1,F
+Alectryon subcinereus,8,104.17,13.35,1,0.25,0.74,1,S/T
+Alphitonia excelsa,25,18.2,9.06,1,0.333333333,0.725166841,1,T
+Anagallis arvensis,0.3,0.5,22.48,0,0.25,NA,1,H
+Angophora subvelutina,20,7.26,8.38,1,0.5,0.658192325,1,T
+Araujia sericifera,NA,9.24,26.38,1,0.25,NA,1,VW
+Aristida ramosa,1.2,0.86,9.44,0,0.25,NA,1,G
+Asperula polymera,0.4,NA,NA,0,0.25,NA,1,H
+Asperula scoparia subsp. scoparia,0.3,1.11,NA,0,0.416666667,NA,1,H
+Asperula sp. (Mann),NA,NA,NA,0,NA,NA,1,H
+Asplenium flabellifolium,0.2,NA,16.81,0,NA,NA,1,F
+Asteraceae sp.,NA,NA,NA,0,NA,NA,0,H
+Astroloma humifusum,0.5,61.56,10.49,1,1,0.76,0,S
+Austrostipa ramosissima,2.5,NA,NA,0,1,NA,1,G
+Backhousia myrtifolia,30,13.01,11.97,1,0.166666667,0.820059734,1,S/T
+Banksia integrifolia subsp. monticola,25,13.67,17.1,1,0.25,0.48216,1,T
+Bedfordia arborescens,5,0.74,14.26,1,0.25,0.65,1,S/T
+Beyeria lasiocarpa,6,NA,NA,1,0.25,NA,1,S/T
+Beyeria viscosa,4,32.14,21.51,1,0.25,NA,1,S
+Bidens pilosa,1,2.1,62.12,0,0.5,NA,0,H
+Bidens subalternans,1.6,3.55,38.89,0,0.5,NA,0,H
+Billardiera macrantha,NA,1.8,NA,1,0.333333333,NA,0,VW
+Blechnum minus,0.7,NA,NA,0,NA,NA,1,F
+Blechnum nudum,1,NA,20.83,0,NA,NA,1,F
+Blechnum patersonii,0.5,NA,28.88,0,NA,NA,1,F
+Blechnum penna-marina subsp. alpina,0.3,NA,13,0,NA,NA,1,F
+Bothriochloa macra,1,1.3,24.61,0,0.25,NA,1,G
+Brachyscome ?angustifolia,NA,NA,NA,0,NA,NA,1,H
+Brachyscome aculeata,0.6,0.26,NA,0,0.75,NA,1,H
+Breynia oblongifolia,3,7.83,15.76,1,0.5,NA,1,S
+Bromus catharticus,1,7.7,27.23,0,0.25,NA,1,G
+Bursaria spinosa subsp. lasiophylla,5,1.48,5.8,1,0.25,0.650078892,1,S
+Bursaria spinosa subsp. spinosa,10,1.48,8.76,1,0.5,0.650078892,1,S/T
+Callistemon subulatus,1,0.04,5.51,1,0.25,0.683,1,S
+Calochlaena dubia,1.5,NA,23.75,0,NA,NA,1,F
+Calystegia marginata,NA,12.62,NA,1,0.5,NA,1,VH
+Calystegia sepium subsp. roseata,NA,25.58,38.4,1,0.25,NA,1,VH
+Calystegia sp. (Gibbo),NA,NA,NA,1,NA,NA,1,VH
+Carduus tenuiflorus,1.5,3.5,12.28,0,0.166666667,NA,0,H
+Carex appressa,1.2,0.84,14.57,0,0.5,NA,1,SRG
+Carex fascicularis,1,1.22,NA,0,0.5,NA,1,SRG
+Carex gaudichaudiana,0.9,0.93,NA,0,0.5,NA,1,SRG
+Carex inversa,0.5,0.37,20.69,0,0.5,NA,1,SRG
+Carex longebrachiata,0.8,1.38,15.52,0,0.5,NA,1,SRG
+Carex polyantha,0.8,1.25,17.08,0,0.5,NA,1,SRG
+Carex sp. (Cataract),NA,NA,12.43,0,NA,NA,1,SRG
+Carex sp. (Gibbo),NA,NA,NA,0,NA,NA,1,SRG
+Carex sp. (Jilliby),NA,NA,NA,0,NA,NA,1,SRG
+Carex sp. (Mann),NA,NA,8.19,0,NA,NA,1,SRG
+Cassinia aculeata,2.5,0.07,13.8,1,0.5,NA,1,S
+Cassinia longifolia,2.5,0.03,7.96,1,0.5,NA,1,S
+Cassinia trinerva,8,0.18,20.63,1,0.5,0.52,1,S/T
+Cassinia uncata,3,0.12,NA,1,0.25,NA,1,S
+Cassytha pubescens,NA,11.53,6.49,1,0.25,NA,1,VH
+Casuarina cunninghamiana,35,0.63,1.41,1,0.166666667,0.612200593,1,T
+Casuarina glauca,20,1.14,4.69,1,0.166666667,0.60140898,1,T
+Cayratia clematidea,NA,NA,40.74,1,0.25,NA,1,VH
+Centaurium erythraea,0.5,0.01,14.1,0,1,NA,1,H
+Centaurium tenuiflorum,0.4,0.01,13.57,0,0.5,NA,0,H
+Centella asiatica,0.2,1.5,47.03,0,0.5,NA,1,C
+Ceratopetalum apetalum,25,17.09,12.07,1,0.5,0.499899061,1,T
+Cirsium vulgare,1.5,2.64,12.65,0,0.416666667,NA,0,H
+Cissus antarctica,NA,65.4,9.91,1,0.75,0.545107896,1,VW
+Clematis aristata,NA,0.29,30.88,1,0.333333333,0.2981,1,VW
+Climber (Sportsmans 56),NA,NA,NA,1,NA,NA,1,VH
+Climber 2 (Wallagaraugh 14),NA,NA,NA,1,NA,NA,1,VH
+Commelina cyanea,0.2,17.5,54.11,0,0.75,NA,1,C
+Commersonia fraseri,8,6.06,23.49,1,0.25,0.371790888,1,S/T
+Convolvulus erubescens,NA,5.21,52.84,1,0.583333333,NA,1,VH
+Conyza bonariensis,1,0.1,20.95,0,1,NA,0,H
+Conyza parva,0.5,0.07,22.75,0,0.5,NA,0,H
+Conyza sumatrensis,2,0.04,13.87,0,0.75,NA,0,H
+Coprosma hirtella,2,37.04,6.11,1,0.25,NA,0,S
+Coprosma quadrifida,4,10.57,34.41,1,0.25,0.485016435,0,S
+Creeper (Tuross 2 60),NA,NA,NA,0,NA,NA,1,C
+Cryptandra spinescens,1,NA,NA,1,0.416666667,NA,1,S
+Cryptocarya glaucescens,35,323.99,10.35,1,0.25,0.496343742,1,T
+Cryptocarya microneura,25,442.22,NA,1,0.25,0.6888,1,T
+Cyathea sp. (Gibbo),NA,NA,NA,0,NA,NA,1,F
+Cymbopogon refractus,1,0.82,NA,0,0.75,NA,1,G
+Cyperus eragrostis,0.9,0.13,NA,0,0.5,NA,1,SRG
+Cyperus polystachyos,0.6,0.07,NA,0,0.5,NA,1,SRG
+Cyperus sphaeroideus,0.5,NA,NA,0,0.5,NA,1,SRG
+Desmodium sp.,NA,NA,NA,1,NA,NA,1,VH
+Desmodium varians,NA,2.08,NA,1,1,NA,1,VH
+Dianella caerulea subsp. caerulea,0.75,7.1,17.21,0,0.5,NA,1,SRG
+Dianella caerulea subsp. producta,0.75,7.1,10.86,0,0.5,NA,1,SRG
+Dianella longifolia subsp. stenophylla,0.8,3.26,13.14,0,0.5,NA,1,SRG
+Dianella revoluta,1,5.83,5.61,0,0.5,NA,1,SRG
+Dianella tasmanica,0.9,4.08,NA,0,0.25,NA,1,SRG
+Dichondra repens,0.2,1.45,32.64,0,0.5,NA,1,H
+Digitaria parviflora,1.5,NA,NA,0,0.25,NA,1,G
+Dodonaea viscosa subsp. cuneata,8,4.91,12.83,1,0.25,0.946932,1,S/T
+Doodia aspera,0.5,NA,10.7,0,NA,NA,1,F
+Doodia caudata,0.3,NA,11.9,0,NA,NA,1,F
+Doryphora sassafras,35,11,11.01,1,0.166666667,0.498891667,1,T
+Duboisia myoporoides,20,1.52,22.07,1,0.5,0.414430689,1,S/T
+Echinopogon caespitosus,1.5,0.72,NA,0,0.5,NA,1,G
+Echinopogon nutans subsp. nutans,1.2,NA,NA,0,0.5,NA,1,G
+Echinostephia aculeata,NA,NA,37.71,1,0.25,NA,1,VH
+Ehrharta erecta,0.6,1.78,11.96,0,0.5,NA,1,G
+Elymus scaber,1.1,0.15,26.42,0,0.666666667,NA,1,G
+Entolasia marginata,0.8,NA,NA,0,1,NA,1,G
+Entolasia stricta,0.8,1.64,36.64,0,1,NA,1,G
+Eucalyptus agglomerata,40,11.11,NA,1,0.5,0.602,1,T
+Eucalyptus amplifolia,30,2.55,4.9,1,0.25,0.785769362,1,T
+Eucalyptus bridgesiana,20,2.76,6.32,1,0.166666667,0.794945992,1,T
+Eucalyptus camphora subsp. humeana,20,0.34,8.6,1,0.333333333,0.49967135,1,T
+Eucalyptus cypellocarpa,50,7.09,4.39,1,0.25,0.623867961,1,T
+Eucalyptus elata,30,4.41,6.41,1,0.5,0.502816615,1,T
+Eucalyptus radiata,50,8.65,10.3,1,0.25,0.577993601,1,T
+Eucalyptus resinifera,45,2.5,NA,1,0.416666667,0.599707427,1,T
+Eucalyptus rubida,40,2.96,5.11,1,0.25,0.477523972,1,T
+Eucalyptus stellulata,15,1.49,8.05,1,0.75,0.63697796,1,T
+Eucalyptus tereticornis,50,0.89,6.55,1,0.5,0.725674024,1,T
+Eucalyptus viminalis,30,1.28,6.89,1,1,0.617917796,1,T
+Euchiton gymnocephalus,0.4,0.03,55.4,0,1,NA,1,H
+Eustrephus latifolius,NA,13.72,22.04,1,0.5,NA,1,VH
+Exocarpos strictus,3.5,27.11,NA,1,1,NA,1,S
+Fern (Mammy Johnsons 35),NA,NA,NA,0,NA,NA,1,F
+Ficus coronata,12,0.32,18.35,1,1,0.400365,1,S/T
+Gahnia aspera,0.7,28.75,NA,0,0.25,NA,1,SRG
+Gahnia subaequiglumis,0.6,NA,NA,0,0.5,NA,1,SRG
+Galium binifolium,0.5,1.34,NA,0,0.25,NA,1,H
+Galium gaudichaudii subsp. gaudichaudii,0.3,NA,NA,0,0.416666667,NA,1,H
+Galium leiocarpum,0.2,0.39,NA,0,0.5,NA,1,H
+Gamochaeta purpurea,0.4,0.01,33.11,0,0.333333333,NA,0,H
+Geitonoplesium cymosum,NA,15.32,15.98,1,0.5,NA,1,VH
+Geranium homeanum,0.7,1.67,NA,0,0.25,NA,1,H
+Geranium molle,0.5,1.24,19.75,0,0.416666667,NA,1,H
+Geranium potentilloides,0.5,1.75,19.85,0,0.583333333,NA,1,H
+Geranium solanderi,0.5,1.67,NA,0,0.416666667,NA,1,H
+Geranium sp. (Goodradigbee),NA,NA,NA,0,NA,NA,1,H
+Glochidion ferdinandi subsp. ferdinandi,8,15.75,12.84,1,1,NA,1,S/T
+Glycine clandestina,NA,4.5,40.81,1,1,NA,1,VH
+Glycine microphylla,NA,3.6,30.67,1,1,NA,1,VH
+Glycine sp. (Cataract),NA,NA,NA,1,NA,NA,1,VH
+Glycine tabacina,NA,4.36,24.32,1,0.5,NA,1,VH
+Grass (Cataract 55),NA,NA,NA,0,NA,NA,1,G
+Grass (Goodradigbee 10),NA,NA,NA,0,NA,NA,1,G
+Grass (Snowy Ck 45),NA,NA,NA,0,NA,NA,1,G
+Grass 1 (Jacobs 7),NA,NA,NA,0,NA,NA,1,G
+Grass 1 (Sportsmans 49),NA,NA,NA,0,NA,NA,1,G
+Grass 2 (Cataract 71),NA,NA,NA,0,NA,NA,1,G
+Grass 2 (Sportsmans 36),NA,NA,NA,0,NA,NA,1,G
+Grevillea lanigera,1.5,NA,7.83,1,0.25,NA,1,S
+Grevillea robusta,40,20,5.02,1,0.25,0.520687229,1,T
+Guioa semiglauca,6,41,13.21,1,0.25,0.77,1,T
+Gymnostachys anceps,1.5,228.6,6.98,0,1,NA,1,SRG
+Herb (Mann 36),NA,NA,NA,0,NA,NA,1,H
+Herb (Snowy Ck 28),NA,NA,NA,0,NA,NA,1,H
+Herb (Tuross 1 40),NA,NA,NA,0,NA,NA,1,H
+Herb (Wadbilliga 13),NA,NA,NA,0,NA,NA,1,H
+Herb 1 (Cataract 29),NA,NA,NA,0,NA,NA,1,H
+Herb 1 (Wallagaraugh 10),NA,NA,NA,0,NA,NA,1,H
+Herb 2 (Cataract 44),NA,NA,NA,0,NA,NA,1,H
+Hibbertia aspera subsp. aspera,0.6,2.49,14.67,1,0.25,NA,1,S
+Hovea asperifolia subsp. asperifolia,3,NA,9.82,1,0.333333333,NA,1,S
+Hybanthus stellarioides,0.3,NA,NA,0,0.5,NA,1,H
+Hydrocotyle  sp. (Nariel),NA,NA,NA,0,NA,NA,1,C
+Hydrocotyle peduncularis,0.2,0.44,33.22,0,0.75,NA,1,C
+Hydrocotyle tripartita,0.1,NA,NA,0,0.416666667,NA,1,C
+Hypochaeris radicata,0.8,0.7,25.89,0,0.75,NA,1,H
+Hypolepis glandulifera,1.5,NA,NA,0,NA,NA,1,F
+Imperata cylindrica,1.2,0.22,16.11,0,0.25,NA,1,G
+Juncus continuus,1.2,NA,NA,0,0.5,NA,1,SRG
+Juncus gregiflorus,1.4,0.01,10.03,0,0.5,NA,1,SRG
+Juncus sp. (Gibbo),NA,NA,NA,0,NA,NA,1,SRG
+Juncus sp. (Mann),NA,NA,NA,0,NA,NA,1,SRG
+Juncus sp. (Nariel),NA,NA,NA,0,NA,NA,1,SRG
+Juncus usitatus,1.1,0.01,NA,0,0.5,NA,1,SRG
+Lagenophora stipitata,0.2,0.44,30.68,0,0.5,NA,1,H
+Lastreopsis decomposita,0.9,NA,NA,0,NA,NA,1,F
+Lepidosperma laterale,1,2.85,7.64,0,0.5,NA,1,SRG
+Lepironia articulata,2,2.85,NA,0,0.25,NA,1,SRG
+Leptospermum brachyandrum,6,0.03,NA,1,0.25,0.700289744,1,S/T
+Leptospermum brevipes,4,0.15,9.02,1,0.25,0.712028707,1,S/T
+Leptospermum emarginatum,4,0.25,7.71,1,0.25,NA,1,S
+Leptospermum grandifolium,6,0.13,7.83,1,0.333333333,0.651526474,1,S/T
+Leptospermum polygalifolium subsp. polygalifolium,3,0.13,13.24,1,0.166666667,0.84,1,S
+Leptospermum trinervium,2.5,0.19,8.64,1,0.5,0.648,1,S/T
+Ligustrum lucidum,10,31,13.68,1,0.5,0.57942,1,S/T
+Ligustrum sinense,3,17,10.46,1,0.416666667,0.612,1,S
+Livistona australis,30,841.29,9.48,1,0.25,NA,1,T
+Lomandra confertifolia subsp. rubiginosa,0.5,17.49,NA,0,0.75,NA,0,SRG
+Lomandra hystrix,1.3,13.92,NA,0,0.5,NA,1,SRG
+Lomandra longifolia,1,11.33,12.89,0,0.25,NA,1,SRG
+Lomandra sp. (Goodradigbee),NA,NA,NA,0,NA,NA,1,SRG
+Lomatia ilicifolia,3,NA,NA,1,0.25,NA,1,S
+Lomatia myricoides,5,6.45,10.32,1,0.166666667,NA,1,S/T
+Lonicera japonica,NA,1.8,17.28,1,0.25,NA,1,VW
+Lophostemon suaveolens,22,0.67,7.3,1,0.25,0.577025052,1,T
+Melaleuca quinquenervia,15,0.31,7.96,1,0.5,0.751375108,1,T
+Melicytus dentatus,4,11.57,16.64,1,0.5,0.529541423,1,S
+Mentha pulegium,0.4,0.07,42.06,0,0.333333333,NA,0,H
+Mentha sp. (Nariel),NA,NA,NA,0,NA,NA,0,H
+Micrantheum hexandrum,2,5.71,NA,1,0.25,NA,0,S
+Microlaena stipoides,0.7,4.97,36.27,0,1,NA,1,G
+Morinda jasminoides,NA,7.9,34.48,1,0.5,NA,1,VW
+Morus alba,20,9,10,1,0.25,0.601344333,1,S/T
+Myrsine variabilis,15,27.21,10.01,1,0.416666667,0.78351,1,S/T
+Neolitsea dealbata,12,146.02,13.7,1,0.25,0.4983,1,S/T
+Notelaea linearis,2,NA,NA,1,0.25,NA,1,S
+Notelaea longifolia,9,44.2,8.5,1,0.583333333,0.86961,1,T
+Notelaea microcarpa subsp. microcarpa,10,43.52,NA,1,0.583333333,0.86961,1,T
+Notelaea microcarpa subsp. velutina,10,43.52,6.02,1,0.583333333,0.86961,1,T
+Notelaea venosa,6,130.84,9.41,1,0.5,NA,1,S/T
+Opercularia hispida,0.4,98.02,NA,0,0.5,NA,1,H
+Oplismenus aemulus,0.3,0.88,56.16,0,1,NA,1,C
+Oplismenus imbecillis,0.3,0.92,63.27,0,1,NA,1,C
+Oxalis chnoodes,0.4,NA,NA,0,0.666666667,NA,1,H
+Oxalis exilis,0.4,0.9,NA,0,0.666666667,NA,1,H
+Oxalis perennans,0.3,0.64,36.01,0,0.666666667,NA,1,H
+Oxalis sp.,NA,NA,NA,0,NA,NA,1,H
+Ozothamnus diosmifolius,2,0.06,10.43,1,0.416666667,NA,1,S
+Pandorea pandorana,NA,18.96,34.63,1,0.583333333,0.4477,1,VW
+Parsonsia straminea,NA,8.4,26.87,1,1,NA,1,VW
+Paspalum dilatatum,2,1.5,21.44,0,0.5,NA,1,G
+Passiflora edulis,NA,15.46,21.6,1,0.416666667,NA,1,VW
+Pavonia hastata,1.5,NA,NA,1,0.5,0.52,1,S
+Pellaea falcata,1.1,NA,NA,0,NA,NA,1,F
+Pellaea nana,0.5,NA,20.53,0,NA,NA,1,F
+Pennisetum clandestinum,0.9,2.18,30.46,0,0.25,NA,1,C
+Persicaria decipiens,0.3,1.07,19.9,0,0.25,NA,1,H
+Persicaria hydropiper,1.2,2.03,30,0,0.166666667,NA,1,H
+Persicaria strigosa,1,3.29,NA,0,0.25,NA,1,H
+Persoonia lanceolata,3,87.76,7.46,1,0.333333333,NA,1,S
+Persoonia stradbrokensis,6,278.92,NA,1,0.916666667,NA,1,S/T
+Phragmites australis,6,0.12,20.9,0,0.25,NA,1,SRG
+Phyllanthus gunnii,2,1.75,12.97,1,0.5,NA,1,S
+Phyllanthus virgatus,0.5,0.36,32.6,0,0.5,NA,1,H
+Phytolacca octandra,2,4.79,25.25,0,0.5,NA,1,H
+Pimelea axiflora subsp. axiflora,3,2.51,NA,1,0.25,NA,1,S
+Pittosporum revolutum,3,17.11,17.66,1,0.25,NA,1,S
+Pittosporum spinescens,8,7.54,18.44,1,0.5,0.7283,1,S/T
+Plantago debilis,0.2,0.29,21.96,0,1,NA,1,H
+Plantago major,0.2,0.2,29.93,0,0.5,NA,1,H
+Plantago sp. (Jacobs),NA,NA,NA,0,NA,NA,1,H
+Plantago sp. (Snowy Ck),NA,NA,NA,0,NA,NA,1,H
+Platylobium formosum subsp. formosum,2.5,9.5,14.49,1,0.25,NA,1,S
+Plectranthus parviflorus,0.7,0.42,34.4,1,1,NA,1,S
+Poa labillardierei subsp. labillardierei,1.2,0.3,13.59,0,0.416666667,NA,1,G
+Poa meionectes,0.7,0.412,10.72,0,0.5,NA,1,G
+Poa pratensis,0.9,0.25,26,0,0.25,NA,1,G
+Poa sieberiana,1,0.27,12.62,0,1,NA,1,G
+Polyscias sambucifolia subsp. decomposita,5,4.02,10.25,1,0.25,NA,1,S/T
+Pomaderris aspera,4,0.56,13.42,1,0.166666667,0.566300386,1,S
+Pomaderris cinerea,10,NA,NA,1,0.25,NA,1,S/T
+Pomaderris lanigera,5,1.29,8.61,1,0.166666667,NA,1,S/T
+Pomaderris phylicifolia subsp. phylicifolia,2,0.84,NA,1,0.166666667,NA,1,S
+Pratia purpurascens,0.2,0.2,60.87,0,0.75,NA,1,C
+Prostanthera lasianthos,6,1.01,13.38,1,0.416666667,0.58,1,S/T
+Prunella vulgaris,0.4,0.75,26.48,0,0.5,NA,1,C
+Prunus cerasifera,15,430,34.92,1,0.25,NA,1,S/T
+Pteridium esculentum,1.5,NA,9.64,0,NA,NA,1,F
+Pultenaea juniperina,3,5.45,6.45,1,0.333333333,0.88,1,S
+Ranunculus muricatus,0.5,11.59,NA,0,0.25,NA,1,H
+Ranunculus repens,0.6,2.32,16.72,0,0.5,NA,1,H
+Ranunculus sp. (Nariel),NA,NA,NA,0,NA,NA,0,H
+Rhytidosporum diosmoides,1.2,NA,NA,1,0.166666667,NA,1,S
+Richardia brasiliensis,0.4,1.07,23.6,0,0.75,NA,1,H
+Ripogonum album,15,1.89,11.94,1,0.416666667,NA,1,VW
+Rosa rubiginosa,3,15.2,22.56,1,0.166666667,NA,1,S
+Rostraria cristata,0.4,0.2,8.7,0,0.5,NA,1,G
+Rubus fruticosus agg.,3,2.89,22.17,1,0.416666667,0.3499,1,S
+Rubus moluccanus subsp. trilobus,1.2,0.85,13.84,1,0.5,0.3499,1,S
+Rubus parvifolius,0.6,0.33,23.11,1,0.5,NA,1,S
+Rumex brownii,0.8,0.62,16.97,0,1,NA,1,H
+Rytidosperma sp.,NA,NA,NA,0,NA,NA,1,G
+Salix fragilis,18,0.14,8.8,1,0.25,0.36,1,T
+Sarcopetalum harveyanum,NA,10.88,18.05,1,0.25,NA,1,VH
+Sedge (Cataract 16),NA,NA,NA,0,NA,NA,1,SRG
+Senecio diaschides ,1,NA,NA,0,0.5,NA,1,H
+Senecio linearifolius,1.5,0.24,18.27,0,1,NA,1,H
+Senecio madagascariensis,0.6,0.26,7.78,0,0.75,NA,1,H
+Senecio prenanthoides,0.8,NA,15.79,0,0.5,NA,0,H
+Senecio sp. (Genoa),NA,NA,NA,0,NA,NA,0,H
+Senecio sp. (Gibbo),NA,NA,NA,0,NA,NA,0,H
+Setaria pumila,1.3,1.39,15.1,0,0.25,NA,1,G
+Shrub (Gibbo 13),NA,NA,NA,1,NA,NA,1,S
+Shrub (Goodradigbee),NA,NA,NA,1,NA,NA,1,S
+Shrub (Tuross 1),NA,NA,NA,1,NA,NA,1,S
+Shrub (Wadbilliga 53),NA,NA,NA,1,NA,NA,1,S
+Shrub 1 (Sportsmans 47),NA,NA,NA,1,NA,NA,1,S
+Shrub 2 (Sportsmans 52),NA,NA,NA,1,NA,NA,1,S
+Sicyos australis,NA,93,NA,1,0.5,NA,1,VH
+Sida rhombifolia,1,2.59,23.59,1,0.75,NA,1,S
+Smilax australis,NA,40.76,11.3,1,0.5,NA,1,VW
+Smilax glyciphylla,NA,36.66,8.82,1,0.416666667,NA,1,VW
+Solanum americanum,1.3,0.59,15,0,1,NA,0,H
+Solanum aviculare,4,0.82,36.25,1,0.25,NA,1,S
+Solanum mauritianum,4,1.03,20.13,1,0.75,0.449091629,1,S/T
+Solanum nigrum,1.2,0.52,26.04,0,0.25,NA,0,H
+Solanum pungetium,1.5,0.9,NA,0,0.75,NA,1,H
+Solenogyne bellioides,0.2,0.13,NA,0,0.5,NA,1,H
+Sonchus asper,1.5,0.32,31.38,0,0.25,NA,0,H
+Sonchus oleraceus,1.1,0.26,26.47,0,1,NA,0,H
+Stellaria flaccida,0.2,0.42,48.42,0,0.416666667,NA,1,H
+Stellaria media,0.2,0.35,43.22,0,0.5,NA,0,H
+Stephania japonica,NA,19.72,26.1,1,0.5,NA,1,VH
+Subshrub 1 (Wallagaraugh 17),NA,NA,NA,1,NA,NA,1,S
+Symplocos thwaitesii,15,36,7.87,1,0.333333333,0.538125,1,S/T
+Syzygium oleosum,15,216.49,10.07,1,0.833333333,0.58133195,1,S/T
+Tagetes minuta,2,1.18,50.14,0,0.25,NA,0,H
+Taraxacum officinale,0.4,0.7,19.17,0,1,NA,1,H
+Tasmannia insipida,3,2.35,12.15,1,0.333333333,0.78,1,S
+Themeda australis,1.2,1.96,16.74,0,0.5,NA,1,G
+Tradescantia fluminensis,0.2,3.01,46.41,0,0.5,NA,1,C
+Tree (Jilliby 32),NA,NA,NA,1,NA,NA,1,T
+Tree (Sportsmans 57),NA,NA,NA,1,NA,0.612402056,1,T
+Trema tomentosa subsp. aspera,6,4.86,47.9,1,0.333333333,0.612402056,1,S/T
+Trifolium repens,0.3,0.41,24.36,0,0.75,NA,1,H
+Tristaniopsis laurina,30,10.26,7.48,1,0.166666667,0.653561451,1,T
+Trophis scandens,NA,1.77,12.14,1,0.5,0.658878333,1,VW
+Tylophora barbata,NA,10.16,31.85,1,0.25,NA,1,VH
+Urtica incisa,1,0.24,40.55,0,1,NA,1,H
+Verbena bonariensis,2,0.17,14.6,0,0.333333333,NA,1,H
+Verbena quadrangularis,2.5,0.2,9.52,0,1,NA,1,H
+Verbena sp. (Nariel),NA,NA,NA,0,NA,NA,1,H
+Vernonia cinerea,1,0.29,28.06,0,0.5,NA,1,H
+Veronica calycina,0.5,0.19,15.24,0,0.5,NA,1,H
+Veronica notabilis,0.4,NA,NA,0,0.5,NA,1,H
+Veronica plebeia,0.1,NA,NA,0,0.5,NA,1,H
+Veronica sp. (Mammy Johnsons),NA,NA,NA,0,NA,NA,1,H
+Veronica sp. (Nariel),NA,NA,NA,0,NA,NA,1,H
+Viola hederacea,0.2,0.7,23.18,0,0.5,NA,1,H
+Viola sieberiana,0.1,NA,NA,0,0.5,NA,1,H
+Vulpia bromoides,0.4,0.48,33.65,0,0.25,NA,0,G
+Wahlenbergia sp. (Tuross 1),NA,NA,NA,0,NA,NA,1,H
+Waterhousea floribunda,30,NA,13.58,1,0.25,0.542954174,1,T
+Wilkiea huegeliana,8,169.46,9.85,1,0.25,0.67,1,S/T
+Xanthium occidentale,2,50.08,48.65,0,0.5,NA,1,H
