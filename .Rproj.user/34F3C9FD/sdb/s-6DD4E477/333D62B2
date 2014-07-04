@@ -1,10 +1,10 @@
 {
-    "contents" : "leafDimensions <- read.csv(\"data/leafDimensions.csv\", header=TRUE, stringsAsFactors = FALSE)\n\nplot(log10(leafDimensions$leafWidth.mean), log10(leafDimensions$length.width.ratio))\n\nhist(log10(leafDimensions$leafWidth.mean))\n",
+    "contents" : "leafDimensions <- read.csv(\"data/leafDimensions.csv\", header=TRUE, stringsAsFactors = FALSE)\n\nplot(log10(leafDimensions$leafWidth.mean), log10(leafDimensions$length.width.ratio))\n\nhist(log10(leafDimensions$leafWidth.mean))\n\n\nblah <- merge(alltraits, percentcover, by.x=\"species\", by.y=\"species\")\n\nblah <- unique(blah)\n\nlength(unique(blah$species))\n\nblah.noferns <- subset(blah, growthform != \"F\")\n\nlength(unique(blah.noferns$species))\n\n\n",
     "created" : 1403765466751.000,
     "dirty" : true,
     "encoding" : "",
     "folds" : "",
-    "hash" : "283244153",
+    "hash" : "866545072",
     "id" : "333D62B2",
     "lastKnownWriteTime" : 27303570963497028,
     "path" : null,

@@ -37,7 +37,7 @@ findtraitvals <- function(plotsums, trait) {
 
 relabund <- function(df) {
                               
-                relcover <- df$speciescover / df$totalcover 
+                relcover <- df$speciescover / df$traitcover 
                 cbind(df, "relcover" = relcover)
 }
   
