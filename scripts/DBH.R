@@ -51,11 +51,11 @@ hydro$basalAreaPerHa <- log2(hydro$basalAreaPerHa)
 hist((hydro$stemsPerHa.small), breaks=7)
 hist((hydro$basalAreaPerHa.small), breaks=7)
 
-hist(log(hydro$stemsPerHa.small), breaks=7)
-hist(log2(hydro$basalAreaPerHa.small), breaks=7)
+hist(log10(hydro$stemsPerHa.small), breaks=7)
+hist(log10(hydro$basalAreaPerHa.small), breaks=7)
 
-hydro$stemsPerHa.small <- log(hydro$stemsPerHa.small)
-hydro$basalAreaPerHa.small <- log2(hydro$basalAreaPerHa.small)
+hydro$stemsPerHa.small <- log10(hydro$stemsPerHa.small)
+hydro$basalAreaPerHa.small <- log10(hydro$basalAreaPerHa.small)
 
 #hydro[6,41] <- 0
 #hydro[6,40] <- 0 
@@ -97,14 +97,26 @@ plot(hydroplots$maxheight.CWM, hydro$basalAreaPerHa.small)
 cor(hydroplots$maxheight.CWM, hydro$basalAreaPerHa.small)
 summary(lm(hydroplots$maxheight.CWM ~ hydro$basalAreaPerHa.small))
 
+plot(hydroplots$leafWidth.CWM, hydro$stemsPerHa)
+cor(hydroplots$leafWidth.CWM, hydro$stemsPerHa)
+summary(lm(hydroplots$leafWidth.CWM ~ hydro$stemsPerHa))
+
+plot(hydroplots$leafratio.CWM, hydro$stemsPerHa)
+cor(hydroplots$leafratio.CWM, hydro$stemsPerHa)
+summary(lm(hydroplots$leafratio.CWM ~ hydro$stemsPerHa))
+
+plot(hydroplots$flowering.period.CWM, hydro$stemsPerHa)
+cor(hydroplots$flowering.period.CWM, hydro$stemsPerHa)
+summary(lm(hydroplots$flowering.period.CWM ~ hydro$stemsPerHa))
+
 
 plot(hydroplots$seedmass.CWM, hydro$stemsPerHa.small)
 cor(hydroplots$seedmass.CWM, hydro$stemsPerHa.small)
 summary(lm(hydroplots$seedmass.CWM ~ hydro$stemsPerHa.small))
 
-plot(hydroplots$FDis, hydro$stemsPerHa.small)
-cor(hydroplots$FDis, hydro$stemsPerHa.small)
-summary(lm(hydroplots$FDiv ~ hydro$stemsPerHa.small))
+plot(hydroplots$FDis, hydro$stemsPerHa)
+cor(hydroplots$FDis, hydro$stemsPerHa)
+summary(lm(hydroplots$FDis ~ hydro$stemsPerHa))
 
 
 

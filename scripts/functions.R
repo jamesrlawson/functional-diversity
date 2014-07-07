@@ -199,14 +199,14 @@ getStats <- function(df, var, trait) {
     
     colnames(x) <- c("metric", "pval.linear", "r2.linear", "pval.quad", "r2.quad")
     
-    if (pval.linear < 0.06) { 
+    if (pval.linear < 0.05) { 
     y <- rbind(x,y)
     }
     
   }
   
   var <- deparse(substitute(var))
-    
+  
   write.csv(y, sprintf("%s/%s_stats.csv", statsDir, var))
    
 #  return(y)

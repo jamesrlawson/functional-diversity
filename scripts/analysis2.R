@@ -18,7 +18,7 @@ library(FD)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydro_all.csv", header=TRUE)
+hydro <- read.csv("data/hydronorm_all.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
 WD <- read.csv("data/WD.csv")
 
@@ -37,11 +37,11 @@ allspp <- na.omit(allspp)
 
 allspp <- rbind(allspp, alltraits[2,]) # Acacia boormanii
 allspp <- rbind(allspp, alltraits[130,]) # Eucalyptus resinifera
-allspp <- rbind(allspp, alltraits[135,]) # Eustrephus latifolius
+#allspp <- rbind(allspp, alltraits[135,]) # Eustrephus latifolius
 allspp <- rbind(allspp, alltraits[176,]) # Hovea asperifolia subsp. asperifolia
 allspp <- rbind(allspp, alltraits[204,]) # Lomandra hystrix
-allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
-allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
+#allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
+#allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
 allspp <- rbind(allspp, alltraits[348,]) # Waterhousea floribunda
 allspp <- allspp[order(allspp$species), ]
 
@@ -92,9 +92,9 @@ rm(test)
 
 traits <- allspp.cover[2]
 traits <- cbind(traits, allspp.cover[4:14])
-#traits$leafLength.mean <- NULL
+traits$leafLength.mean <- NULL
 traits$leafWidth.mean <- NULL
-traits$length.width.ratio <- NULL
+#traits$length.width.ratio <- NULL
 
 traits$growthform <- NULL
 traits$lifehistory <- NULL
@@ -142,7 +142,7 @@ FD.dbfd <- dbFD(traits,
                 stand.x = TRUE,
                 ord = c("metric"),
                 corr = c("cailliez"),
-                calc.FGR = TRUE, 
+#                calc.FGR = TRUE, 
                 calc.FDiv = TRUE, 
                 calc.FRic = TRUE,
                 calc.CWM=TRUE, 
@@ -172,9 +172,6 @@ hydroplots$leafratio.CWM <- CWM$length.width.ratio
 hydroplots$leafWidth.CWM <- CWM$leafWidth
 hydroplots$leafLength.CWM <- CWM$leafLength
 
-
-
-
 CWM$woody <- NULL
 CWM$lifehistory <- NULL
 
@@ -188,37 +185,37 @@ TukeyHSD(FDis.aov)
 
 ## plot everything against hydro ##
 
-plot.linear(hydroplots, hydroplots$FDis, FD)
-plot.linear(hydroplots, hydroplots$FDiv, FD)
-plot.linear(hydroplots, hydroplots$FRic, FD)
-plot.linear(hydroplots, hydroplots$FEve, FD)
-plot.linear(hydroplots, hydroplots$nbsp, FD)
+#plot.linear(hydroplots, hydroplots$FDis, FD)
+#plot.linear(hydroplots, hydroplots$FDiv, FD)
+#plot.linear(hydroplots, hydroplots$FRic, FD)
+#plot.linear(hydroplots, hydroplots$FEve, FD)
+#plot.linear(hydroplots, hydroplots$nbsp, FD)
 
-plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
-plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
-plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
-plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
-plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
-plot.linear(hydroplots,hydroplots$leafratio.CWM)
-plot.linear(hydroplots,hydroplots$leafWidth.CWM)
-
-
+#plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
+#plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
+#plot.linear(hydroplots,hydroplots$leafratio.CWM)
+#plot.linear(hydroplots,hydroplots$leafWidth.CWM)
 
 
-plot.quad(hydroplots, hydroplots$FDis, FD)
-plot.quad(hydroplots, hydroplots$FDiv, FD)
-plot.quad(hydroplots,hydroplots$FRic, FD)
-plot.quad(hydroplots, hydroplots$FEve, FD)
-plot.quad(hydroplots, hydroplots$nbsp, FD)
 
-plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
-plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
-plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
-plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
-plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
-plot.quad(hydroplots,hydroplots$leafratio.CWM)
-plot.quad(hydroplots,hydroplots$leafWidth.CWM)
-plot.quad(hydroplots,hydroplots$leafLength.CWM)
+
+#plot.quad(hydroplots, hydroplots$FDis, FD)
+#plot.quad(hydroplots, hydroplots$FDiv, FD)
+#plot.quad(hydroplots,hydroplots$FRic, FD)
+#plot.quad(hydroplots, hydroplots$FEve, FD)
+#plot.quad(hydroplots, hydroplots$nbsp, FD)
+
+#plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
+#plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
+#plot.quad(hydroplots,hydroplots$leafratio.CWM)
+#plot.quad(hydroplots,hydroplots$leafWidth.CWM)
+#plot.quad(hydroplots,hydroplots$leafLength.CWM)
 
 
 
@@ -228,7 +225,7 @@ getStats(hydroplots, hydroplots$FDiv, FD)
 getStats(hydroplots, hydroplots$FRic, FD)
 getStats(hydroplots, hydroplots$FEve, FD)
 getStats(hydroplots, hydroplots$nbsp, FD)
-getStats(hydroplots, hydroplots$FGR, FD)
+#getStats(hydroplots, hydroplots$FGR, FD)
 
 
 getStats(hydroplots, hydroplots$SLA.CWM, CWM)
@@ -237,7 +234,7 @@ getStats(hydroplots, hydroplots$maxheight.CWM, CWM)
 getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
 getStats(hydroplots, hydroplots$WD.CWM, CWM)
 getStats(hydroplots,hydroplots$leafratio.CWM)
-getStats(hydroplots,hydroplots$leafWidth.CWM)
-getStats(hydroplots,hydroplots$leafLength.CWM)
+#getStats(hydroplots,hydroplots$leafWidth.CWM)
+#getStats(hydroplots,hydroplots$leafLength.CWM)
 
 
