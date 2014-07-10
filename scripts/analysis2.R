@@ -1,7 +1,4 @@
-#############################################################################################
-#################### ANALYSIS FOR ONLY SPP. WITH COMPLETE DATA ####################
-#############################################################################################
-#################### LHS + woody/herbaceous ##################################################
+
 
 source("scripts/functions.R")
 options(stringsAsFactors = FALSE)
@@ -169,8 +166,8 @@ hydroplots$maxheight.CWM <- CWM$maxheight
 hydroplots$flowering.period.CWM <- CWM$flowering.period
 hydroplots$WD.CWM <- CWM$WD
 hydroplots$leafratio.CWM <- CWM$length.width.ratio
-hydroplots$leafWidth.CWM <- CWM$leafWidth
-hydroplots$leafLength.CWM <- CWM$leafLength
+#hydroplots$leafWidth.CWM <- CWM$leafWidth
+#hydroplots$leafLength.CWM <- CWM$leafLength
 
 CWM$woody <- NULL
 CWM$lifehistory <- NULL
@@ -235,6 +232,6 @@ getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
 getStats(hydroplots, hydroplots$WD.CWM, CWM)
 getStats(hydroplots,hydroplots$leafratio.CWM)
 #getStats(hydroplots,hydroplots$leafWidth.CWM)
-#getStats(hydroplots,hydroplots$leafLength.CWM)
+getStats(hydroplots,hydroplots$leafLength.CWM)
 
 

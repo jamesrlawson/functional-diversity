@@ -206,6 +206,7 @@ getStats <- function(df, var, trait) {
   }
   
   var <- deparse(substitute(var))
+
   
   write.csv(y, sprintf("%s/%s_stats.csv", statsDir, var))
    
