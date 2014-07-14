@@ -1,0 +1,79 @@
+---
+title: "FD results"
+author: "James Lawson"
+date: "Monday, July 14, 2014"
+output: html_document
+---
+
+Functional Diversity of riparian plant communities of south eastern Australia 
+========================================================
+
+This document presents the results of a functional diversity analysis using the following traits:
+
+maxheight
+SLA
+seedmass
+wood density
+flowering period (proportion of year)
+leaf length:width ratio
+(leaf length)
+
+Species by species trait correlations
+--------------------------------------
+Missing wood density cors due to missing values
+
+```{r}
+traits.naomit <- na.omit(traits)
+pairs(traits.naomit)
+cor(traits.naomit)
+
+```
+
+
+PCA of trait data 
+--------------------------------------
+```{r}
+traits.PCA <- prcomp(traits.all, centre=TRUE, retx=TRUE)
+summary(traits.PCA)
+biplot(traits.PCA)
+```
+
+
+Trait correlations by CWM
+--------------------------------------
+
+```{r}
+pairs(CWM)
+cor(CWM)
+
+```
+
+
+FDis significant regressions
+--------------------------------------
+```{r}
+getStats(hydroplots, hydroplots$FDis)
+
+```
+
+PCA over significant hydrological variables
+-------------------------------------------
+```{r}
+FDis.signif <- data.frame(cbind(
+                          "CVMDFWinter" = hydro$CVMDFWinter,
+                          "MDFMDFSummer" = hydro$MDFMDFSummer,
+                          "MDFMDFSpring" = hydro$MDFMDFSpring,
+                          "P_MaxM" = hydro$P_MaxM,
+                          "CVAnnMRateRise"= hydro$CVAnnMRateRise,
+                          "CVAnnHSPeak"= hydro$CVAnnHSPeak))
+                                                    
+FDis.signif.cor <- cor(FDis.signif)
+View(FDis.signif.cor )
+pairs(FDis.signif)
+
+FDis.signif.PCA <- prcomp(FDis.signif, scale=TRUE, centre=TRUE, retx=TRUE)
+summary(FDis.signif.PCA)
+plot(FDis.signif.PCA)
+biplot(FDis.signif.PCA)
+```
+

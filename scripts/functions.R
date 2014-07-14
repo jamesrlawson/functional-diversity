@@ -45,44 +45,45 @@ relabund <- function(df) {
 spread <- function(x) (diff(range(x)))
 
 
-plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
+plot.linear <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc.
+  
   
   figureDir <- "C:/Users/JLawson/Desktop/stuff/data/analysis/R/functional diversity/output/figures"
   traitDir <- deparse(substitute(trait))
   varDir <- deparse(substitute(var))
   
-  outDir <- sprintf("%s/%s/%s/%s", figureDir, traitDir, varDir, "linear")
+  outDir <- sprintf("%s/%s/%s/linear", figureDir, traitDir, varDir)
   
   dir.create(outDir, recursive=TRUE)
-    
-  for(i in 1:ncol(df)) {
-    hydro <- df[[i]]  
-    hydroname <- as.expression(colnames(df[i]))   
-    fit.linear <- lm(var ~ hydro, data = df)
-    
-  #  padj <- labels$p.adj[i]
-    r2 <- signif(summary(fit.linear)$r.squared, 5)
-    pval <- anova(fit.linear)[1,"Pr(>F)"]
   
   labels <- list("ylab" <- c(deparse(substitute(trait))),
                  "catname" <- as.factor(df$category)
   )
+  
+  for(i in 1:ncol(df)) {
+    hydro <- df[[i]]  
+    hydroname <- as.expression(colnames(df[i]))   
+    fit.quad <- lm(var ~ hydro, data = df)
+    
+    #  padj <- labels$p.adj[i]
+    r2 <- signif(summary(fit.quad)$r.squared, 5)
+    pval <- anova(fit.quad)[1,"Pr(>F)"]
     
     png(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 600, height = 500)
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point()
-    p <- p + geom_point(aes(shape = labels[2]), size =3)
+    p <- p + geom_point(aes(shape = labels$catname), size =3)
     p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
     p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x, se=TRUE, col="black") 
     p <- p + xlab(hydroname)
-  #  p <- p + ylim(0.45, 0.75)
+    #  p <- p + ylim(0.45, 0.75)
     p <- p + ylab(labels$ylab)
-   # p <- p + annotate("text",                    
-   #                   x=max(hydro)/1.5, y=0.5,
-   #                   label=paste("R^2 = ",signif(summary(fit.quad)$r.squared, 5),
-   #                               "\np.adj =",labels$p.adj[i]),
-   #                   size = 4)
+    # p <- p + annotate("text",                    
+    #                   x=max(hydro)/1.5, y=0.5,
+    #                   label=paste("R^2 = ",signif(summary(fit.quad)$r.squared, 5),
+    #                               "\np.adj =",labels$p.adj[i]),
+    #                   size = 4)
     #    p <- p + ggtitle(labels$title)    
     p <- p + theme_minimal() # if you want to use a preset theme and then modify it, call it first
     p <- p + theme(panel.grid.major = element_blank(),
@@ -98,7 +99,6 @@ plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
     dev.off()
   }
 }
-
 
 plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc.
   
@@ -206,10 +206,12 @@ getStats <- function(df, var, trait) {
   }
   
   var <- deparse(substitute(var))
-
+  
+  y$padj.linear <- p.adjust(y$pval.linear, method="BH", n=36)
+  y$padj.quad <- p.adjust(y$pval.quad, method="BH", n=36)
   
   write.csv(y, sprintf("%s/%s_stats.csv", statsDir, var))
    
-#  return(y)
+  return(y)
   
 }

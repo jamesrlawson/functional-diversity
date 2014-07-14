@@ -6,7 +6,7 @@ library(reshape)
 library(FD)
 
 DBH <- na.omit(read.csv("data/DBH.csv", header=TRUE))
-hydro <- read.csv("data/hydro_all.csv", header=TRUE)
+hydro <- read.csv("data/hydro.csv", header=TRUE)
 
 DBH.small <- subset(DBH, dbh < 50)
 
@@ -67,15 +67,15 @@ getStats(hydro, hydro$basalAreaPerHa, DBH)
 getStats(hydro, hydro$stemsPerHa.small, DBH)
 getStats(hydro, hydro$basalAreaPerHa.small, DBH)
 
-plot.linear(hydro, hydro$stemsPerHa, DBH)
-plot.linear(hydro, hydro$basalAreaPerHa, DBH)
-plot.linear(hydro, hydro$stemsPerHa.small, DBH)
-plot.linear(hydro, hydro$basalAreaPerHa.small, DBH)
+#plot.linear(hydro, hydro$stemsPerHa, DBH)
+#plot.linear(hydro, hydro$basalAreaPerHa, DBH)
+#plot.linear(hydro, hydro$stemsPerHa.small, DBH)
+#plot.linear(hydro, hydro$basalAreaPerHa.small, DBH)
 
-plot.quad(hydro, hydro$stemsPerHa, DBH)
-plot.quad(hydro, hydro$basalAreaPerHa, DBH)
-plot.quad(hydro, hydro$stemsPerHa.small, DBH)
-plot.quad(hydro, hydro$basalAreaPerHa.small, DBH)
+#plot.quad(hydro, hydro$stemsPerHa, DBH)
+#plot.quad(hydro, hydro$basalAreaPerHa, DBH)
+#plot.quad(hydro, hydro$stemsPerHa.small, DBH)
+#plot.quad(hydro, hydro$basalAreaPerHa.small, DBH)
 
 
 ## aov ##
@@ -88,6 +88,21 @@ TukeyHSD(basalAreaPerHa.aov)
 
 
 ### correlations with CWMs and richness ###
+
+hydroplots2 <- cbind(hydroplots, "stemsPerHa.small" = hydro$stemsPerHa.small,
+                                  "stemsPerHa" = hydro$stemsPerHa,
+                                  "basalAreaPerHa.small" = hydro$basalAreaPerHa.small,
+                                  "basalAreaPerHa" = hydro$basalAreaPerHa)
+                             
+                  
+getStats(hydroplots2, hydroplots2$stemsPerHa.small, DBH)
+getStats(hydroplots2, hydroplots2$stemsPerHa, DBH)
+getStats(hydroplots2, hydroplots2$basalAreaPerHa.small, DBH)
+getStats(hydroplots2, hydroplots2$basalAreaPerHa, DBH)
+
+
+
+
 
 plot(hydroplots$maxheight.CWM, hydro$stemsPerHa.small)
 cor(hydroplots$maxheight.CWM, hydro$stemsPerHa.small)

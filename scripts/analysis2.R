@@ -15,7 +15,7 @@ library(FD)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydronorm_all.csv", header=TRUE)
+hydro <- read.csv("data/hydro.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
 WD <- read.csv("data/WD.csv")
 
@@ -34,11 +34,11 @@ allspp <- na.omit(allspp)
 
 allspp <- rbind(allspp, alltraits[2,]) # Acacia boormanii
 allspp <- rbind(allspp, alltraits[130,]) # Eucalyptus resinifera
-#allspp <- rbind(allspp, alltraits[135,]) # Eustrephus latifolius
+allspp <- rbind(allspp, alltraits[135,]) # Eustrephus latifolius
 allspp <- rbind(allspp, alltraits[176,]) # Hovea asperifolia subsp. asperifolia
 allspp <- rbind(allspp, alltraits[204,]) # Lomandra hystrix
-#allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
-#allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
+allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
+allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
 allspp <- rbind(allspp, alltraits[348,]) # Waterhousea floribunda
 allspp <- allspp[order(allspp$species), ]
 
@@ -106,6 +106,7 @@ hist((traits$flowering.period)) # non-normal distribution with any common transf
 hist(log10(traits$leafWidth.mean))
 hist(log10(traits$leafLength.mean))
 hist(log10(traits$length.width.ratio))
+hist(log10(traits$WD))
 
 traits$seedmass <- log10(traits$seedmass)
 traits$SLA <- log10(traits$SLA)
@@ -113,8 +114,10 @@ traits$maxheight <- log10(traits$maxheight)
 traits$leafWidth.mean <- log10(traits$leafWidth.mean)
 traits$length.width.ratio <- log10(traits$length.width.ratio)
 traits$leafLength.mean <- log10(traits$leafLength.mean)
+traits$WD <- log10(traits$WD)
 
 traits$woody <- as.numeric(traits$woody)
+traits$woody <- NULL
 
 # create abun, in correct input format for FD analysis
 
@@ -131,19 +134,17 @@ rownames(traits) <- spp
 rm(spp)
 
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
-### 12 groups ###
 
 FD.dbfd <- dbFD(traits, 
                 abun, 
                 w.abun = TRUE, 
                 stand.x = TRUE,
-                ord = c("metric"),
                 corr = c("cailliez"),
 #                calc.FGR = TRUE, 
                 calc.FDiv = TRUE, 
                 calc.FRic = TRUE,
+                m = "max",
                 calc.CWM=TRUE, 
-                clust.type="ward", 
                 print.pco=TRUE, 
                #scale.RaoQ=TRUE, 
                 stand.FRic=TRUE)
@@ -232,6 +233,8 @@ getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
 getStats(hydroplots, hydroplots$WD.CWM, CWM)
 getStats(hydroplots,hydroplots$leafratio.CWM)
 #getStats(hydroplots,hydroplots$leafWidth.CWM)
-getStats(hydroplots,hydroplots$leafLength.CWM)
+#getStats(hydroplots,hydroplots$leafLength.CWM)
+
+blah <- getStats(hydroplots,hydroplots$leafratio.CWM)
 
 
