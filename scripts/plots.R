@@ -26,3 +26,5 @@ FDis.signif.PCA <- prcomp(FDis.signif, scale=TRUE, centre=TRUE, retx=TRUE)
 summary(FDis.signif.PCA)
 plot(FDis.signif.PCA)
 biplot(FDis.signif.PCA)
+e
+FDis.signif.PCA$rotatio[,1:2] # loadings

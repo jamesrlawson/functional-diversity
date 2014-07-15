@@ -18,6 +18,7 @@ percentcover <- read.csv("data/percentcover.csv", header=TRUE)
 hydro <- read.csv("data/hydro.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
 WD <- read.csv("data/WD.csv")
+categories <- read.csv("data/categories.csv", header=TRUE)
 
 # remove observations that average less than 1% cover
 percentcover <- subset(percentcover, avgcover > 1)
@@ -40,6 +41,11 @@ allspp <- rbind(allspp, alltraits[204,]) # Lomandra hystrix
 allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
 allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
 allspp <- rbind(allspp, alltraits[348,]) # Waterhousea floribunda
+
+allspp <- rbind(allspp, alltraits[42,]) # Blechnum nudum
+allspp <- rbind(allspp, alltraits[53,]) # Calochlaena dubia
+allspp <- rbind(allspp, alltraits[112,]) # Doodia aspera
+                                                
 allspp <- allspp[order(allspp$species), ]
 
 # add wood density and leaf dimension data
@@ -150,6 +156,7 @@ FD.dbfd <- dbFD(traits,
                 stand.FRic=TRUE)
 
 hydroplots <- hydro
+catname <- as.factor(categories$cats)
 
 hydroplots$FDis <- FD.dbfd$FDis
 hydroplots$FDiv <- FD.dbfd$FDiv
@@ -178,12 +185,12 @@ pairs(CWM)
 
 ## try a Tukey's test to compare hydro categories ##
 
-FDis.aov <- aov(hydroplots$FDis ~ as.factor(hydroplots$category))
+FDis.aov <- aov(hydroplots$FDis ~ as.factor(categories$cats))
 TukeyHSD(FDis.aov)
 
 ## plot everything against hydro ##
 
-#plot.linear(hydroplots, hydroplots$FDis, FD)
+plot.linear(hydroplots, hydroplots$FDis, FD)
 #plot.linear(hydroplots, hydroplots$FDiv, FD)
 #plot.linear(hydroplots, hydroplots$FRic, FD)
 #plot.linear(hydroplots, hydroplots$FEve, FD)
@@ -200,7 +207,7 @@ TukeyHSD(FDis.aov)
 
 
 
-#plot.quad(hydroplots, hydroplots$FDis, FD)
+plot.quad(hydroplots, hydroplots$FDis, FD)
 #plot.quad(hydroplots, hydroplots$FDiv, FD)
 #plot.quad(hydroplots,hydroplots$FRic, FD)
 #plot.quad(hydroplots, hydroplots$FEve, FD)
@@ -235,6 +242,5 @@ getStats(hydroplots,hydroplots$leafratio.CWM)
 #getStats(hydroplots,hydroplots$leafWidth.CWM)
 #getStats(hydroplots,hydroplots$leafLength.CWM)
 
-blah <- getStats(hydroplots,hydroplots$leafratio.CWM)
 
 
