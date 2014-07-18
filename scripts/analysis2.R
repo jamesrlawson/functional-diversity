@@ -188,39 +188,46 @@ pairs(CWM)
 FDis.aov <- aov(hydroplots$FDis ~ as.factor(categories$cats))
 TukeyHSD(FDis.aov)
 
+## add total species richness information ##
+## presence / absence data for all species at each site including rare spp. ##
+
+diversity <- read.csv("data/diversity.csv", header=TRUE, stringsAsFactors = FALSE)
+div_hydro <- merge(diversity, hydro)
+hydroplots$richness <- tapply(div_hydro$species, div_hydro$plot, length)
+
 ## plot everything against hydro ##
 
 plot.linear(hydroplots, hydroplots$FDis, FD)
-#plot.linear(hydroplots, hydroplots$FDiv, FD)
-#plot.linear(hydroplots, hydroplots$FRic, FD)
-#plot.linear(hydroplots, hydroplots$FEve, FD)
-#plot.linear(hydroplots, hydroplots$nbsp, FD)
+plot.linear(hydroplots, hydroplots$FDiv, FD)
+plot.linear(hydroplots, hydroplots$FRic, FD)
+plot.linear(hydroplots, hydroplots$FEve, FD)
+plot.linear(hydroplots, hydroplots$nbsp, FD)
 
-#plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
-#plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
-#plot.linear(hydroplots,hydroplots$leafratio.CWM)
-#plot.linear(hydroplots,hydroplots$leafWidth.CWM)
-
+plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
+plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
+plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
+plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
+plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
+plot.linear(hydroplots,hydroplots$leafratio.CWM)
+plot.linear(hydroplots,hydroplots$leafWidth.CWM)
+plot.linear(hydroplots, hydroplots$richness, richness)
 
 
 
 plot.quad(hydroplots, hydroplots$FDis, FD)
-#plot.quad(hydroplots, hydroplots$FDiv, FD)
-#plot.quad(hydroplots,hydroplots$FRic, FD)
-#plot.quad(hydroplots, hydroplots$FEve, FD)
-#plot.quad(hydroplots, hydroplots$nbsp, FD)
+plot.quad(hydroplots, hydroplots$FDiv, FD)
+plot.quad(hydroplots,hydroplots$FRic, FD)
+plot.quad(hydroplots, hydroplots$FEve, FD)
+plot.quad(hydroplots, hydroplots$nbsp, FD)
 
-#plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
-#plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
-#plot.quad(hydroplots,hydroplots$leafratio.CWM)
-#plot.quad(hydroplots,hydroplots$leafWidth.CWM)
-#plot.quad(hydroplots,hydroplots$leafLength.CWM)
+plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
+plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
+plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
+plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
+plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
+plot.quad(hydroplots,hydroplots$leafratio.CWM)
+plot.quad(hydroplots,hydroplots$leafWidth.CWM)
+plot.quad(hydroplots,hydroplots$leafLength.CWM)
 
 
 
@@ -231,7 +238,7 @@ getStats(hydroplots, hydroplots$FRic, FD)
 getStats(hydroplots, hydroplots$FEve, FD)
 getStats(hydroplots, hydroplots$nbsp, FD)
 #getStats(hydroplots, hydroplots$FGR, FD)
-
+getStats(hydroplots, hydroplots$richness, richness)
 
 getStats(hydroplots, hydroplots$SLA.CWM, CWM)
 getStats(hydroplots, hydroplots$seedmass.CWM, CWM)

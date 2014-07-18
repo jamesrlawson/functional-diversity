@@ -25,31 +25,31 @@ Missing wood density cors due to missing values
 
 ```r
 traits.naomit <- na.omit(traits)
-pairs(traits.naomit)
-```
-
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
-
-```r
 cor(traits.naomit)
 ```
 
 ```
 ##                    maxheight seedmass     SLA flowering.period
-## maxheight             1.0000  0.11679 -0.3766         -0.18770
-## seedmass              0.1168  1.00000  0.1165          0.16079
-## SLA                  -0.3766  0.11652  1.0000          0.15174
-## flowering.period     -0.1877  0.16079  0.1517          1.00000
-## length.width.ratio    0.2076 -0.22689 -0.5312         -0.11641
-## WD                   -0.1059  0.04015 -0.4354          0.03592
+## maxheight            1.00000  0.15627 -0.3701         -0.19589
+## seedmass             0.15627  1.00000  0.1165          0.16079
+## SLA                 -0.37009  0.11652  1.0000          0.15174
+## flowering.period    -0.19589  0.16079  0.1517          1.00000
+## length.width.ratio   0.19285 -0.22689 -0.5312         -0.11641
+## WD                  -0.08565  0.04015 -0.4354          0.03592
 ##                    length.width.ratio       WD
-## maxheight                     0.20762 -0.10591
+## maxheight                     0.19285 -0.08565
 ## seedmass                     -0.22689  0.04015
 ## SLA                          -0.53118 -0.43544
 ## flowering.period             -0.11641  0.03592
 ## length.width.ratio            1.00000  0.07723
 ## WD                            0.07723  1.00000
 ```
+
+```r
+pairs(traits.naomit)
+```
+
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
 
 
 PCA of trait data 
@@ -80,31 +80,31 @@ Trait correlations by CWM
 
 
 ```r
-pairs(CWM)
-```
-
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
-```r
-cor(CWM)
+print(cor(CWM))
 ```
 
 ```
 ##                    maxheight seedmass     SLA flowering.period
-## maxheight             1.0000   0.4390 -0.4226         -0.70122
-## seedmass              0.4390   1.0000  0.2095         -0.13660
-## SLA                  -0.4226   0.2095  1.0000          0.55707
-## flowering.period     -0.7012  -0.1366  0.5571          1.00000
-## length.width.ratio   -0.3423  -0.3442 -0.3928          0.32308
-## WD                   -0.1660   0.0384 -0.3433          0.05575
+## maxheight            1.00000   0.5103 -0.4792         -0.62103
+## seedmass             0.51033   1.0000  0.1357         -0.13660
+## SLA                 -0.47916   0.1357  1.0000          0.56184
+## flowering.period    -0.62103  -0.1366  0.5618          1.00000
+## length.width.ratio  -0.17268  -0.3442 -0.4065          0.32308
+## WD                  -0.09881   0.0384 -0.3615          0.05575
 ##                    length.width.ratio       WD
-## maxheight                     -0.3423 -0.16604
+## maxheight                     -0.1727 -0.09881
 ## seedmass                      -0.3442  0.03840
-## SLA                           -0.3928 -0.34328
+## SLA                           -0.4065 -0.36149
 ## flowering.period               0.3231  0.05575
 ## length.width.ratio             1.0000  0.09990
 ## WD                             0.0999  1.00000
 ```
+
+```r
+pairs(CWM)
+```
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 
 FDis significant regressions
@@ -117,67 +117,89 @@ getStats(hydroplots, hydroplots$FDis)
 ```
 ## Warning: ANOVA F-tests on an essentially perfect fit are unreliable
 ## Warning: ANOVA F-tests on an essentially perfect fit are unreliable
+## Warning: cannot open file 'C:/Users/JLawson/Desktop/stuff/data/analysis/R/functional diversity/output/stats/hydroplots$FDis_stats.csv': Permission denied
 ```
 
 ```
-##                  metric pval.linear r2.linear  pval.quad r2.quad
-## 1         leafratio.CWM   1.717e-02    0.3645  2.114e-02  0.3777
-## 2  flowering.period.CWM   1.994e-02    0.3511  2.514e-02  0.3556
-## 3         maxheight.CWM   9.993e-03    0.4111  1.300e-02  0.4188
-## 4                  RaoQ   1.168e-12    0.9816  2.782e-14  0.9930
-## 5                  FRic   2.418e-03    0.5199  3.259e-03  0.5345
-## 6                  FDiv   4.735e-02    0.2695  5.625e-02  0.2755
-## 7                  FDis  3.656e-206    1.0000 8.853e-191  1.0000
-## 8           CVMDFWinter   8.691e-03    0.4227  1.140e-02  0.4304
-## 9          MDFMDFSummer   3.528e-03    0.4928  4.821e-03  0.5026
-## 10         MDFMDFSpring   1.169e-02    0.3979  1.493e-02  0.4075
-## 11               M_MaxM   3.947e-02    0.2872  4.808e-02  0.2883
-## 12               P_MaxM   6.359e-03    0.4479  1.747e-03  0.6648
-## 13               M_MinM   3.897e-02    0.2885  2.459e-02  0.4755
-## 14               M_MDFM   3.628e-02    0.2953  4.095e-02  0.3240
-## 15            AS20YrARI   2.492e-02    0.3307  3.070e-02  0.3379
-## 16       CVAnnMRateFall   2.649e-02    0.3250  3.319e-02  0.3260
-## 17       CVAnnMRateRise   1.041e-02    0.4077  1.381e-02  0.4105
-## 18          CVAnnHSPeak   1.223e-03    0.5655  1.760e-03  0.5760
-##    padj.linear  padj.quad
-## 1    5.619e-02  6.918e-02
-## 2    5.981e-02  6.962e-02
-## 3    4.164e-02  5.375e-02
-## 4    2.102e-11  5.007e-13
-## 5    2.176e-02  2.347e-02
-## 6    9.469e-02  1.125e-01
-## 7   1.316e-204 3.187e-189
-## 8    4.164e-02  5.375e-02
-## 9    2.540e-02  2.892e-02
-## 10   4.208e-02  5.375e-02
-## 11   8.359e-02  1.018e-01
-## 12   3.815e-02  1.584e-02
-## 13   8.359e-02  6.962e-02
-## 14   8.359e-02  9.214e-02
-## 15   6.813e-02  7.893e-02
-## 16   6.813e-02  7.965e-02
-## 17   4.164e-02  5.375e-02
-## 18   1.468e-02  1.584e-02
+## Error: cannot open the connection
 ```
 
 PCA over significant hydrological variables
 -------------------------------------------
 
 ```r
-FDis.signif <- data.frame(cbind(
-                          "CVMDFWinter" = hydro$CVMDFWinter,
-                          "MDFMDFSummer" = hydro$MDFMDFSummer,
-                          "MDFMDFSpring" = hydro$MDFMDFSpring,
-                          "P_MaxM" = hydro$P_MaxM,
-                          "CVAnnMRateRise"= hydro$CVAnnMRateRise,
-                          "CVAnnHSPeak"= hydro$CVAnnHSPeak))
+FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
+                                hydroplots["CVMDFAutumn"],
+                                hydroplots["CVMDFSpring"],
+                                hydroplots["MDFMDFSummer"],
+                                hydroplots["MDFMDFSpring"],
+                                hydroplots["M_MaxM"],
+                                hydroplots["P_MaxM"],
+                                hydroplots["M_MinM"],
+                                hydroplots["M_MDFM"],
+                                hydroplots["P_MDFM"],
+                                hydroplots["AS20YrARI"],
+                                hydroplots["CVAnnMRateFall"],
+                                hydroplots["CVAnnMRateRise"],
+                                hydroplots["LSPeak"],
+                                hydroplots["CVAnnHSPeak"]
+))
+
                                                     
 FDis.signif.cor <- cor(FDis.signif)
-View(FDis.signif.cor )
-pairs(FDis.signif)
+print(FDis.signif.cor)
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-51.png) 
+```
+##                CVMDFWinter CVMDFAutumn CVMDFSpring MDFMDFSummer
+## CVMDFWinter         1.0000      0.6858      0.7883       0.3814
+## CVMDFAutumn         0.6858      1.0000      0.7691       0.5859
+## CVMDFSpring         0.7883      0.7691      1.0000       0.4019
+## MDFMDFSummer        0.3814      0.5859      0.4019       1.0000
+## MDFMDFSpring       -0.7523     -0.7708     -0.7219      -0.8011
+## M_MaxM             -0.7842     -0.9369     -0.8074      -0.6376
+## P_MaxM             -0.6988     -0.5826     -0.4450      -0.3189
+## M_MinM             -0.6226     -0.8050     -0.6418      -0.7407
+## M_MDFM             -0.7726     -0.8912     -0.7773      -0.6567
+## P_MDFM             -0.7993     -0.9117     -0.8239      -0.5258
+## AS20YrARI           0.7820      0.8625      0.8518       0.5993
+## CVAnnMRateFall      0.8923      0.8788      0.8631       0.4792
+## CVAnnMRateRise      0.8752      0.8169      0.7183       0.3922
+## LSPeak             -0.8258     -0.8393     -0.8365      -0.5217
+## CVAnnHSPeak         0.5652      0.7368      0.4265       0.7445
+##                MDFMDFSpring  M_MaxM  P_MaxM  M_MinM  M_MDFM  P_MDFM
+## CVMDFWinter         -0.7523 -0.7842 -0.6988 -0.6226 -0.7726 -0.7993
+## CVMDFAutumn         -0.7708 -0.9369 -0.5826 -0.8050 -0.8912 -0.9117
+## CVMDFSpring         -0.7219 -0.8074 -0.4450 -0.6418 -0.7773 -0.8239
+## MDFMDFSummer        -0.8011 -0.6376 -0.3189 -0.7407 -0.6567 -0.5258
+## MDFMDFSpring         1.0000  0.8894  0.4277  0.7691  0.8357  0.8373
+## M_MaxM               0.8894  1.0000  0.5744  0.8418  0.9497  0.9681
+## P_MaxM               0.4277  0.5744  1.0000  0.3735  0.5327  0.6033
+## M_MinM               0.7691  0.8418  0.3735  1.0000  0.9360  0.7883
+## M_MDFM               0.8357  0.9497  0.5327  0.9360  1.0000  0.9179
+## P_MDFM               0.8373  0.9681  0.6033  0.7883  0.9179  1.0000
+## AS20YrARI           -0.8336 -0.9087 -0.5818 -0.7486 -0.8935 -0.9102
+## CVAnnMRateFall      -0.7838 -0.9092 -0.6552 -0.7998 -0.9048 -0.9299
+## CVAnnMRateRise      -0.7046 -0.8557 -0.8006 -0.6361 -0.7944 -0.8649
+## LSPeak               0.8648  0.9148  0.5972  0.6792  0.8161  0.9572
+## CVAnnHSPeak         -0.6551 -0.7194 -0.7642 -0.6587 -0.7124 -0.6564
+##                AS20YrARI CVAnnMRateFall CVAnnMRateRise  LSPeak CVAnnHSPeak
+## CVMDFWinter       0.7820         0.8923         0.8752 -0.8258      0.5652
+## CVMDFAutumn       0.8625         0.8788         0.8169 -0.8393      0.7368
+## CVMDFSpring       0.8518         0.8631         0.7183 -0.8365      0.4265
+## MDFMDFSummer      0.5993         0.4792         0.3922 -0.5217      0.7445
+## MDFMDFSpring     -0.8336        -0.7838        -0.7046  0.8648     -0.6551
+## M_MaxM           -0.9087        -0.9092        -0.8557  0.9148     -0.7194
+## P_MaxM           -0.5818        -0.6552        -0.8006  0.5972     -0.7642
+## M_MinM           -0.7486        -0.7998        -0.6361  0.6792     -0.6587
+## M_MDFM           -0.8935        -0.9048        -0.7944  0.8161     -0.7124
+## P_MDFM           -0.9102        -0.9299        -0.8649  0.9572     -0.6564
+## AS20YrARI         1.0000         0.8312         0.7632 -0.8958      0.7415
+## CVAnnMRateFall    0.8312         1.0000         0.9062 -0.8792      0.5976
+## CVAnnMRateRise    0.7632         0.9062         1.0000 -0.8311      0.6665
+## LSPeak           -0.8958        -0.8792        -0.8311  1.0000     -0.6179
+## CVAnnHSPeak       0.7415         0.5976         0.6665 -0.6179      1.0000
+```
 
 ```r
 FDis.signif.PCA <- prcomp(FDis.signif, scale=TRUE, centre=TRUE, retx=TRUE)
@@ -186,21 +208,29 @@ summary(FDis.signif.PCA)
 
 ```
 ## Importance of components:
-##                          PC1   PC2    PC3    PC4    PC5     PC6
-## Standard deviation     2.050 1.000 0.7661 0.3251 0.2613 0.18983
-## Proportion of Variance 0.701 0.167 0.0978 0.0176 0.0114 0.00601
-## Cumulative Proportion  0.701 0.867 0.9650 0.9826 0.9940 1.00000
+##                          PC1    PC2    PC3    PC4    PC5    PC6     PC7
+## Standard deviation     3.392 1.0948 0.9814 0.6408 0.5725 0.4844 0.38212
+## Proportion of Variance 0.767 0.0799 0.0642 0.0274 0.0219 0.0156 0.00973
+## Cumulative Proportion  0.767 0.8470 0.9113 0.9386 0.9605 0.9761 0.98587
+##                            PC8     PC9    PC10    PC11    PC12    PC13
+## Standard deviation     0.29949 0.23265 0.18371 0.14583 0.09958 0.04769
+## Proportion of Variance 0.00598 0.00361 0.00225 0.00142 0.00066 0.00015
+## Cumulative Proportion  0.99185 0.99546 0.99771 0.99912 0.99979 0.99994
+##                           PC14     PC15
+## Standard deviation     0.03083 1.02e-16
+## Proportion of Variance 0.00006 0.00e+00
+## Cumulative Proportion  1.00000 1.00e+00
 ```
 
 ```r
 plot(FDis.signif.PCA)
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-52.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-51.png) 
 
 ```r
 biplot(FDis.signif.PCA)
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-53.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-52.png) 
 

@@ -1,0 +1,774 @@
+plotID,species
+1,Abrophyllum ornans
+1,Acacia floribunda
+1,Acacia implexa
+1,Acacia irrorata
+1,Acmena smithii
+1,Adiantum aethiopicum
+1,Adiantum hispidulum
+1,Alectryon subcinereus
+1,Carex longebrachiata
+1,Casuarina cunninghamiana subsp. Cunninghamiana
+1,Ceratopetalum apetalum
+1,Commelina cyanea
+1,Conyza bonariensis
+1,Cryptocarya glaucescens
+1,Cryptocarya microneura
+1,Dichondra repens
+1,Doodia aspera
+1,Doodia caudata
+1,Doryphora sassafras
+1,Eustrephus latifolius
+1,Fern (Mammy Johnsons 35)
+1,Ficus coronata
+1,Geitonoplesium cymosum
+1,Glycine microphylla
+1,Guioa semiglauca
+1,Gymnostachys anceps
+1,Lastreopsis decomposita
+1,Leptospermum polygalifolium
+1,Lomandra longifolia
+1,Lomatia myricoides
+1,Microlaena stipoides
+1,Morinda jasminoides
+1,Neolitsea dealbata
+1,Notelaea longifolia
+1,Oplismenus aemulus
+1,Oplismenus imbecillis
+1,Pandorea pandorana
+1,Pellaea nana
+1,Phyllanthus gunnii
+1,Pimelea axiflora
+1,Pittosporum revolutum
+1,Pittosporum spinescens
+1,Smilax australis
+1,Tristaniopsis laurina
+1,Veronica sp. (Mammy Johnsons)
+1,Waterhousea floribunda
+2,Adiantum aethiopicum
+2,Blechnum nudum
+2,Blechnum patersonii
+2,Carex polyantha
+2,Clematis aristata
+2,Climber 2 (Wallagaraugh 14)
+2,Coprosma quadrifida
+2,Dianella caerulea
+2,Dichondra repens
+2,Doodia aspera
+2,Doodia caudata
+2,Herb 1 (Wallagaraugh 10)
+2,Lomandra longifolia
+2,Myrsine variabilis
+2,Notelaea longifolia
+2,Notelaea venosa
+2,Oplismenus aemulus
+2,Oplismenus aemulus
+2,Oplismenus imbecillis
+2,Pittosporum revolutum
+2,Smilax australis
+2,Solanum pungetium
+2,Subshrub 1 (Wallagaraugh 17)
+2,Symplocos thwaitesii
+2,Tristaniopsis laurina
+2,Tylophora barbata
+2,Veronica notabilis
+3,Acacia mearnsii
+3,Acacia melanoxylon
+3,Acaena novae-zelandiae
+3, Adiantum aethiopicum
+3,Anagallis arvensis
+3,Blechnum nudum
+3,Bursaria spinosa subsp. lasiophylla
+3,Calochlaena dubia
+3,Carex longebrachiata
+3,Cassinia aculeata
+3,Cassinia uncata
+3,Centaurium tenuiflorum
+3,Cirsium vulgare
+3,Clematis aristata
+3,Conyza bonariensis
+3,Conyza sumatrensis
+3,Coprosma quadrifida
+3,Dianella caerulea
+3,Dichondra repens
+3,Elymus scaber
+3,Eucalyptus viminalis
+3,Galium propinquum
+3,Gamochaeta purpurea
+3,Geranium solanderi
+3,Glycine clandestina
+3,Hydrocotyle peduncularis
+3,Lagenophora stipitata
+3,Leptospermum brevipes
+3,Lomandra longifolia
+3,Lomatia myricoides
+3,Microlaena stipoides
+3,Phytolacca octandra
+3,Pimelea axiflora
+3,Plantago debilis
+3,Poa meionectes
+3,Poa pratensis
+3,Pomaderris aspera
+3,Prunella vulgaris
+3,Pteridium esculentum
+3,Rubus fruticosus agg.
+3,Rubus parvifolius
+3,Senecio ?prenanthoides
+3,Senecio linearifolius
+3,Senecio sp. (Genoa)
+3,Sonchus oleraceus
+3,Trifolium repens
+3,Veronica notabilis
+3,Viola hederacea
+3,Vulpia bromoides (Genoa)
+4,Acacia floribunda
+4,Acetosella vulgaris
+4,Adiantum aethiopicum
+4,Asplenium flabellifolium
+4,Austrostipa ramosissima
+4,Austrostipa ramosissima
+4,Beyeria lasiocarpa
+4,Beyeria viscosa
+4,Bidens pilosa
+4,Bursaria spinosa subsp. spinosa
+4,Carex appressa
+4,Carex longebrachiata
+4,Cassinia trinerva
+4,Cassinia aculeata
+4,Casuarina cunninghamiana
+4,Clematis aristata
+4,Conyza sumatrensis
+4,Coprosma quadrifida
+4,Cryptandra spinescens
+4,Dichondra repens
+4,Doodia aspera
+4,Echinopogon caespitosus
+4,Entolasia marginata
+4,Entolasia stricta
+4,Eucalyptus agglomerata
+4,Eucalyptus cypellocarpa
+4,Geitonoplesium cymosum
+4,Geranium solanderi
+4,Glycine microphylla
+4,Glycine tabacina
+4,Hydrocotyle peduncularis
+4,Hydrocotyle tripartita
+4,Lomandra longifolia
+4,Lomatia myricoides
+4,Melicytus dentatus
+4,Microlaena stipoides
+4,Muehlenbeckia gracillima
+4,Myrsine variabilis
+4,Notelaea longifolia
+4,Oplismenus aemulus
+4,Oplismenus imbecillis
+4,Oxalis perennans
+4,Pandorea pandorana
+4,Parsonsia straminea
+4,Pellaea falcata
+4,Phyllanthus gunnii
+4,Plantago major
+4,Pomaderris aspera
+4,Pratia purpurascens
+4,Pteridium esculentum
+4,Rubus moluccanus var. trilobus
+4,Rubus parvifolius
+4,Rumex brownii
+4,Senecio prenanthoides
+4,Shrub (Wadbilliga 53)
+4,Sicyos australis
+4,Smilax australis
+4,Solanum nigrum
+4,Solanum pungetium
+4,Sonchus oleraceus
+4,Stellaria flaccida
+4,Taraxacum officinale
+4,Tylophora barbata
+4,Urtica incisa
+4,Viola hederacea
+5,Acacia floribunda
+5,Acacia mearnsii
+5,Acetosella vulgaris
+5,Adiantum aethiopicum
+5,Anagallis arvensis
+5,Aristida ramosa
+5,Astroloma humifusum
+5,Austrostipa ramosissima
+5,Backhousia myrtifolia
+5,Callistemon subulatus
+5,Carex gaudichaudiana
+5,Carex inversa
+5,Carex longebrachiata
+5,Casuarina cunninghamiana
+5,Centaurium erythraea
+5,Cirsium vulgare
+5,Clematis aristata
+5,Conyza bonariensis
+5,Creeper (Tuross 2 60)
+5,Cryptandra spinescens
+5,Dichondra repens
+5,Echinopogon caespitosus
+5,Ehrharta erecta
+5,Entolasia marginata
+5,Entolasia stricta
+5,Eucalyptus elata
+5,Gahnia subaequiglumis
+5,Glycine microphylla
+5,Glycine tabacina
+5,Herb (Wadbilliga 13)
+5,Hydrocotyle tripartita
+5,Lepidosperma laterale
+5,Lomandra longifolia
+5,Melicytus dentatus
+5,Microlaena stipoides
+5,Notelaea venosa
+5,Oplismenus aemulus
+5,Oplismenus imbecillis
+5,Oxalis chnoodes
+5,Oxalis perennans
+5,Pandorea pandorana
+5,Pellaea falcata
+5,Phyllanthus gunnii
+5,Pimelea axiflora
+5,Plantago debilis
+5,Poa meionectes
+5,Pomaderris aspera
+5,Pteridium esculentum
+5,Ranunculus repens
+5,Rubus moluccanus var. trilobus
+5,Rubus parvifolius
+5,Solanum pungetium
+5,Solenogyne bellioides
+5,Sonchus oleraceus
+5,Taraxacum officinale
+5,Tristaniopsis laurina
+5,Tylophora barbata
+5,Viola hederacea
+5,Viola sieberiana
+6,Acacia floribunda
+6,Acacia mearnsii
+6,Astroloma humifusum
+6,Bidens pilosa
+6,Brachyscome aculeata
+6,Callistemon subulatus
+6,Calystegia sp. (Gibbo)
+6,Carex inversa
+6,Carex sp. (Gibbo)
+6,Casuarina cunninghamiana
+6,Clematis aristata
+6,Conyza sp. (Gibbo)
+6,Cryptandra spinescens
+6,Dichondra repens
+6,Dodonaea viscosa subsp. cuneata
+6,Entolasia marginata
+6,Entolasia stricta
+6,Forb (Tuross 1 32)
+6,Glycine clandestina
+6,Herb (Tuross 1 40)
+6,Hibbertia aspera subsp. aspera
+6,Hydrocotyle tripartita
+6,Lepidosperma laterale
+6,Leptospermum brevipes
+6,Leptospermum emarginatum
+6,Lomandra longifolia
+6,Lomandra sp. (Tuross 1)
+6,Lomatia myricoides
+6,Melicytus dentatus
+6,Microlaena stipoides
+6,Notelaea venosa
+6,Oplismenus aemulus
+6,Oplismenus imbecillis
+6,Oxalis perennans
+6,Phyllanthus gunnii
+6,Poa labillardierei var. labillardierei
+6,Pomaderris cinerea
+6,Pomaderris phylicifolia subsp. phylicifolia
+6,Shrub (Tuross 1)
+6,Taraxacum officinale
+6,Veronica calycina
+6,Wahlenbergia sp. (Tuross 1)
+7,Acacia boormanii
+7,Acacia dealbata
+7,Acacia melanoxylon
+7,Anagallis arvensis
+7,Beyeria viscosa
+7,Bromus sp.
+7,Carex appressa
+7,Cassinia longifolia
+7,Cirsium vulgare
+7,Coprosma quadrifida
+7,Dianella tasmanica
+7,Ehrharta erecta
+7,Elymus scaber
+7,Eucalyptus bridgesiana
+7,Eucalyptus rubida
+7,Forb (Jacobs 34)
+7,Geranium homeanum
+7,Grass 1 (Jacobs 7)
+7,Hydrocotyle tripartita
+7,Leptospermum brevipes
+7,Lomandra longifolia
+7,Lomatia myricoides
+7,Microlaena stipoides
+7,Plantago sp. (Jacobs)
+7,Pomaderris aspera
+7,Pteridium esculentum
+7,Rostraria cristata
+7,Rubus fruticosus agg.
+7,Rubus parvifolius
+7,Rytidosperma sp.
+7,Themeda australis
+7,Verbena quadrangularis
+8,Acacia dealbata
+8,Acacia melanoxylon
+8,Acaena novae-zelandiae
+8,Adiantum aethiopicum
+8,Asteraceae sp.
+8,Blechnum minus
+8,Blechnum nudum
+8,Bothriochloa macra
+8,Calochlaena dubia
+8,Carduus tenuiflorus
+8,Carex ?appressa
+8,Carex fascicularis
+8,Carex inversa
+8,Cirsium vulgare
+8,Conyza bonariensis
+8,Coprosma quadrifida
+8,Dianella tasmanica
+8,Dichondra repens
+8,Eucalyptus camphora subsp. humeana
+8,Eucalyptus radiata
+8,Geranium homeanum
+8,Hydrocotyle  sp. (Nariel)
+8,Hypolepis glandulifera
+8,Juncus sp. (Nariel)
+8,Leptospermum brevipes
+8,Leptospermum grandifolium
+8,Lomatia myricoides
+8,Melicytus dentatus
+8,Mentha pulegium
+8,Mentha sp. (Nariel)
+8,Microlaena stipoides
+8,Morus alba
+8,Persicaria hydropiper
+8,Phragmites australis
+8,Plantago major
+8,Poa labillardierei var. labillardierei
+8,Poa pratensis
+8,Pomaderris aspera
+8,Prunella vulgaris
+8,Pteridium esculentum
+8,Ranunculus repens
+8,Ranunculus sp. (Nariel)
+8,Rubus parvifolius
+8,Rubus fruticosus agg.
+8,Rumex brownii
+8,Salix spp. hybridised
+8,Stellaria flaccida
+8,Taraxacum officinale
+8,Trifolium repens
+8,Urtica incisa
+8,Verbena sp. (Nariel)
+8,Veronica sp. (Nariel)
+9,Acacia dealbata
+9,Acacia melanoxylon
+9,Acaena novae-zelandiae
+9,Adiantum aethiopicum
+9,Aromatic shrub
+9,Asperula ?polymera
+9,Asperula scoparia subsp. scoparia
+9,Bedfordia arborescens
+9,Billardiera macrantha
+9,Blechnum nudum
+9,Bursaria spinosa subsp. lasiophylla
+9,Calochlaena dubia
+9,Carex appressa
+9,Cassinia aculeata
+9,Cirsium vulgare
+9,Cirsium vulgare
+9,Clematis aristata
+9,Conyza bonariensis
+9,Coprosma quadrifida
+9,Cyathea sp. (Gibbo)
+9,Dianella tasmanica
+9,Dichondra repens
+9,Echinopogon caespitosus
+9,Eucalyptus camphora subsp. humeana
+9,Eucalyptus radiata
+9,Eucalyptus viminalis
+9,Euchiton gymnocephalus
+9,Galium gaudichaudii subsp. gaudichaudii
+9,Geranium homeanum
+9,Hibbertia aspera subsp. aspera
+9,Hovea asperifolia var. asperifolia
+9,Juncus sp. (Gibbo)
+9,Lagenophora stipitata
+9,Lagenophora stipitata
+9,Leptospermum brevipes
+9,Leptospermum grandifolium
+9,Lomandra longifolia
+9,Lomatia ilicifolia
+9,Lomatia myricoides
+9,Microlaena stipoides 
+9,Oxalis perennans
+9,Persoonia ?lanceolata
+9,Platylobium formosum subsp. formosum
+9,Poa labillardierei var. labillardierei
+9,Poa sieberiana
+9,Polyscias sambucifolia
+9,Pomaderris aspera
+9,Pteridium esculentum
+9,Pultenaea juniperina
+9,Ranunculus repens
+9,Rubus parvifolius
+9,Rubus fruticosus agg.
+9,Senecio sp. (Gibbo)
+9,Shrub (Gibbo 13)
+9,Stellaria flaccida
+9,Veronica calycina
+9,Viola hederacea
+10,Acacia dealbata
+10,Acacia melanoxylon
+10,Acacia pravissima
+10,Acaena novae-zelandiae
+10,Adiantum aethiopicum
+10,Asperula scoparia subsp. scoparia
+10,Brachyscome ?angustifolia
+10,Bursaria spinosa subsp. lasiophylla
+10,Carex ?appressa
+10,Cassinia aculeata
+10,Cassinia uncata
+10,Centaurium tenuiflorum
+10,Cirsium vulgare
+10,Coprosma quadrifida
+10,Desmodium sp.
+10,Dianella tasmanica
+10,Dichondra repens
+10,Echinopogon caespitosus
+10,Eucalyptus camphora subsp. humeana
+10,Eucalyptus stellulata
+10,Forb 1 (Snowy Ck 6)
+10,Forb 2 (Snowy Ck 41)
+10,Grass (Snowy Ck 45)
+10,Herb (Snowy Ck 28)
+10,Lastreopsis decomposita
+10,Leptospermum brevipes
+10,Leptospermum sp. (Snowy Ck)
+10,Lomatia myricoides
+10,Melicytus dentatus
+10,Microlaena stipoides
+10,Oxalis sp.
+10,Pellaea falcata
+10,Persicaria decipiens
+10,Persicaria hydropiper
+10,Pimelea axiflora
+10,Plantago sp. (Snowy Ck)
+10,Poa sieberiana
+10,Pomaderris aspera
+10,Prunella vulgaris
+10,Prunus cerasifera
+10,Pteridium esculentum
+10,Richardia brasiliensis
+10,Rosa rubiginosa
+10,Rubus fruticosus agg.
+10,Rubus parvifolius
+10,Urtica incisa
+10,Veronica calycina
+11,Acacia fimbriata
+11,Acacia irrorata
+11,Adiantum aethiopicum
+11,Asperula sp. (Mann)
+11,Bidens pilosa
+11,Bidens subalternans
+11,Bursaria spinosa subsp. spinosa
+11,Carex sp. (Mann)
+11,Casuarina cunninghamiana
+11,Cayratia clematidea
+11,Centella asiatica
+11,Cirsium vulgare
+11,Commelina cyanea
+11,Cymbopogon refractus
+11,Cyperus sphaeroideus
+11,Desmodium varians
+11,Dichondra repens
+11,Echinopogon nutans var. nutans
+11,Eucalyptus amplifolia
+11,Geitonoplesium cymosum
+11,Geranium homeanum
+11,Glycine clandestina
+11,Glycine tabacina
+11,Herb (Mann 36)
+11,Hydrocotyle peduncularis
+11,Hydrocotyle tripartita
+11,Hypochaeris radicata
+11,Imperata cylindrica
+11,Juncus continuus
+11,Juncus sp. (Mann)
+11,Lomandra hystrix
+11,Lomandra longifolia
+11,Melicytus dentatus
+11,Microlaena stipoides
+11,Muehlenbeckia gracillima (Mann 62)
+11,Notelaea linearis
+11,Notelaea microcarpa var. microcarpa
+11,Oplismenus aemulus
+11,Oxalis chnoodes
+11,Oxalis perennans
+11,Parsonsia straminea
+11,Paspalum dilatatum
+11,Pavonia hastata
+11,Persicaria decipiens
+11,Persicaria strigosa
+11,Plantago debilis
+11,Poa sieberiana
+11,Pratia purpurascens
+11,Ranunculus muricatus
+11,Rubus fruticosus agg.
+11,Rubus parvifolius
+11,Rumex brownii
+11,Sida rhombifolia
+11,Solanum aviculare
+11,Stellaria flaccida
+11,Tagetes minuta
+11,Tradescantia fluminensis
+11,Trifolium repens
+11,Urtica incisa
+11,Verbena bonariensis
+11,Verbena quadrangularis
+11,Veronica plebeia
+11,Xanthium occidentale
+12,Acacia floribunda
+12,Acacia irrorata
+12,Acetosella vulgaris
+12,Angophora subvelutina
+12,Bidens pilosa
+12,Bidens subalternans
+12,Bromus catharticus
+12,Calystegia marginata
+12,Carex sp. (Cataract)
+12,Cassytha pubescens
+12,Casuarina cunninghamiana
+12,Cayratia clematidea
+12,Centella asiatica
+12,Cirsium vulgare
+12,Commelina cyanea
+12,Conyza bonariensis
+12,Conyza parva
+12,Conyza sp. (Cataract)
+12,Entolasia stricta
+12,Eucalyptus tereticornis
+12,Eucalyptus tereticornis
+12,Galium propinquum
+12,Gamochaeta purpurea
+12,Geitonoplesium cymosum
+12,Geranium molle
+12,Glycine clandestina
+12,Glycine sp. (Cataract)
+12,Grass (Cataract 55)
+12,Grass 2 (Cataract 71)
+12,Herb 1 (Cataract 29)
+12,Herb 2 (Cataract 44)
+12,Hydrocotyle peduncularis
+12,Hypochaeris radicata
+12,Imperata cylindrica
+12,Imperata cylindrica
+12,Juncus usitatus
+12,Ligustrum sinense
+12,Lomandra hystrix
+12,Melicytus dentatus
+12,Microlaena stipoides
+12,Muehlenbeckia gracillima
+12,Notelaea microcarpa var. velutina
+12,Opercularia hispida
+12,Oplismenus aemulus
+12,Paspalum dilatatum
+12,Passiflora edulis
+12,Pellaea falcata
+12,Pennisetum clandestinum
+12,Phytolacca octandra
+12,Plantago debilis
+12,Plectranthus parviflorus
+12,Pratia purpurascens
+12,Pteridium esculentum
+12,Rhytidosporum diosmoides
+12,Rubus fruticosus agg.
+12,Rumex brownii
+12,Sedge (Cataract 16)
+12,Senecio ?diaschides 
+12,Senecio madagascariensis
+12,Setaria pumila
+12,Sida rhombifolia
+12,Solanum americanum
+12,Solanum mauritianum
+12,Sonchus oleraceus
+12,Stellaria media
+12,Stephania japonica
+12,Tagetes minuta
+12,Urtica incisa
+12,Verbena bonariensis
+12,Xanthium occidentale
+13,Acacia floribunda
+13,Acacia implexa
+13,Acacia irrorata
+13,Acacia leiocalyx subsp. leiocalyx
+13,Acronychia oblongifolia
+13,Adiantum aethiopicum
+13,Alphitonia excelsa
+13,Banksia integrifolia
+13,Breynia oblongifolia
+13,Bursaria spinosa subsp. spinosa
+13,Calochlaena dubia
+13,Casuarina glauca
+13,Centella asiatica
+13,Climber (Sportsmans 56)
+13,Convolvulus erubescens
+13,Dianella caerulea var. producta
+13,Dianella longifolia var. stenophylla
+13,Dichondra repens
+13,Digitaria parviflora
+13,Duboisia myoporoides
+13,Echinostephia aculeata
+13,Entolasia marginata
+13,Gahnia aspera
+13,Galium binifolium
+13,Geitonoplesium cymosum
+13,Glycine clandestina
+13,Grass 1 (Sportsmans 49)
+13,Grass 2 (Sportsmans 36)
+13,Grevillea robusta
+13,Hybanthus stellarioides
+13,Imperata cylindrica
+13,Lepironia articulata
+13,Leptospermum brachyandrum
+13,Leptospermum trinervium
+13,Lomandra longifolia
+13,Lophostemon suaveolens
+13,Melaleuca quinquenervia
+13,Micrantheum hexandrum
+13,Microlaena stipoides 
+13,Morinda jasminoides
+13,Notelaea longifolia
+13,Oplismenus aemulus
+13,Oplismenus imbecillis
+13,Oxalis exilis
+13,Parsonsia straminea
+13,Pennisetum clandestinum
+13,Persoonia stradbrokensis
+13,Phyllanthus virgatus
+13,Pomaderris aspera
+13,Pratia purpurascens
+13,Pteridium esculentum
+13,Richardia brasiliensis
+13,Shrub 1 (Sportsmans 47)
+13,Shrub 2 (Sportsmans 52)
+13,Smilax australis
+13,Stephania japonica
+13,Syzygium oleosum
+13,Tree (Sportsmans 57)
+13,Trema tomentosa var. aspera
+13,Tristaniopsis laurina
+13,Vernonia cinerea
+14,Acacia dealbata
+14,Acacia falciformis
+14,Acacia implexa
+14,Acacia pravissima
+14,Acaena novae-zelandiae
+14,Adiantum aethiopicum
+14,Anagallis arvensis
+14,Blechnum penna-marina subsp. Alpina
+14,Bromus catharticus
+14,Carex appressa
+14,Cassinia aculeata
+14,Cirsium vulgare
+14,Conyza sumatrensis
+14,Coprosma hirtella
+14,Coprosma quadrifida
+14,Dianella revoluta
+14,Dichondra repens
+14,Dodonaea viscosa subsp. cuneata
+14,Entolasia stricta
+14,Eucalyptus radiata
+14,Eucalyptus viminalis
+14,Exocarpos strictus
+14,Galium leiocarpum
+14,Gamochaeta purpurea
+14,Geranium potentilloides
+14,Geranium sp. (Goodradigbee)
+14,Glycine clandestina
+14,Grass (Goodradigbee 10)
+14,Grevillea lanigera
+14,Hibbertia aspera subsp. aspera
+14,Hovea asperifolia subsp. asperifolia
+14,Hypochaeris radicata
+14,Juncus gregiflorus
+14,Leptospermum brevipes
+14,Leptospermum grandifolium
+14,Lomandra sp. (Goodradigbee)
+14,Lomatia myricoides
+14,Microlaena stipoides
+14,Opercularia hispida
+14,Ozothamnus diosmifolius
+14,Poa sieberiana
+14,Pomaderris aspera
+14,Pteridium esculentum
+14,Pultenaea juniperina
+14,Rubus fruticosus agg.
+14,Senecio madagascariensis
+14,Shrub (Goodradigbee)
+14,Sonchus asper
+14,Trifolium repens
+14,Verbena bonariensis
+14,Vernonia cinerea
+14,Viola sieberiana
+15,Acacia maidenii
+15,Acmena smithii
+15,Adiantum aethiopicum
+15,Adiantum hispidulum
+15,Alectryon subcinereus
+15,Araujia sericifera
+15,Breynia oblongifolia
+15,Calystegia sepium subsp. Roseata
+15,Carex sp. (Jilliby)
+15,Cassytha pubescens
+15,Cissus antarctica
+15,Commersonia fraseri
+15,Cryptocarya microneura
+15,Cyperus eragrostis
+15,Cyperus polystachyos
+15,Doodia aspera
+15,Entolasia marginata
+15,Eucalyptus resinifera
+15,Eucalyptus tereticornis
+15,Ficus coronata
+15,Geitonoplesium cymosum
+15,Glochidion ferdinandi var. ferdinandi
+15,Guioa semiglauca
+15,Gymnostachys anceps
+15,Ligustrum lucidum
+15,Ligustrum sinense
+15,Livistona australis
+15,Lomandra longifolia
+15,Lonicera japonica
+15,Morinda jasminoides
+15,Myrsine variabilis
+15,Notelaea venosa
+15,Oplismenus imbecillis
+15,Pandorea pandorana
+15,Parsonsia straminea
+15,Passiflora edulis
+15,Pellaea falcata
+15,Pittosporum revolutum
+15,Pittosporum spinescens
+15,Pomaderris lanigera
+15,Ripogonum album
+15,Sarcopetalum harveyanum
+15,Sida rhombifolia
+15,Smilax australis
+15,Smilax glyciphylla
+15,Solanum mauritianum
+15,Tasmannia insipida
+15,Tradescantia fluminensis
+15,Tree (Jilliby 32)
+15,Trophis scandens
+15,Wilkiea huegeliana

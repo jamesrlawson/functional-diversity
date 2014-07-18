@@ -24,8 +24,8 @@ Missing wood density cors due to missing values
 
 ```{r}
 traits.naomit <- na.omit(traits)
-pairs(traits.naomit)
 cor(traits.naomit)
+pairs(traits.naomit)
 
 ```
 
@@ -43,8 +43,8 @@ Trait correlations by CWM
 --------------------------------------
 
 ```{r}
+print(cor(CWM))
 pairs(CWM)
-cor(CWM)
 
 ```
 
@@ -59,17 +59,26 @@ getStats(hydroplots, hydroplots$FDis)
 PCA over significant hydrological variables
 -------------------------------------------
 ```{r}
-FDis.signif <- data.frame(cbind(
-                          "CVMDFWinter" = hydro$CVMDFWinter,
-                          "MDFMDFSummer" = hydro$MDFMDFSummer,
-                          "MDFMDFSpring" = hydro$MDFMDFSpring,
-                          "P_MaxM" = hydro$P_MaxM,
-                          "CVAnnMRateRise"= hydro$CVAnnMRateRise,
-                          "CVAnnHSPeak"= hydro$CVAnnHSPeak))
+FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
+                                hydroplots["CVMDFAutumn"],
+                                hydroplots["CVMDFSpring"],
+                                hydroplots["MDFMDFSummer"],
+                                hydroplots["MDFMDFSpring"],
+                                hydroplots["M_MaxM"],
+                                hydroplots["P_MaxM"],
+                                hydroplots["M_MinM"],
+                                hydroplots["M_MDFM"],
+                                hydroplots["P_MDFM"],
+                                hydroplots["AS20YrARI"],
+                                hydroplots["CVAnnMRateFall"],
+                                hydroplots["CVAnnMRateRise"],
+                                hydroplots["LSPeak"],
+                                hydroplots["CVAnnHSPeak"]
+))
+
                                                     
 FDis.signif.cor <- cor(FDis.signif)
-View(FDis.signif.cor )
-pairs(FDis.signif)
+print(FDis.signif.cor)
 
 FDis.signif.PCA <- prcomp(FDis.signif, scale=TRUE, centre=TRUE, retx=TRUE)
 summary(FDis.signif.PCA)
