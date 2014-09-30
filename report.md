@@ -128,11 +128,12 @@ PCA over significant hydrological variables
 -------------------------------------------
 
 ```r
-FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
-                                hydroplots["CVMDFAutumn"],
-                                hydroplots["CVMDFSpring"],
-                                hydroplots["MDFMDFSummer"],
-                                hydroplots["MDFMDFSpring"],
+FDis.signif <- data.frame(cbind(
+#                                hydroplots["CVMDFWinter"],
+#                                hydroplots["CVMDFAutumn"],
+ #                               hydroplots["CVMDFSpring"],
+#                                hydroplots["MDFMDFSummer"],
+#                                hydroplots["MDFMDFSpring"],
                                 hydroplots["M_MaxM"],
                                 hydroplots["P_MaxM"],
                                 hydroplots["M_MinM"],
@@ -151,54 +152,28 @@ print(FDis.signif.cor)
 ```
 
 ```
-##                CVMDFWinter CVMDFAutumn CVMDFSpring MDFMDFSummer
-## CVMDFWinter         1.0000      0.6858      0.7883       0.3814
-## CVMDFAutumn         0.6858      1.0000      0.7691       0.5859
-## CVMDFSpring         0.7883      0.7691      1.0000       0.4019
-## MDFMDFSummer        0.3814      0.5859      0.4019       1.0000
-## MDFMDFSpring       -0.7523     -0.7708     -0.7219      -0.8011
-## M_MaxM             -0.7842     -0.9369     -0.8074      -0.6376
-## P_MaxM             -0.6988     -0.5826     -0.4450      -0.3189
-## M_MinM             -0.6226     -0.8050     -0.6418      -0.7407
-## M_MDFM             -0.7726     -0.8912     -0.7773      -0.6567
-## P_MDFM             -0.7993     -0.9117     -0.8239      -0.5258
-## AS20YrARI           0.7820      0.8625      0.8518       0.5993
-## CVAnnMRateFall      0.8923      0.8788      0.8631       0.4792
-## CVAnnMRateRise      0.8752      0.8169      0.7183       0.3922
-## LSPeak             -0.8258     -0.8393     -0.8365      -0.5217
-## CVAnnHSPeak         0.5652      0.7368      0.4265       0.7445
-##                MDFMDFSpring  M_MaxM  P_MaxM  M_MinM  M_MDFM  P_MDFM
-## CVMDFWinter         -0.7523 -0.7842 -0.6988 -0.6226 -0.7726 -0.7993
-## CVMDFAutumn         -0.7708 -0.9369 -0.5826 -0.8050 -0.8912 -0.9117
-## CVMDFSpring         -0.7219 -0.8074 -0.4450 -0.6418 -0.7773 -0.8239
-## MDFMDFSummer        -0.8011 -0.6376 -0.3189 -0.7407 -0.6567 -0.5258
-## MDFMDFSpring         1.0000  0.8894  0.4277  0.7691  0.8357  0.8373
-## M_MaxM               0.8894  1.0000  0.5744  0.8418  0.9497  0.9681
-## P_MaxM               0.4277  0.5744  1.0000  0.3735  0.5327  0.6033
-## M_MinM               0.7691  0.8418  0.3735  1.0000  0.9360  0.7883
-## M_MDFM               0.8357  0.9497  0.5327  0.9360  1.0000  0.9179
-## P_MDFM               0.8373  0.9681  0.6033  0.7883  0.9179  1.0000
-## AS20YrARI           -0.8336 -0.9087 -0.5818 -0.7486 -0.8935 -0.9102
-## CVAnnMRateFall      -0.7838 -0.9092 -0.6552 -0.7998 -0.9048 -0.9299
-## CVAnnMRateRise      -0.7046 -0.8557 -0.8006 -0.6361 -0.7944 -0.8649
-## LSPeak               0.8648  0.9148  0.5972  0.6792  0.8161  0.9572
-## CVAnnHSPeak         -0.6551 -0.7194 -0.7642 -0.6587 -0.7124 -0.6564
-##                AS20YrARI CVAnnMRateFall CVAnnMRateRise  LSPeak CVAnnHSPeak
-## CVMDFWinter       0.7820         0.8923         0.8752 -0.8258      0.5652
-## CVMDFAutumn       0.8625         0.8788         0.8169 -0.8393      0.7368
-## CVMDFSpring       0.8518         0.8631         0.7183 -0.8365      0.4265
-## MDFMDFSummer      0.5993         0.4792         0.3922 -0.5217      0.7445
-## MDFMDFSpring     -0.8336        -0.7838        -0.7046  0.8648     -0.6551
-## M_MaxM           -0.9087        -0.9092        -0.8557  0.9148     -0.7194
-## P_MaxM           -0.5818        -0.6552        -0.8006  0.5972     -0.7642
-## M_MinM           -0.7486        -0.7998        -0.6361  0.6792     -0.6587
-## M_MDFM           -0.8935        -0.9048        -0.7944  0.8161     -0.7124
-## P_MDFM           -0.9102        -0.9299        -0.8649  0.9572     -0.6564
-## AS20YrARI         1.0000         0.8312         0.7632 -0.8958      0.7415
-## CVAnnMRateFall    0.8312         1.0000         0.9062 -0.8792      0.5976
-## CVAnnMRateRise    0.7632         0.9062         1.0000 -0.8311      0.6665
-## LSPeak           -0.8958        -0.8792        -0.8311  1.0000     -0.6179
-## CVAnnHSPeak       0.7415         0.5976         0.6665 -0.6179      1.0000
+##                 M_MaxM  P_MaxM  M_MinM  M_MDFM  P_MDFM AS20YrARI
+## M_MaxM          1.0000  0.5744  0.8418  0.9497  0.9681   -0.9087
+## P_MaxM          0.5744  1.0000  0.3735  0.5327  0.6033   -0.5818
+## M_MinM          0.8418  0.3735  1.0000  0.9360  0.7883   -0.7486
+## M_MDFM          0.9497  0.5327  0.9360  1.0000  0.9179   -0.8935
+## P_MDFM          0.9681  0.6033  0.7883  0.9179  1.0000   -0.9102
+## AS20YrARI      -0.9087 -0.5818 -0.7486 -0.8935 -0.9102    1.0000
+## CVAnnMRateFall -0.9092 -0.6552 -0.7998 -0.9048 -0.9299    0.8312
+## CVAnnMRateRise -0.8557 -0.8006 -0.6361 -0.7944 -0.8649    0.7632
+## LSPeak          0.9148  0.5972  0.6792  0.8161  0.9572   -0.8958
+## CVAnnHSPeak    -0.7194 -0.7642 -0.6587 -0.7124 -0.6564    0.7415
+##                CVAnnMRateFall CVAnnMRateRise  LSPeak CVAnnHSPeak
+## M_MaxM                -0.9092        -0.8557  0.9148     -0.7194
+## P_MaxM                -0.6552        -0.8006  0.5972     -0.7642
+## M_MinM                -0.7998        -0.6361  0.6792     -0.6587
+## M_MDFM                -0.9048        -0.7944  0.8161     -0.7124
+## P_MDFM                -0.9299        -0.8649  0.9572     -0.6564
+## AS20YrARI              0.8312         0.7632 -0.8958      0.7415
+## CVAnnMRateFall         1.0000         0.9062 -0.8792      0.5976
+## CVAnnMRateRise         0.9062         1.0000 -0.8311      0.6665
+## LSPeak                -0.8792        -0.8311  1.0000     -0.6179
+## CVAnnHSPeak            0.5976         0.6665 -0.6179      1.0000
 ```
 
 ```r
@@ -208,18 +183,14 @@ summary(FDis.signif.PCA)
 
 ```
 ## Importance of components:
-##                          PC1    PC2    PC3    PC4    PC5    PC6     PC7
-## Standard deviation     3.392 1.0948 0.9814 0.6408 0.5725 0.4844 0.38212
-## Proportion of Variance 0.767 0.0799 0.0642 0.0274 0.0219 0.0156 0.00973
-## Cumulative Proportion  0.767 0.8470 0.9113 0.9386 0.9605 0.9761 0.98587
-##                            PC8     PC9    PC10    PC11    PC12    PC13
-## Standard deviation     0.29949 0.23265 0.18371 0.14583 0.09958 0.04769
-## Proportion of Variance 0.00598 0.00361 0.00225 0.00142 0.00066 0.00015
-## Cumulative Proportion  0.99185 0.99546 0.99771 0.99912 0.99979 0.99994
-##                           PC14     PC15
-## Standard deviation     0.03083 1.02e-16
-## Proportion of Variance 0.00006 0.00e+00
-## Cumulative Proportion  1.00000 1.00e+00
+##                          PC1    PC2    PC3    PC4     PC5     PC6     PC7
+## Standard deviation     2.835 0.9344 0.7323 0.5520 0.30459 0.27716 0.19428
+## Proportion of Variance 0.804 0.0873 0.0536 0.0305 0.00928 0.00768 0.00377
+## Cumulative Proportion  0.804 0.8913 0.9449 0.9754 0.98464 0.99232 0.99609
+##                            PC8     PC9    PC10
+## Standard deviation     0.14905 0.11304 0.06389
+## Proportion of Variance 0.00222 0.00128 0.00041
+## Cumulative Proportion  0.99831 0.99959 1.00000
 ```
 
 ```r

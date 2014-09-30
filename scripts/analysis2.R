@@ -6,6 +6,7 @@ library(plyr)
 library(ggplot2)
 library(reshape)
 library(FD)
+library(SYNCSA)
 
 #############################################################################################
 ############################# GET RELATIVE ABUNDANCES FOR ALL TRAITS ########################
@@ -64,6 +65,8 @@ allspp.cover <- relabund(allspp.cover)
 
 ferns.cover <- merge(ferns, percentcover, by.x = "species", by.y = "species")
 ferns.totalcover <- ddply(ferns.cover, .(plotID), summarise, totalferncover = sum(avgcover))
+
+# datadensity is broken - adds ferns that have already been readded by rbind
 
 dataDensity <- data.frame(cbind("plotID" = unique(allspp.cover$plotID), 
                                 "traitcover" = unique(allspp.cover$traitcover),
@@ -142,11 +145,12 @@ rm(spp)
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
 
 FD.dbfd <- dbFD(traits, 
-                abun, 
-                w.abun = TRUE, 
+                abun,
+                w.abun = FALSE, 
                 stand.x = TRUE,
                 corr = c("cailliez"),
-#                calc.FGR = TRUE, 
+                calc.FGR = TRUE, 
+                clust.type = c("ward"),
                 calc.FDiv = TRUE, 
                 calc.FRic = TRUE,
                 m = "max",
@@ -154,6 +158,16 @@ FD.dbfd <- dbFD(traits,
                 print.pco=TRUE, 
                #scale.RaoQ=TRUE, 
                 stand.FRic=TRUE)
+
+## run SYNCSA analysis for functional redundancy and Simpson diversity ##
+
+# to use presabs only
+abun.presabs <- abun
+abun.presabs[abun.presabs>0] <- 1
+FD.redun <- rao.diversity(abun.presabs, traits=traits)
+
+#FD.redun <- rao.diversity(abun, traits=traits)
+ ##
 
 hydroplots <- hydro
 catname <- as.factor(categories$cats)
@@ -165,6 +179,9 @@ hydroplots$FEve <- FD.dbfd$FEve
 hydroplots$RaoQ <- FD.dbfd$RaoQ
 hydroplots$FGR <- FD.dbfd$FGR
 hydroplots$nbsp <- FD.dbfd$nbsp
+hydroplots$simpson <- FD.redun$Simpson
+hydroplots$FunRao <- FD.redun$FunRao
+hydroplots$redun <- FD.redun$FunRedundancy
 
 CWM <- FD.dbfd$CWM
 
@@ -202,6 +219,9 @@ plot.linear(hydroplots, hydroplots$FDiv, FD)
 plot.linear(hydroplots, hydroplots$FRic, FD)
 plot.linear(hydroplots, hydroplots$FEve, FD)
 plot.linear(hydroplots, hydroplots$nbsp, FD)
+plot.linear(hydroplots, hydroplots$simpson, FD)
+plot.linear(hydroplots, hydroplots$FunRao, FD)
+plot.linear(hydroplots, hydroplots$redun, FD)
 
 plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
 plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
@@ -219,6 +239,9 @@ plot.quad(hydroplots, hydroplots$FDiv, FD)
 plot.quad(hydroplots,hydroplots$FRic, FD)
 plot.quad(hydroplots, hydroplots$FEve, FD)
 plot.quad(hydroplots, hydroplots$nbsp, FD)
+plot.quad(hydroplots, hydroplots$simpson, FD)
+plot.quad(hydroplots, hydroplots$FunRao, FD)
+plot.quad(hydroplots, hydroplots$redun, FD)
 
 plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
 plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
@@ -239,6 +262,9 @@ getStats(hydroplots, hydroplots$FEve, FD)
 getStats(hydroplots, hydroplots$nbsp, FD)
 #getStats(hydroplots, hydroplots$FGR, FD)
 getStats(hydroplots, hydroplots$richness, richness)
+getStats(hydroplots, hydroplots$simpson, FD)
+getStats(hydroplots, hydroplots$FunRao, FD)
+getStats(hydroplots, hydroplots$redun, FD)
 
 getStats(hydroplots, hydroplots$SLA.CWM, CWM)
 getStats(hydroplots, hydroplots$seedmass.CWM, CWM)

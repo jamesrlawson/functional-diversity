@@ -59,11 +59,12 @@ getStats(hydroplots, hydroplots$FDis)
 PCA over significant hydrological variables
 -------------------------------------------
 ```{r}
-FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
-                                hydroplots["CVMDFAutumn"],
-                                hydroplots["CVMDFSpring"],
-                                hydroplots["MDFMDFSummer"],
-                                hydroplots["MDFMDFSpring"],
+FDis.signif <- data.frame(cbind(
+#                                hydroplots["CVMDFWinter"],
+#                                hydroplots["CVMDFAutumn"],
+ #                               hydroplots["CVMDFSpring"],
+#                                hydroplots["MDFMDFSummer"],
+#                                hydroplots["MDFMDFSpring"],
                                 hydroplots["M_MaxM"],
                                 hydroplots["P_MaxM"],
                                 hydroplots["M_MinM"],
