@@ -16,7 +16,7 @@ library(SYNCSA)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydro.csv", header=TRUE)
+hydro <- read.csv("data/hydro1.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
 WD <- read.csv("data/WD.csv")
 categories <- read.csv("data/categories.csv", header=TRUE)
@@ -31,7 +31,18 @@ plotcover <- ddply(percentcover, .(plotID), summarise, plotCover = sum(avgcover)
 # remove data poor species
 
 allspp <- subset(alltraits, growthform != "F") # remove ferns
+
+# separate out ferns so we can use this in the data density analysis below
 ferns <- subset(alltraits, growthform == "F")
+# remove fern spp. we're going to add back in to the dataset
+
+ferns <- ferns[-17,] # Pteridium esculentum
+#ferns <- ferns[-15,] # Pellaea falcata - adding causes NA's in FD distance matrix
+ferns <- ferns[-10,] # Doodia aspera
+ferns <- ferns[-8,] # Calochlaena dubia
+ferns <- ferns[-5,] # Blechnum nudum
+#ferns <- ferns[-1,] # Adiantum aethiopicum - adding causes NA's in FD distance matrix
+
 allspp <- na.omit(allspp)
 
 allspp <- rbind(allspp, alltraits[2,]) # Acacia boormanii
@@ -43,9 +54,13 @@ allspp <- rbind(allspp, alltraits[223,]) # Notelaea microcarpa subsp. microcarpa
 allspp <- rbind(allspp, alltraits[318,]) # Stephania japonica
 allspp <- rbind(allspp, alltraits[348,]) # Waterhousea floribunda
 
+#allspp <- rbind(allspp, alltraits[18,]) # Adiantum aethiopicum
 allspp <- rbind(allspp, alltraits[42,]) # Blechnum nudum
 allspp <- rbind(allspp, alltraits[53,]) # Calochlaena dubia
 allspp <- rbind(allspp, alltraits[112,]) # Doodia aspera
+allspp <- rbind(allspp, alltraits[273,]) # Pteridium esculentum
+#allspp <- rbind(allspp, alltraits[239,]) # Pellaea falcata
+
                                                 
 allspp <- allspp[order(allspp$species), ]
 
@@ -54,10 +69,17 @@ allspp <- allspp[order(allspp$species), ]
 allspp <- merge(allspp, leafDimensions, all.x=TRUE)
 allspp <- merge(allspp, WD, all.x=TRUE)
 
+
+## add calculated leaf area ##
+
+allspp$leafarea <- allspp$leafLength.mean * allspp$leafWidth.mean * 0.7
+
+##
+
 allspp.cover <- findtraitvals(plotsums, allspp)
 allspp.cover <- merge(allspp.cover, plotcover)
 
-### get relative abundance ###
+### data density ###
 
 allspp.traitcover <- ddply(allspp.cover, .(plotID), summarise, traitcover = sum(speciescover))
 allspp.cover <- merge(allspp.cover, allspp.traitcover, by.x = "plotID", by.y = "plotID")
@@ -66,40 +88,55 @@ allspp.cover <- relabund(allspp.cover)
 ferns.cover <- merge(ferns, percentcover, by.x = "species", by.y = "species")
 ferns.totalcover <- ddply(ferns.cover, .(plotID), summarise, totalferncover = sum(avgcover))
 
-# datadensity is broken - adds ferns that have already been readded by rbind
-
 dataDensity <- data.frame(cbind("plotID" = unique(allspp.cover$plotID), 
                                 "traitcover" = unique(allspp.cover$traitcover),
-                                "totalferncover" = c(10.8,
-                                                     38.8,
-                                                     41.2,
-                                                     16.2,
+                                "totalferncover" = c(1.2,
+                                                     0,
+                                                     0,
+                                                     1.4,
                                                      0,
                                                      0,
                                                      0,
-                                                     36.0,
-                                                     15.5,
-                                                     7.0,
                                                      0,
-                                                     2.9,
-                                                     33.4,
                                                      0,
-                                                     6.5), # values from ferns.totalcover
+                                                     2.6,
+                                                     0,
+                                                     0,
+                                                     0,
+                                                     0,
+                                                     0), # values from ferns.totalcover
                                 "plotCover" = unique(allspp.cover$plotCover)))
-dataDensity$dataDensity <- dataDensity$traitcover / dataDensity$plotCover
-dataDensity$dataDensity.withferns <- (dataDensity$traitcover + dataDensity$totalferncover) / (dataDensity$plotCover)
-print(dataDensity)
+dataDensity$coverage <- dataDensity$traitcover / dataDensity$plotCover
+dataDensity$coverage.withferns <- (dataDensity$traitcover + dataDensity$totalferncover) / (dataDensity$plotCover)
+
+
+dataDensity$WD = ddply(allspp.cover, .(plotID), summarise, WD = length(na.omit(WD)) / length(WD))$WD
+dataDensity$maxheight = ddply(allspp.cover, .(plotID), summarise, maxheight = length(na.omit(maxheight)) / length(maxheight))$maxheight
+dataDensity$seedmass = ddply(allspp.cover, .(plotID), summarise, seedmass = length(na.omit(seedmass)) / length(seedmass))$seedmass
+dataDensity$SLA = ddply(allspp.cover, .(plotID), summarise, SLA = length(na.omit(SLA)) / length(SLA))$SLA
+dataDensity$flowering.period = ddply(allspp.cover, .(plotID), summarise, flowering.period = length(na.omit(flowering.period)) / length(flowering.period))$flowering.period
+dataDensity$length.width.ratio = ddply(allspp.cover, .(plotID), summarise, length.width.ratio = length(na.omit(length.width.ratio)) / length(length.width.ratio))$length.width.ratio
+
+dataDensity$traitcover <- NULL
+dataDensity$totalferncover <- NULL
+dataDensity$plotCover <- NULL
+dataDensity$coverage.withferns <- NULL
+
+dataDensity <- format(dataDensity, digits = 3)
+
+#
 
 test <- ddply(allspp.cover, .(plotID), summarise, summedRelCover = (sum(relcover)))
 print(test)
 rm(test)
 
-#######
+
 
 traits <- allspp.cover[2]
-traits <- cbind(traits, allspp.cover[4:14])
+traits <- cbind(traits, allspp.cover[4:15])
 traits$leafLength.mean <- NULL
 traits$leafWidth.mean <- NULL
+traits$leafarea <- NULL
 #traits$length.width.ratio <- NULL
 
 traits$growthform <- NULL
@@ -112,18 +149,20 @@ hist(log10(traits$seedmass))
 hist(log10(traits$SLA))
 hist(log10(traits$maxheight), breaks = 5)
 hist((traits$flowering.period)) # non-normal distribution with any common transform
-hist(log10(traits$leafWidth.mean))
-hist(log10(traits$leafLength.mean))
-hist(log10(traits$length.width.ratio))
+#hist(log10(traits$leafWidth.mean))
+#hist(log10(traits$leafLength.mean))
+#hist(log10(traits$length.width.ratio))
 hist(log10(traits$WD))
+#hist(log10(traits$leafarea))
 
 traits$seedmass <- log10(traits$seedmass)
 traits$SLA <- log10(traits$SLA)
 traits$maxheight <- log10(traits$maxheight)
-traits$leafWidth.mean <- log10(traits$leafWidth.mean)
+#traits$leafWidth.mean <- log10(traits$leafWidth.mean)
 traits$length.width.ratio <- log10(traits$length.width.ratio)
-traits$leafLength.mean <- log10(traits$leafLength.mean)
+#traits$leafLength.mean <- log10(traits$leafLength.mean)
 traits$WD <- log10(traits$WD)
+#traits$leafarea <- log10(traits$leafarea)
 
 traits$woody <- as.numeric(traits$woody)
 traits$woody <- NULL
@@ -132,7 +171,7 @@ traits$woody <- NULL
 
 abun <- data.frame(allspp.cover[1])
 abun <- cbind(abun, allspp.cover[2])
-abun <- cbind(abun, allspp.cover[17])
+abun <- cbind(abun, allspp.cover[18])
 abun <- cast(abun, plotID ~ species, value="relcover", fill=0)
 rownames(abun) <- abun$plotID
 abun$plotID <- NULL
@@ -142,32 +181,45 @@ traits$species <- NULL
 rownames(traits) <- spp
 rm(spp)
 
+#traits$maxheight <- NULL
+#traits$seedmass <- NULL
+#traits$SLA <- NULL
+#traits$length.width.ratio <- NULL
+#traits$flowering.period <- NULL
+#traits$WD <- NULL
+
+
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
 
 FD.dbfd <- dbFD(traits, 
                 abun,
-                w.abun = FALSE, 
-                stand.x = TRUE,
+                w.abun = TRUE,  # use presence - absence converted data?
+                stand.x = FALSE,
                 corr = c("cailliez"),
-                calc.FGR = TRUE, 
-                clust.type = c("ward"),
-                calc.FDiv = TRUE, 
-                calc.FRic = TRUE,
+#                calc.FGR = TRUE, 
+#                clust.type = c("kmeans"),
+#                km.inf.gr = c(2),
+#                km.sup.gr = c(10),
+#                km.iter = (100),
+#                calc.FDiv = TRUE, 
+#                calc.FRic = TRUE,
                 m = "max",
                 calc.CWM=TRUE, 
                 print.pco=TRUE, 
-               #scale.RaoQ=TRUE, 
-                stand.FRic=TRUE)
+#                scale.RaoQ=TRUE, 
+ #               stand.FRic=TRUE
+                )
 
 ## run SYNCSA analysis for functional redundancy and Simpson diversity ##
 
 # to use presabs only
 abun.presabs <- abun
 abun.presabs[abun.presabs>0] <- 1
-FD.redun <- rao.diversity(abun.presabs, traits=traits)
 
-#FD.redun <- rao.diversity(abun, traits=traits)
- ##
+FD.redun_presabs <- rao.diversity(abun.presabs, traits=traits)
+
+FD.redun <- rao.diversity(abun, traits=traits)
+##
 
 hydroplots <- hydro
 catname <- as.factor(categories$cats)
@@ -191,6 +243,7 @@ hydroplots$maxheight.CWM <- CWM$maxheight
 hydroplots$flowering.period.CWM <- CWM$flowering.period
 hydroplots$WD.CWM <- CWM$WD
 hydroplots$leafratio.CWM <- CWM$length.width.ratio
+#hydroplots$leafarea.CWM <- CWM$length.width.ratio
 #hydroplots$leafWidth.CWM <- CWM$leafWidth
 #hydroplots$leafLength.CWM <- CWM$leafLength
 
@@ -229,7 +282,7 @@ plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
 plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
 plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
 plot.linear(hydroplots,hydroplots$leafratio.CWM)
-plot.linear(hydroplots,hydroplots$leafWidth.CWM)
+#plot.linear(hydroplots,hydroplots$leafWidth.CWM)
 plot.linear(hydroplots, hydroplots$richness, richness)
 
 
@@ -249,8 +302,8 @@ plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
 plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
 plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
 plot.quad(hydroplots,hydroplots$leafratio.CWM)
-plot.quad(hydroplots,hydroplots$leafWidth.CWM)
-plot.quad(hydroplots,hydroplots$leafLength.CWM)
+#plot.quad(hydroplots,hydroplots$leafWidth.CWM)
+p#lot.quad(hydroplots,hydroplots$leafLength.CWM)
 
 
 
@@ -271,9 +324,12 @@ getStats(hydroplots, hydroplots$seedmass.CWM, CWM)
 getStats(hydroplots, hydroplots$maxheight.CWM, CWM)
 getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
 getStats(hydroplots, hydroplots$WD.CWM, CWM)
+#getStats(hydroplots,hydroplots$leafarea.CWM)
 getStats(hydroplots,hydroplots$leafratio.CWM)
 #getStats(hydroplots,hydroplots$leafWidth.CWM)
 #getStats(hydroplots,hydroplots$leafLength.CWM)
+
+
 
 
 

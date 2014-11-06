@@ -48,7 +48,7 @@ spread <- function(x) (diff(range(x)))
 plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
   
   
-  figureDir <- "C:/Users/JLawson/Desktop/stuff/data/analysis/R/functional diversity/output/figures"
+  figureDir <- "C:/Users/James/Desktop/stuff/data/analysis/R/functional diversity/output/figures"
   traitDir <- deparse(substitute(trait))
   varDir <- deparse(substitute(var))
   
@@ -101,7 +101,7 @@ plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
 plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc.
   
   
-  figureDir <- "C:/Users/JLawson/Desktop/stuff/data/analysis/R/functional diversity/output/figures"
+  figureDir <- "C:/Users/James/Desktop/stuff/data/analysis/R/functional diversity/output/figures"
   traitDir <- deparse(substitute(trait))
   varDir <- deparse(substitute(var))
   
@@ -165,7 +165,7 @@ getStats <- function(df, var, trait) {
   
   # create / set output directory
   
-  statsDir <- "C:/Users/JLawson/Desktop/stuff/data/analysis/R/functional diversity/output/stats"
+  statsDir <- "C:/Users/James/Desktop/stuff/data/analysis/R/functional diversity/output/stats"
    
   dir.create(statsDir, recursive=TRUE, showWarnings=FALSE)
 
@@ -203,8 +203,8 @@ getStats <- function(df, var, trait) {
   
   var <- deparse(substitute(var))
   
-  y$padj.linear <- p.adjust(y$pval.linear, method="BH", n=36)
-  y$padj.quad <- p.adjust(y$pval.quad, method="BH", n=36)
+  y$padj.linear <- p.adjust(y$pval.linear, method="BH", n=31)
+  y$padj.quad <- p.adjust(y$pval.quad, method="BH", n=31)
   
   write.csv(y, sprintf("%s/%s_stats.csv", statsDir, var))
    

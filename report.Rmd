@@ -10,13 +10,49 @@ Functional Diversity of riparian plant communities of south eastern Australia
 
 This document presents the results of a functional diversity analysis using the following traits:
 
-maxheight
-SLA
-seedmass
-wood density
-flowering period (proportion of year)
-leaf length:width ratio
-(leaf length)
+- maxheight
+- SLA
+- seedmass
+- wood density
+- flowering period (proportion of year)
+- leaf length:width ratio
+
+
+**FDis and functional redundancy are significantly predicted by:**
+- Flood magnitude (mean, extreme and CV)
+- Low flow intensity
+- Flood rise/fall rates
+- Temporal uniformity of maximum, minimum and average flows (seasonal, interannual)
+- Seasonality of flows
+
+
+Relationships of hydrological variables with Functional Dispersion
+------------------------------------------------------------------
+
+```{r}
+
+getStats(hydroplots, hydroplots$FDis, FD)
+
+```
+
+Relationships of hydrological variables with Functional Richness
+------------------------------------------------------------------
+
+```{r}
+
+getStats(hydroplots, hydroplots$FRic, FD)
+
+```
+
+Relationships of hydrological variables with Functional Redundancy
+------------------------------------------------------------------
+
+```{r}
+
+getStats(hydroplots, hydroplots$redun, FD)
+
+```
+
 
 Species by species trait correlations
 --------------------------------------
@@ -49,32 +85,35 @@ pairs(CWM)
 ```
 
 
-FDis significant regressions
---------------------------------------
-```{r}
-getStats(hydroplots, hydroplots$FDis)
-
-```
-
 PCA over significant hydrological variables
 -------------------------------------------
 ```{r}
 FDis.signif <- data.frame(cbind(
-#                                hydroplots["CVMDFWinter"],
-#                                hydroplots["CVMDFAutumn"],
- #                               hydroplots["CVMDFSpring"],
-#                                hydroplots["MDFMDFSummer"],
-#                                hydroplots["MDFMDFSpring"],
+                                hydroplots["CVMDFWinter"],
+                                hydroplots["CVMDFAutumn"],
+                                hydroplots["CVMDFSummer"],
+                                hydroplots["CVMDFSpring"],
+                                hydroplots["MDFMDFAutumn"],
+                                hydroplots["MDFMDFSummer"],
+                                hydroplots["MDFMDFSpring"],
                                 hydroplots["M_MaxM"],
                                 hydroplots["P_MaxM"],
                                 hydroplots["M_MinM"],
+                                hydroplots["C_MinM"],
+                                hydroplots["P_MinM"],
                                 hydroplots["M_MDFM"],
+                                hydroplots["C_MDFM"],
                                 hydroplots["P_MDFM"],
                                 hydroplots["AS20YrARI"],
+                                hydroplots["CVAnnBFI"],
+                                hydroplots["BFI"],
                                 hydroplots["CVAnnMRateFall"],
                                 hydroplots["CVAnnMRateRise"],
                                 hydroplots["LSPeak"],
-                                hydroplots["CVAnnHSPeak"]
+                                hydroplots["CVAnnHSPeak"],
+                                hydroplots["HSPeak"]
+
+                                
 ))
 
                                                     
