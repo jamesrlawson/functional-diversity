@@ -88,5 +88,8 @@ vif(model13) # way high
 AIC(model1, model2, model3, model4, model5, model6, model8, model9, model10, model12)
 
 # model 12 wins! lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
+summary(model12)
 
-
+# "multicollinearity multicollinearity misleadingly inflates the standard errors. Thus, it makes some variables statistically insignificant while they should be otherwise significant."
+# so perhaps... model 13 is actually real
+summary(model13)
