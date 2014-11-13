@@ -71,8 +71,8 @@ plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point()
-    p <- p + geom_point(aes(shape = catname), size =3)
-    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
+#    p <- p + geom_point(aes(shape = catname), size =3)
+#    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
     p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x, se=TRUE, col="black") 
     p <- p + xlab(hydroname)
     #  p <- p + ylim(0.45, 0.75)
@@ -124,8 +124,8 @@ plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point()
-    p <- p + geom_point(aes(shape = catname), size =3)
-    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
+#    p <- p + geom_point(aes(shape = catname), size =3)
+#    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
     p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x + I(x^2), se=TRUE, col="black") 
     p <- p + xlab(hydroname)
     #  p <- p + ylim(0.45, 0.75)
@@ -202,7 +202,7 @@ getStats <- function(df, var, trait) {
   }
   
   var <- deparse(substitute(var))
-  
+    
   y$padj.linear <- p.adjust(y$pval.linear, method="BH", n=31)
   y$padj.quad <- p.adjust(y$pval.quad, method="BH", n=31)
   
@@ -211,6 +211,44 @@ getStats <- function(df, var, trait) {
   return(y)
   
 }
+
+getAllStats <- function(df, var, trait) {
+  
+  y <- data.frame()
+  
+  for(i in 1:ncol(df)) {
+    
+    hydro <- df[[i]]  
+    hydroname <- as.expression(colnames(df[i]))  
+    
+    fit.linear <- lm(var ~ hydro, data = df)
+    fit.quad <- lm(var ~ hydro + I(hydro^2), data = df)
+    
+    r2.linear <- signif(summary(fit.linear)$r.squared, 5)
+    pval.linear <- anova(fit.linear)[1,"Pr(>F)"]
+    
+    f.stat <- signif(summary(fit.linear)$fstatistic[1], 3)
+    
+    x <- cbind(pval.linear, r2.linear, f.stat)
+    
+    x <- as.data.frame(x)
+    
+    x <- cbind(as.character(hydroname), x)
+    
+    colnames(x) <- c("metric", "pval.linear", "r2.linear", "f statistic")
+    
+      y <- rbind(x,y)
+    
+  }
+  
+  var <- deparse(substitute(var))
+    
+  return(y)
+  
+}
+
+
+
 
 
 

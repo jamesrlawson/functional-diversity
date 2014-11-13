@@ -16,7 +16,7 @@ library(SYNCSA)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydro1.csv", header=TRUE)
+hydro <- read.csv("data/hydro2.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
 WD <- read.csv("data/WD.csv")
 categories <- read.csv("data/categories.csv", header=TRUE)
@@ -268,42 +268,42 @@ hydroplots$richness <- tapply(div_hydro$species, div_hydro$plot, length)
 ## plot everything against hydro ##
 
 plot.linear(hydroplots, hydroplots$FDis, FD)
-plot.linear(hydroplots, hydroplots$FDiv, FD)
-plot.linear(hydroplots, hydroplots$FRic, FD)
-plot.linear(hydroplots, hydroplots$FEve, FD)
-plot.linear(hydroplots, hydroplots$nbsp, FD)
-plot.linear(hydroplots, hydroplots$simpson, FD)
-plot.linear(hydroplots, hydroplots$FunRao, FD)
-plot.linear(hydroplots, hydroplots$redun, FD)
+#plot.linear(hydroplots, hydroplots$FDiv, FD)
+#plot.linear(hydroplots, hydroplots$FRic, FD)
+#plot.linear(hydroplots, hydroplots$FEve, FD)
+#plot.linear(hydroplots, hydroplots$nbsp, FD)
+#plot.linear(hydroplots, hydroplots$simpson, FD)
+#plot.linear(hydroplots, hydroplots$FunRao, FD)
+#plot.linear(hydroplots, hydroplots$redun, FD)
 
-plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
-plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
-plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
-plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
-plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
-plot.linear(hydroplots,hydroplots$leafratio.CWM)
+#plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
+#plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
+#plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
+#plot.linear(hydroplots,hydroplots$leafratio.CWM)
 #plot.linear(hydroplots,hydroplots$leafWidth.CWM)
-plot.linear(hydroplots, hydroplots$richness, richness)
+#plot.linear(hydroplots, hydroplots$richness, richness)
 
 
 
 plot.quad(hydroplots, hydroplots$FDis, FD)
-plot.quad(hydroplots, hydroplots$FDiv, FD)
-plot.quad(hydroplots,hydroplots$FRic, FD)
-plot.quad(hydroplots, hydroplots$FEve, FD)
-plot.quad(hydroplots, hydroplots$nbsp, FD)
-plot.quad(hydroplots, hydroplots$simpson, FD)
-plot.quad(hydroplots, hydroplots$FunRao, FD)
-plot.quad(hydroplots, hydroplots$redun, FD)
+#plot.quad(hydroplots, hydroplots$FDiv, FD)
+#plot.quad(hydroplots,hydroplots$FRic, FD)
+#plot.quad(hydroplots, hydroplots$FEve, FD)
+#plot.quad(hydroplots, hydroplots$nbsp, FD)
+#plot.quad(hydroplots, hydroplots$simpson, FD)
+#plot.quad(hydroplots, hydroplots$FunRao, FD)
+#plot.quad(hydroplots, hydroplots$redun, FD)
 
-plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
-plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
-plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
-plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
-plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
-plot.quad(hydroplots,hydroplots$leafratio.CWM)
+#plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
+#plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
+#plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
+#plot.quad(hydroplots,hydroplots$leafratio.CWM)
 #plot.quad(hydroplots,hydroplots$leafWidth.CWM)
-p#lot.quad(hydroplots,hydroplots$leafLength.CWM)
+#plot.quad(hydroplots,hydroplots$leafLength.CWM)
 
 
 
@@ -331,5 +331,11 @@ getStats(hydroplots,hydroplots$leafratio.CWM)
 
 
 
+# get stats tables for all FDis tests
 
+FDis.tests <- getAllStats(hydroplots, hydroplots$FDis, FD)
+FDis.tests <- FDis.tests[c(17:39),] # remove incidental variables or p.adjust breaks
+FDis.tests$padj.linear <- p.adjust(FDis.tests$pval.linear, method="BH")
+FDis.tests$padj.quad <- p.adjust(FDis.tests$pval.quad, method="BH")
+write.csv(FDis.tests, "output/stats/FDis-all.csv")
 

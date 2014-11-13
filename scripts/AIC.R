@@ -1,4 +1,5 @@
 require(car)
+require(MuMIn)
 
 ## Model selection procedure ##
 
@@ -13,7 +14,7 @@ require(car)
 
 ########### PCA ###############
 
-# note LSPeak and CVAnnHSNum are included even though BH adjustment rendered them non-significant at alpha 0.05 #
+# note CVAnnHSNum is included even though BH adjustment rendered them non-significant at alpha 0.05 #
 
 hydro.FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
                                       hydroplots["CVMDFAutumn"],
@@ -26,9 +27,19 @@ hydro.FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
                                       hydroplots["AS20YrARI"],
                                       hydroplots["CVAnnMRateFall"],
                                       hydroplots["CVAnnMRateRise"],
-                                      hydroplots["LSPeak"],
                                       hydroplots["CVAnnHSPeak"],
-                                      hydroplots["CVAnnHSNum"]
+                                      hydroplots["CVAnnHSNum"]#,
+#                                      ,
+ #                                     hydroplots["latinv"],
+ #                                     hydroplots["elevation"],
+  #                                    hydroplots["catchment"]
+                                      
+#                                      hydroplots["MDFMDFAutumn"],
+#                                      hydroplots["MDFMDFWinter"],
+#                                      hydroplots["BFI"],
+#                                      hydroplots["C_MDFM"],
+#                                      hydroplots["CVAnnBFI"]
+                                      
 ))
 
 
@@ -63,14 +74,14 @@ model5 <- lm(FDis ~ CVAnnHSNum.centred + MDFMDFSummer.centred, data = hydroplots
 model6 <- lm(FDis ~ CVAnnHSPeak.centred + MDFMDFSummer.centred, data = hydroplots)
 model7 <- lm(FDis ~ CVAnnHSNum.centred * CVAnnHSPeak.centred, data = hydroplots)
 model8 <- lm(FDis ~ CVAnnHSNum.centred * MDFMDFSummer.centred, data = hydroplots)
-model9 <- lm(FDis ~ CVAnnHSPeak.centred + MDFMDFSummer.centred, data = hydroplots)
+model9 <- lm(FDis ~ CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
 
 model10 <- lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred + MDFMDFSummer.centred, data = hydroplots)
 model11 <- lm(FDis ~ CVAnnHSNum.centred * CVAnnHSPeak.centred + MDFMDFSummer.centred, data = hydroplots)
 model12 <- lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
 model13 <- lm(FDis ~ CVAnnHSNum.centred * CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
 
-AIC(model1, model2, model3, model4, model5, model6, model7, model8, model9, model10, model11, model12, model13)
+AICc(model1, model2, model3, model4, model5, model6, model7, model8, model9, model10, model11, model12, model13)
 
 # exclude according to VIFs #
 
@@ -93,3 +104,10 @@ summary(model12)
 # "multicollinearity multicollinearity misleadingly inflates the standard errors. Thus, it makes some variables statistically insignificant while they should be otherwise significant."
 # so perhaps... model 13 is actually real
 summary(model13)
+
+model12 <- lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
+modelx <- lm(FDis ~ catchment + CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
+
+summary(modelx)
+summary(model12)
+
