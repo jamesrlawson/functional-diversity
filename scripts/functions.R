@@ -67,33 +67,29 @@ plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
     r2 <- signif(summary(fit.linear)$r.squared, 5)
     pval <- anova(fit.linear)[1,"Pr(>F)"]
     
-    png(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 600, height = 500)
+    tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
     
     p <- qplot(hydro, var, data = df) 
-    p <- p + geom_point()
-#    p <- p + geom_point(aes(shape = catname), size =3)
-#    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
-    p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x, se=TRUE, col="black") 
+    p <- p + geom_point(size = 3)
+  
+    p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x, fullrange=TRUE, se=TRUE, col="black", alpha = 0.2) 
     p <- p + xlab(hydroname)
-    #  p <- p + ylim(0.45, 0.75)
-    p <- p + ylab(labels$ylab)
-    # p <- p + annotate("text",                    
-    #                   x=max(hydro)/1.5, y=0.5,
-    #                   label=paste("R^2 = ",signif(summary(fit.quad)$r.squared, 5),
-    #                               "\np.adj =",labels$p.adj[i]),
-    #                   size = 4)
-    #    p <- p + ggtitle(labels$title)    
-    p <- p + theme_minimal() # if you want to use a preset theme and then modify it, call it first
-    p <- p + theme(panel.grid.major = element_blank(),
+    p <- p + ylab(c("FDis"))  
+    p <- p + theme_bw() 
+    p <- p + theme_set(theme_bw(base_size = 15))
+    p <- p + theme(legend.position = "none",
+                   axis.text = element_text(size = rel(0.8)),
+#                   axis.title.y = element_text(hjust=0.35),
+                   axis.title.x = element_text(vjust=0.35),
+                   panel.border = element_blank(),
                    panel.grid.minor = element_blank(),
-                   axis.line = element_line(size=.7, color = "black"),
-                   legend.position = "bottom",
-                   panel.background = element_blank(),      
-                   plot.title = element_text(size=12),
-                   axis.text = element_text(size=12),
-                   text = element_text(size=12))   
+                   panel.grid.major = element_blank(),
+                   axis.line = element_line(size=.2, color = "black"))
     
     print(p)
+   
+    
+    print(p) 
     dev.off()
   }
 }
@@ -120,31 +116,24 @@ plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc
     r2 <- signif(summary(fit.quad)$r.squared, 5)
     pval <- anova(fit.quad)[1,"Pr(>F)"]
     
-    png(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 600, height = 500)
+    tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point()
-#    p <- p + geom_point(aes(shape = catname), size =3)
-#    p <- p + scale_shape_discrete(name = "Hydrological \n class", labels = c("stable winter baseflow", "unpredictable baseflow", "unpredictable intermittent"))
-    p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x + I(x^2), se=TRUE, col="black") 
+
+    p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x + I(x^2), se=TRUE, col="black", alpha = 0.2) 
     p <- p + xlab(hydroname)
-    #  p <- p + ylim(0.45, 0.75)
-    p <- p + ylab(labels$ylab)
-    # p <- p + annotate("text",                    
-    #                   x=max(hydro)/1.5, y=0.5,
-    #                   label=paste("R^2 = ",signif(summary(fit.quad)$r.squared, 5),
-    #                               "\np.adj =",labels$p.adj[i]),
-    #                   size = 4)
-    #    p <- p + ggtitle(labels$title)    
-    p <- p + theme_minimal() # if you want to use a preset theme and then modify it, call it first
-    p <- p + theme(panel.grid.major = element_blank(),
+    p <- p + ylab(c("FDis"))  
+    p <- p + theme_bw() 
+    p <- p + theme_set(theme_bw(base_size = 15))
+    p <- p + theme(legend.position = "none",
+                   axis.text = element_text(size = rel(0.8)),
+                   #                   axis.title.y = element_text(hjust=0.35),
+                   axis.title.x = element_text(vjust=0.35),
+                   panel.border = element_blank(),
                    panel.grid.minor = element_blank(),
-                   axis.line = element_line(size=.7, color = "black"),
-                   legend.position = "bottom",
-                   panel.background = element_blank(),      
-                   plot.title = element_text(size=12),
-                   axis.text = element_text(size=12),
-                   text = element_text(size=12))   
+                   panel.grid.major = element_blank(),
+                   axis.line = element_line(size=.2, color = "black"))
     
     print(p)
     dev.off()
@@ -226,16 +215,20 @@ getAllStats <- function(df, var, trait) {
     
     r2.linear <- signif(summary(fit.linear)$r.squared, 5)
     pval.linear <- anova(fit.linear)[1,"Pr(>F)"]
+    fstat.linear <- signif(summary(fit.linear)$fstatistic[1], 4)
     
-    f.stat <- signif(summary(fit.linear)$fstatistic[1], 3)
+    r2.quad <- signif(summary(fit.quad)$r.squared, 5)
+    pval.quad <- anova(fit.quad)[1,"Pr(>F)"]
+    fstat.quad <- signif(summary(fit.quad)$fstatistic[1], 4)
+
     
-    x <- cbind(pval.linear, r2.linear, f.stat)
+    x <- cbind(pval.linear, r2.linear, fstat.linear, pval.quad, r2.quad, fstat.quad)
     
     x <- as.data.frame(x)
     
     x <- cbind(as.character(hydroname), x)
     
-    colnames(x) <- c("metric", "pval.linear", "r2.linear", "f statistic")
+    colnames(x) <- c("metric", "pval.linear", "r2.linear", "f statistic linear", "pval.quad", "r2.quad", "f statistic quad")
     
       y <- rbind(x,y)
     

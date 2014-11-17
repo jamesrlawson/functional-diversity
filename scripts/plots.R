@@ -1,5 +1,6 @@
 require(plyr)
 require(reshape)
+require(multtest)
 
 ## summary hydro stats ##
 
@@ -55,13 +56,40 @@ plot.linear(hydroplots, hydroplots$FDis, FD)
 ## get stats tables for all FDis tests ##
 
 FDis.tests <- getAllStats(hydroplots, hydroplots$FDis, FD)
-FDis.tests <- FDis.tests[c(17:39),] # remove incidental variables or p.adjust breaks
-FDis.tests$padj.linear <- p.adjust(FDis.tests$pval.linear, method="BH")
-FDis.tests$padj.quad <- p.adjust(FDis.tests$pval.quad, method="BH")
+FDis.tests <- FDis.tests[c(13:35),] # remove incidental variables or p.adjust breaks - run this straight after generating hydroplots in the analysis file 
+
+  
 write.csv(FDis.tests, "output/stats/FDis-all.csv")
 
-# M_MinM is the only relationship described by a quadratic fit, so we need to put 
-# its p value into the vector of linear p values, otherwise we get an incorrect adjustment
+# M_MinM and CVMDFSummer are best described by a quadratic fit, so we need to put 
+# their p values into the vector of p values to be adjusted
+# my function gives incorrect p values for quadratic fits, for some reason. have to run the regressions individually. 
+
+
+p.vec <- c(0.009625127,
+           0.034225202,
+           0.02176, # this is the p val for the quadratic fit for CVMDFSummer
+           0.025969223,
+           0.088081735,
+           0.109117651,
+           0.003060679,
+           0.013393695,
+           0.025804779,
+           0.088452064,
+           0.009421, # this is the p val for the quadratic fit for M_MinM
+           0.136126122,
+           0.020857362,
+           0.108604162,
+           0.014833246,
+           0.012875004,
+           0.010989153,
+           0.157241392,
+           0.155629385,
+           0.001014303,
+           0.036001867,
+           0.726998403,
+           0.064823375)
+           
 
 p.vec <- c(0.001014303,
            0.003060679,
@@ -72,7 +100,7 @@ p.vec <- c(0.001014303,
            0.010989153,
            0.025969223,
            0.025804779,
-           0.012047481, # this is the p val for the quadratic fit for M_MinM
+           0.009421, # this is the p val for the quadratic fit for M_MinM
            0.020857362,
            0.034225202,
            0.036001867,
@@ -84,10 +112,31 @@ p.vec <- c(0.001014303,
            0.136126122,
            0.157241392,
            0.155629385,
-           0.286664786,
+           0.02176, # this is the p val for the quadratic fit for CVMDFSummer
            0.726998403)
 
-p.adjust(p.vec, "BH")[10]
+padjs  <- mt.rawp2adjp(p.vec, c("TSBH"))
+padjs  <- data.frame(padjs$adjp[order(padjs$index),])
+View(padjs$TSBH_0.05) # here's the adjusted vector
+FDis.tests$p.adj <- padjs$TSBH_0.05
+
+## analyse global variables ##
+
+hydroplots1$FDisp <- FD.dbfd$FDis
+
+hydro1 <- read.csv("data/hydro1.csv", header=TRUE)
+hydroplots$latinv <- hydro1$latinv
+hydroplots$catchment <- hydro1$catchment
+hydroplots$elevation <- hydro1$elevation
+
+FDis_lat.lm <- lm(FDis ~ latinv, data = hydroplots)
+FDis_catchment.lm <- lm(FDis ~ catchment, data = hydroplots)
+FDis_elevation.lm <- lm(FDis ~ elevation, data = hydroplots)
+
+## make regression plots ##
+
+plot.linear(hydroplots, hydroplots$FDis, FD)
+plot.quad(hydroplots, hydroplots$FDis, FD)
 
 
 ## significant hydro metrics PCA ##

@@ -106,8 +106,35 @@ summary(model12)
 summary(model13)
 
 model12 <- lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
-modelx <- lm(FDis ~ catchment + CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
-
-summary(modelx)
 summary(model12)
+
+
+model12$coeff["CVAnnHSNum.centred"] * sd(hydroplots$CVAnnHSNum.centred) / sd(hydroplots$FDis)
+model12$coeff["CVAnnHSPeak.centred"] * sd(hydroplots$CVAnnHSPeak.centred) / sd(hydroplots$FDis)
+model12$coeff["MDFMDFSummer.centred"] * sd(hydroplots$MDFMDFSummer.centred) / sd(hydroplots$FDis)
+model12$coeff["CVAnnHSPeak.centred:MDFMDFSummer.centred"] * sd(hydroplots$CVAnnHSPeak.centred * hydroplots$MDFMDFSummer.centred) / sd(hydroplots$FDis)
+
+
+summary(model12)
+summary(model13)
+summary(model10)
+summary(model5)
+
+
+
+
+
+
+
+
+
+
+modelx <- 
+
+
+
+
+
+
+
 
