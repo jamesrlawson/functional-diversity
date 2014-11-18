@@ -181,13 +181,6 @@ traits$species <- NULL
 rownames(traits) <- spp
 rm(spp)
 
-#traits$maxheight <- NULL
-#traits$seedmass <- NULL
-#traits$SLA <- NULL
-#traits$length.width.ratio <- NULL
-#traits$flowering.period <- NULL
-#traits$WD <- NULL
-
 
 ### run FD analysis ### important that traits are scaled (stand.x = TRUE)
 

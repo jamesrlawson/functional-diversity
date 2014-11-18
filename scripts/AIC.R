@@ -19,6 +19,7 @@ require(MuMIn)
 hydro.FDis.signif <- data.frame(cbind(hydroplots["CVMDFWinter"],
                                       hydroplots["CVMDFAutumn"],
                                       hydroplots["CVMDFSpring"],
+                                      hydroplots["CVMDFSummer"],
                                       hydroplots["MDFMDFSummer"],
                                       hydroplots["MDFMDFSpring"],
                                       hydroplots["M_MaxM"],
@@ -96,8 +97,6 @@ vif(model11) # dodgy
 vif(model12)
 vif(model13) # way high
 
-AIC(model1, model2, model3, model4, model5, model6, model8, model9, model10, model12)
-
 # model 12 wins! lm(FDis ~ CVAnnHSNum.centred + CVAnnHSPeak.centred * MDFMDFSummer.centred, data = hydroplots)
 summary(model12)
 
@@ -115,22 +114,20 @@ model12$coeff["MDFMDFSummer.centred"] * sd(hydroplots$MDFMDFSummer.centred) / sd
 model12$coeff["CVAnnHSPeak.centred:MDFMDFSummer.centred"] * sd(hydroplots$CVAnnHSPeak.centred * hydroplots$MDFMDFSummer.centred) / sd(hydroplots$FDis)
 
 
+
+summary(model1)
+summary(model2)
+summary(model3)
+summary(model4)
+summary(model5)
+summary(model6)
+summary(model7)
+summary(model8)
+summary(model9)
+summary(model10)
+summary(model11)
 summary(model12)
 summary(model13)
-summary(model10)
-summary(model5)
-
-
-
-
-
-
-
-
-
-
-modelx <- 
-
 
 
 
