@@ -60,6 +60,12 @@ FDis.tests <- FDis.tests[c(13:35),] # remove incidental variables or p.adjust br
   
 write.csv(FDis.tests, "output/stats/FDis-all.csv")
 
+# have a look for nbsp, simpson diversity and total richness
+FDis.tests_nbsp <- getAllStats(hydroplots, hydroplots$nbsp, FD)
+FDis.tests_simpson<- getAllStats(hydroplots, hydroplots$simpson, FD)
+FDis.tests_richness <- getAllStats(hydroplots, hydroplots$richness, FD)
+
+
 # M_MinM and CVMDFSummer are best described by a quadratic fit, so we need to put 
 # their p values into the vector of p values to be adjusted
 # my function gives incorrect p values for quadratic fits, for some reason. have to run the regressions individually. 
