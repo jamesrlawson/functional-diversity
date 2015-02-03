@@ -67,7 +67,9 @@ plot.linear <- function(df, var, trait) { # var is alphaT/betaT/ts/Rs, etc.
     r2 <- signif(summary(fit.linear)$r.squared, 5)
     pval <- anova(fit.linear)[1,"Pr(>F)"]
     
-    tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
+#    tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
+    
+    svg(sprintf("%s/%s_pval-%s_r2-%s.svg", outDir, hydroname, pval, r2), width = 6.7, height = 5, pointsize=8)
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point(size = 3)
@@ -116,7 +118,10 @@ plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc
     r2 <- signif(summary(fit.quad)$r.squared, 5)
     pval <- anova(fit.quad)[1,"Pr(>F)"]
     
-    tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
+ #  tiff(sprintf("%s/%s_pval-%s_r2-%s.png", outDir, hydroname, pval, r2), width = 400, height = 300)
+    svg(sprintf("%s/%s_pval-%s_r2-%s.svg", outDir, hydroname, pval, r2), width = 6.7, height = 5, pointsize=8)
+    
+    
     
     p <- qplot(hydro, var, data = df) 
     p <- p + geom_point()

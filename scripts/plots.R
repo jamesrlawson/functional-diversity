@@ -1,6 +1,8 @@
 require(plyr)
 require(reshape)
 require(multtest)
+source("scripts/functions.R")
+
 
 ## summary hydro stats ##
 
