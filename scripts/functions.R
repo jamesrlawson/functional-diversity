@@ -179,7 +179,8 @@ getStats <- function(df, var, trait) {
     pval.linear <- anova(fit.linear)[1,"Pr(>F)"]
     
     r2.quad <- signif(summary(fit.quad)$r.squared, 5)
-    pval.quad <- anova(fit.quad)[1,"Pr(>F)"]
+    quad.summ <- summary(fit.quad)
+    pval.quad <- pf(quad.summ$fstatistic[1], quad.summ$fstatistic[2], quad.summ$fstatistic[3],lower.tail = FALSE)
     
     x <- cbind(pval.linear, r2.linear, pval.quad, r2.quad)
     

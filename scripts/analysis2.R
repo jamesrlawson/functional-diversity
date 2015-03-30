@@ -18,7 +18,7 @@ alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
 hydro <- read.csv("data/hydro2.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
-WD <- read.csv("data/WD.csv")
+WD <- read.csv("data/WD1.csv")
 categories <- read.csv("data/categories.csv", header=TRUE)
 
 # remove observations that average less than 1% cover
@@ -137,7 +137,6 @@ traits <- cbind(traits, allspp.cover[4:15])
 traits$leafLength.mean <- NULL
 traits$leafWidth.mean <- NULL
 traits$leafarea <- NULL
-#traits$length.width.ratio <- NULL
 
 traits$growthform <- NULL
 traits$lifehistory <- NULL
@@ -149,20 +148,13 @@ hist(log10(traits$seedmass))
 hist(log10(traits$SLA))
 hist(log10(traits$maxheight), breaks = 5)
 hist((traits$flowering.period)) # non-normal distribution with any common transform
-#hist(log10(traits$leafWidth.mean))
-#hist(log10(traits$leafLength.mean))
-#hist(log10(traits$length.width.ratio))
 hist(log10(traits$WD))
-#hist(log10(traits$leafarea))
 
 traits$seedmass <- log10(traits$seedmass)
 traits$SLA <- log10(traits$SLA)
 traits$maxheight <- log10(traits$maxheight)
-#traits$leafWidth.mean <- log10(traits$leafWidth.mean)
 traits$length.width.ratio <- log10(traits$length.width.ratio)
-#traits$leafLength.mean <- log10(traits$leafLength.mean)
 traits$WD <- log10(traits$WD)
-#traits$leafarea <- log10(traits$leafarea)
 
 traits$woody <- as.numeric(traits$woody)
 traits$woody <- NULL
@@ -236,9 +228,6 @@ hydroplots$maxheight.CWM <- CWM$maxheight
 hydroplots$flowering.period.CWM <- CWM$flowering.period
 hydroplots$WD.CWM <- CWM$WD
 hydroplots$leafratio.CWM <- CWM$length.width.ratio
-#hydroplots$leafarea.CWM <- CWM$length.width.ratio
-#hydroplots$leafWidth.CWM <- CWM$leafWidth
-#hydroplots$leafLength.CWM <- CWM$leafLength
 
 CWM$woody <- NULL
 CWM$lifehistory <- NULL
@@ -257,71 +246,6 @@ TukeyHSD(FDis.aov)
 diversity <- read.csv("data/diversity.csv", header=TRUE, stringsAsFactors = FALSE)
 div_hydro <- merge(diversity, hydro)
 hydroplots$richness <- tapply(div_hydro$species, div_hydro$plot, length)
-
-## plot everything against hydro ##
-
-plot.linear(hydroplots, hydroplots$FDis, FD)
-#plot.linear(hydroplots, hydroplots$FDiv, FD)
-#plot.linear(hydroplots, hydroplots$FRic, FD)
-#plot.linear(hydroplots, hydroplots$FEve, FD)
-#plot.linear(hydroplots, hydroplots$nbsp, FD)
-#plot.linear(hydroplots, hydroplots$simpson, FD)
-#plot.linear(hydroplots, hydroplots$FunRao, FD)
-#plot.linear(hydroplots, hydroplots$redun, FD)
-
-#plot.linear(hydroplots, hydroplots$SLA.CWM, CWM)
-#plot.linear(hydroplots,hydroplots$seedmass.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$maxheight.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$flowering.period.CWM, CWM)
-#plot.linear(hydroplots, hydroplots$WD.CWM, CWM)
-#plot.linear(hydroplots,hydroplots$leafratio.CWM)
-#plot.linear(hydroplots,hydroplots$leafWidth.CWM)
-#plot.linear(hydroplots, hydroplots$richness, richness)
-
-
-
-plot.quad(hydroplots, hydroplots$FDis, FD)
-#plot.quad(hydroplots, hydroplots$FDiv, FD)
-#plot.quad(hydroplots,hydroplots$FRic, FD)
-#plot.quad(hydroplots, hydroplots$FEve, FD)
-#plot.quad(hydroplots, hydroplots$nbsp, FD)
-#plot.quad(hydroplots, hydroplots$simpson, FD)
-#plot.quad(hydroplots, hydroplots$FunRao, FD)
-#plot.quad(hydroplots, hydroplots$redun, FD)
-
-#plot.quad(hydroplots, hydroplots$SLA.CWM, CWM)
-#plot.quad(hydroplots,hydroplots$seedmass.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$maxheight.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$flowering.period.CWM, CWM)
-#plot.quad(hydroplots, hydroplots$WD.CWM, CWM)
-#plot.quad(hydroplots,hydroplots$leafratio.CWM)
-#plot.quad(hydroplots,hydroplots$leafWidth.CWM)
-#plot.quad(hydroplots,hydroplots$leafLength.CWM)
-
-
-
-
-getStats(hydroplots, hydroplots$FDis, FD)
-getStats(hydroplots, hydroplots$FDiv, FD)
-getStats(hydroplots, hydroplots$FRic, FD)
-getStats(hydroplots, hydroplots$FEve, FD)
-getStats(hydroplots, hydroplots$nbsp, FD)
-#getStats(hydroplots, hydroplots$FGR, FD)
-getStats(hydroplots, hydroplots$richness, richness)
-getStats(hydroplots, hydroplots$simpson, FD)
-getStats(hydroplots, hydroplots$FunRao, FD)
-getStats(hydroplots, hydroplots$redun, FD)
-
-getStats(hydroplots, hydroplots$SLA.CWM, CWM)
-getStats(hydroplots, hydroplots$seedmass.CWM, CWM)
-getStats(hydroplots, hydroplots$maxheight.CWM, CWM)
-getStats(hydroplots, hydroplots$flowering.period.CWM, CWM)
-getStats(hydroplots, hydroplots$WD.CWM, CWM)
-#getStats(hydroplots,hydroplots$leafarea.CWM)
-getStats(hydroplots,hydroplots$leafratio.CWM)
-#getStats(hydroplots,hydroplots$leafWidth.CWM)
-#getStats(hydroplots,hydroplots$leafLength.CWM)
-
 
 
 # get stats tables for all FDis tests
