@@ -16,9 +16,9 @@ library(SYNCSA)
 
 alltraits <- read.csv("data/alltraits.csv", header=TRUE)
 percentcover <- read.csv("data/percentcover.csv", header=TRUE)
-hydro <- read.csv("data/hydro2.csv", header=TRUE)
+hydro <- read.csv("data/hydro.csv", header=TRUE)
 leafDimensions <- read.csv("data/leafDimensions.csv", header=TRUE, stringsAsFactors = FALSE)
-WD <- read.csv("data/WD1.csv")
+WD <- read.csv("data/WD.csv")
 categories <- read.csv("data/categories.csv", header=TRUE)
 
 # remove observations that average less than 1% cover
