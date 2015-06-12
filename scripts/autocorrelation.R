@@ -52,15 +52,26 @@ Moran.I(hydroplots$FDis, hydro.gowdis.inv)
 
 # variance partitioning
 
-clim.lm <- clim_pdmt + I(clim_pdmt^2) + clim_pcld + I(clim_pcld^2) + clim_isot + I(clim_isot^2) + clim_twet, everything)
-clim.lm.dredge <- dredge(clim.lm, trace=TRUE)
+clim.lm <- lm(FDis ~ clim_pdmt + I(clim_pdmt^2) + clim_pcld + I(clim_pcld^2) + clim_isot + I(clim_isot^2) + clim_twet, data = everything)
+clim.lm.dredge <- dredge(clim.lm, trace=TRUE, m.max = 5)
 clim.lm.dredge
 
+clim.lm.int <- lm(FDis ~ clim_pdmt * clim_pcld * clim_isot * clim_twet, data = everything)
+clim.lm.int.dredge <- dredge(clim.lm.int, trace=TRUE, m.max=8)
+clim.lm.int.dredge
+
 FDis.varpart <- varpart(everything$FDis,
-                        ~clim_isot + I(clim_isot^2),
                         ~CVAnnHSNum + CVAnnHSPeak * MDFMDFSummer,
-         #               ~soil_ece + I(soil_ece^2),
+                        ~clim_isot + I(clim_isot^2),
+                 #       ~soil_ece + I(soil_ece^2),
                         data = everything)
 FDis.varpart
 plot(FDis.varpart)
 
+
+
+hydro.pca <- prcomp(hydro[,2:24], scale=TRUE, center=TRUE, retx=TRUE)
+summary(hydro.pca)
+hydro.pca$rotation[,1:5]
+write.csv(hydro.pca$rotation[,1:5], "output/hydro_pca.csv")
+ 

@@ -124,7 +124,7 @@ plot.quad <- function(df, var, trait, labels) { # var is alphaT/betaT/ts/Rs, etc
     
     
     p <- qplot(hydro, var, data = df) 
-    p <- p + geom_point()
+    p <- p + geom_point(size = 3)
 
     p <- p + stat_smooth(aes(group = 1), method = "lm", formula = y ~ x + I(x^2), se=TRUE, col="black", alpha = 0.2) 
     p <- p + xlab(hydroname)
